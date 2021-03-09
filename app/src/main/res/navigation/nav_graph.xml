@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.softsuit.aad.codelab.core.notification.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" >
+        <action
+            android:id="@+id/action_notificationFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.softsuit.aad.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_notificationFragment"
+            app:destination="@id/notificationFragment" />
+        <action
+            android:id="@+id/main_fragment_id"
+            app:destination="@id/notificationFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_mainFragment_to_toastSnakeFragment"
+            app:destination="@id/toastSnakeFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_selectImageFragment"
+            app:destination="@id/selectImageFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_materialComponentsFragment"
+            app:destination="@id/materialComponentsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/toastSnakeFragment"
+        android:name="com.softsuit.aad.codelab.core.toast.ToastSnakeFragment"
+        android:label="fragment_toast_snake"
+        tools:layout="@layout/fragment_toast_snake" >
+        <action
+            android:id="@+id/action_toastSnakeFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/blurFragment"
+        android:name="com.softsuit.aad.codelab.core.workmanager.BlurFragment"
+        android:label="fragment_workmanager"
+        tools:layout="@layout/fragment_blur" >
+        <action
+            android:id="@+id/action_blurFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectImageFragment"
+        android:name="com.softsuit.aad.codelab.core.workmanager.SelectImageFragment"
+        android:label="fragment_select_image"
+        tools:layout="@layout/fragment_select_image" >
+        <action
+            android:id="@+id/action_selectImageFragment_to_blurFragment"
+            app:destination="@id/blurFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/materialComponentsFragment"
+        android:name="com.softsuit.aad.codelab.userinterface.materialcomponents.MaterialComponentsFragment"
+        android:label="fragment_material_components"
+        tools:layout="@layout/fragment_material_components" >
+        <action
+            android:id="@+id/action_materialComponentsFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_materialComponentsFragment_to_productGridFragment"
+            app:destination="@id/productGridFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productGridFragment"
+        android:name="com.softsuit.aad.codelab.userinterface.materialcomponents.ProductGridFragment"
+        android:label="fragment_product_grid"
+        tools:layout="@layout/fragment_product_grid" >
+        <action
+            android:id="@+id/action_productGridFragment_to_materialComponentsFragment"
+            app:destination="@id/materialComponentsFragment" />
+    </fragment>
+
+</navigation>
