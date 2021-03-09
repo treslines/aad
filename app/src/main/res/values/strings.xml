@@ -30,4 +30,8 @@
     <string name="shr_button_next">Next</string>
     <string name="shr_button_cancel">Cancel</string>
     <string name="shr_error_password">Wrong Password</string>
+    <string name="interactive_ui_button_toast">Toast</string>
+    <string name="interactive_ui_button_count">Count</string>
+    <string name="interactive_ui_count_initial_value">0</string>
+    <string name="toast_message">Hello toast!</string>
 </resources>

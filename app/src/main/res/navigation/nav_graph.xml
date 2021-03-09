@@ -36,6 +36,9 @@
         <action
             android:id="@+id/action_mainFragment_to_materialComponentsFragment"
             app:destination="@id/materialComponentsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_interactiveUiFragment"
+            app:destination="@id/interactiveUiFragment" />
     </fragment>
     <fragment
         android:id="@+id/toastSnakeFragment"
@@ -84,6 +87,15 @@
         <action
             android:id="@+id/action_productGridFragment_to_materialComponentsFragment"
             app:destination="@id/materialComponentsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/interactiveUiFragment"
+        android:name="com.softsuit.aad.codelab.userinterface.interactiveui.InteractiveUiFragment"
+        android:label="fragment_interactive_ui"
+        tools:layout="@layout/fragment_interactive_ui" >
+        <action
+            android:id="@+id/action_interactiveUiFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
 
 </navigation>
