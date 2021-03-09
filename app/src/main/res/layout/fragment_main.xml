@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".codelab.core.notification.NotificationFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/codelab_title_aad"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:gravity="center_horizontal"
+            android:text="Android Associated Developer"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/codelab_title_core"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Codelab: Core"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/codelab_toast_snake"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="left|center_vertical"
+            android:text="Toast &amp; Snake"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/codelab_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="left|center_vertical"
+            android:text="Notification"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/codelab_work_manager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="left|center_vertical"
+            android:text="Work Manager"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/codelab_title_user_interface"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="5dp"
+            android:text="Codelab: User Interface"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/codelab_activities_intents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="left|center_vertical"
+            android:text="Activities and intents"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/codelab_interactive_ui"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="left|center_vertical"
+            android:text="Your first interactive UI"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/codelab_themes_touches"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="left|center_vertical"
+            android:text="Themes and final touches"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/codelab_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="left|center_vertical"
+            android:text="RecyclerView"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/codelab_menu_pickers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="left|center_vertical"
+            android:text="Menus and pickers"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/codelab_user_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="left|center_vertical"
+            android:text="User navigation"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/codelab_material_components"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="left|center_vertical"
+            android:text="Material Components (Kotlin)"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/codelab_lifecycles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="left|center_vertical"
+            android:text="Lifecycles"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/codelab_add_user_interactivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="left|center_vertical"
+            android:text="Add user interactivity"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/codelab_constraint_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="left|center_vertical"
+            android:text="Constraint layout using the Layout Editor"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/codelab_recyclerview_fundamentals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="left|center_vertical"
+            android:text="RecyclerView fundamentals (Kotlin)"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/codelab_title_data_management"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="left|center_vertical"
+            android:text="Codelab: Data Management"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/codelab_room_livedata_viewmodel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="left|center_vertical"
+            android:text="Room, LiveData and ViewModel"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/codelab_repository"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="left|center_vertical"
+            android:text="Repository"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/codelab_drawables_styles_themes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="left|center_vertical"
+            android:text="Drawables, styles, and themes"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/codelab_shared_preferences"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="left|center_vertical"
+            android:text="Shared preferences"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/codelab_app_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="left|center_vertical"
+            android:text="App settings"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/codelab_viewmodel_viewmodelfactory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="left|center_vertical"
+            android:text="ViewModel and ViewModelFactory"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/codelab_room_with_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="left|center_vertical"
+            android:text="Room with a View"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/codelab_title_debugging"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="5dp"
+            android:text="Codelab: Debbuging"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/codelab_androis_studio_debugger"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="left|center_vertical"
+            android:text="Android Studio debugger"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/codelab_add_log_statements"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="left|center_vertical"
+            android:text="Add log statements to your app"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/codelab_title_testing"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="5dp"
+            android:text="Codelab: Testing"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/codelab_unit_tests"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="left|center_vertical"
+            android:text="Unit tests"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/codelab_testing_junit_mockito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="left|center_vertical"
+            android:text="Unit testing with JUnit and Mockito"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/codelab_espresso_ui_testing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="left|center_vertical"
+            android:text="Espresso for UI testing"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+    </LinearLayout>
+
+</ScrollView>
