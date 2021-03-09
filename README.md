@@ -1,5 +1,8 @@
 # Google Developer Certification (Android Associated Certification)
 - A Step by Step Guide going thru every official codelab section BUT...
-
-- - using navigation graph, single page activity, fragments
-- - all the new stuff i got on the road ;)
+  - with all the new, **GOOD** stuff i got on the way ;)
+    - navigation graph
+    - fragments
+    - view binding
+    - extension functions
+    - single activity app
