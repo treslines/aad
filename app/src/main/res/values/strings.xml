@@ -34,4 +34,6 @@
     <string name="interactive_ui_button_count">Count</string>
     <string name="interactive_ui_count_initial_value">0</string>
     <string name="toast_message">Hello toast!</string>
+    <string name="send_button">Send</string>
+    <string name="input_send_text">Enter Your Message Here</string>
 </resources>

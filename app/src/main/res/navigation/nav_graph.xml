@@ -39,6 +39,9 @@
         <action
             android:id="@+id/action_mainFragment_to_interactiveUiFragment"
             app:destination="@id/interactiveUiFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_sendFragment"
+            app:destination="@id/activityIntentsFragment" />
     </fragment>
     <fragment
         android:id="@+id/toastSnakeFragment"
@@ -96,6 +99,27 @@
         <action
             android:id="@+id/action_interactiveUiFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/activityIntentsFragment"
+        android:name="com.softsuit.aad.codelab.userinterface.activityintents.SendFragment"
+        android:label="fragment_activity_intents"
+        tools:layout="@layout/fragment_send" >
+        <action
+            android:id="@+id/action_sendFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_sendFragment_to_replyFragment"
+            app:destination="@id/replyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/replyFragment"
+        android:name="com.softsuit.aad.codelab.userinterface.activityintents.ReplyFragment"
+        android:label="fragment_reply"
+        tools:layout="@layout/fragment_reply" >
+        <action
+            android:id="@+id/action_replyFragment_to_activityIntentsFragment"
+            app:destination="@id/activityIntentsFragment" />
     </fragment>
 
 </navigation>
