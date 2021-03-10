@@ -29,10 +29,38 @@ android {
         testInstrumentationRunnerArguments clearPackageData: 'true'
     }
 
+    signingConfigs {
+        release {
+            storeFile file("release-key.keystore")
+            storePassword 'password'
+            keyAlias 'alias'
+            keyPassword 'journaldev'
+        }
+    }
+    // +-----------------------------------------------------------------+
+    // | Build types you'll encounter in every projects (Build Variants) |
+    // +-----------------------------------------------------------------+
     buildTypes {
         release {
-            minifyEnabled false
+            signingConfig signingConfigs.release
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        // debug don't need to be specified, only if you want to change something
+        debug {
+            minifyEnabled false
+            debuggable true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        /**
+         * The `initWith` property allows you to copy configurations from other build types,
+         * then configure only the settings you want to change. This one copies the debug build
+         * type, and then changes the manifest placeholder and application ID.
+         */
+        staging {
+            initWith debug
+            manifestPlaceholders = [hostName:"internal.softsuit.com"]
+            applicationIdSuffix ".debugStaging"
         }
     }
 
@@ -88,20 +116,20 @@ dependencies {
     // +-----------------------------------------------------------------+
     // | startFragmentForResult (setFragmentResultListener)              |
     // +-----------------------------------------------------------------+
-    implementation "androidx.fragment:fragment:1.3.0"
-    implementation "androidx.fragment:fragment-ktx:1.3.0"
+    implementation "androidx.fragment:fragment:1.3.1"
+    implementation "androidx.fragment:fragment-ktx:1.3.1"
 
     // +-----------------------------------------------------------------+
     // | Navigation                                                      |
     // +-----------------------------------------------------------------+
-    def nav_version = "2.3.3"
+    def nav_version = "2.3.4"
     // Kotlin
     implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
     implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
     // Feature module Support
     implementation "androidx.navigation:navigation-dynamic-features-fragment:$nav_version"
     // Jetpack Compose Integration
-    implementation "androidx.navigation:navigation-compose:1.0.0-alpha08"
+    implementation "androidx.navigation:navigation-compose:1.0.0-alpha09"
 
     // +-----------------------------------------------------------------+
     // | Testing deps                                                    |

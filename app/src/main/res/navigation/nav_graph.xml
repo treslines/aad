@@ -41,7 +41,7 @@
             app:destination="@id/interactiveUiFragment" />
         <action
             android:id="@+id/action_mainFragment_to_sendFragment"
-            app:destination="@id/activityIntentsFragment" />
+            app:destination="@id/sendFragment" />
     </fragment>
     <fragment
         android:id="@+id/toastSnakeFragment"
@@ -101,7 +101,7 @@
             app:destination="@id/mainFragment" />
     </fragment>
     <fragment
-        android:id="@+id/activityIntentsFragment"
+        android:id="@+id/sendFragment"
         android:name="com.softsuit.aad.codelab.userinterface.activityintents.SendFragment"
         android:label="fragment_activity_intents"
         tools:layout="@layout/fragment_send" >
@@ -118,8 +118,8 @@
         android:label="fragment_reply"
         tools:layout="@layout/fragment_reply" >
         <action
-            android:id="@+id/action_replyFragment_to_activityIntentsFragment"
-            app:destination="@id/activityIntentsFragment" />
+            android:id="@+id/action_replyFragment_to_sendFragment"
+            app:destination="@id/sendFragment" />
     </fragment>
 
 </navigation>
