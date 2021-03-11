@@ -42,6 +42,9 @@
         <action
             android:id="@+id/action_mainFragment_to_sendFragment"
             app:destination="@id/sendFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_recyclerViewFragment"
+            app:destination="@id/recyclerViewFragment" />
     </fragment>
     <fragment
         android:id="@+id/toastSnakeFragment"
@@ -120,6 +123,15 @@
         <action
             android:id="@+id/action_replyFragment_to_sendFragment"
             app:destination="@id/sendFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recyclerViewFragment"
+        android:name="com.softsuit.aad.codelab.userinterface.recyclerview.RecyclerViewFragment"
+        android:label="fragment_recycler_view"
+        tools:layout="@layout/fragment_recycler_view" >
+        <action
+            android:id="@+id/action_recyclerViewFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
 
 </navigation>

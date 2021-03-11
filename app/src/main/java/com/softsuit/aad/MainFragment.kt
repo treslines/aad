@@ -19,6 +19,7 @@ class MainFragment : Fragment(R.layout.fragment_main) {
         binding.codelabWorkManager.setOnClickListener { navTo(R.id.selectImageFragment) }
         binding.codelabMaterialComponents.setOnClickListener { navTo(R.id.materialComponentsFragment) }
         binding.codelabInteractiveUi.setOnClickListener { navTo(R.id.interactiveUiFragment) }
-        binding.codelabActivitiesIntents.setOnClickListener { navTo(R.id.action_mainFragment_to_sendFragment) }
+        binding.codelabActivitiesIntents.setOnClickListener { navTo(R.id.sendFragment) }
+        binding.codelabRecyclerview.setOnClickListener { navTo(R.id.recyclerViewFragment) }
     }
 }
