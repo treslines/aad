@@ -5,8 +5,6 @@
     android:id="@+id/nav_graph"
     app:startDestination="@id/mainFragment">
 
-    <include app:graph="@navigation/user_tab_graph" />
-
     <fragment
         android:id="@+id/notificationFragment"
         android:name="com.softsuit.aad.codelab.core.notification.NotificationFragment"
@@ -47,6 +45,9 @@
         <action
             android:id="@+id/action_mainFragment_to_recyclerViewFragment"
             app:destination="@id/recyclerViewFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_showTabsActivity"
+            app:destination="@id/showTabsActivity" />
     </fragment>
     <fragment
         android:id="@+id/toastSnakeFragment"
@@ -135,5 +136,10 @@
             android:id="@+id/action_recyclerViewFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
     </fragment>
+    <activity
+        android:id="@+id/showTabsActivity"
+        android:name="com.softsuit.aad.codelab.userinterface.usernavigation.ShowTabsActivity"
+        android:label="activity_show_tabs"
+        tools:layout="@layout/activity_show_tabs" />
 
 </navigation>

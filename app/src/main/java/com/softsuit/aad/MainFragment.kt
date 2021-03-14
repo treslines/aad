@@ -21,5 +21,9 @@ class MainFragment : Fragment(R.layout.fragment_main) {
         binding.codelabInteractiveUi.setOnClickListener { navTo(R.id.interactiveUiFragment) }
         binding.codelabActivitiesIntents.setOnClickListener { navTo(R.id.sendFragment) }
         binding.codelabRecyclerview.setOnClickListener { navTo(R.id.recyclerViewFragment) }
+        // +-----------------------------------------------------------------+
+        // | Navigation between activities (no more fragments for show case) |
+        // +-----------------------------------------------------------------+
+        binding.codelabUserNavigation.setOnClickListener { navTo(R.id.showTabsActivity) }
     }
 }

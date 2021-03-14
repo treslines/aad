@@ -6,3 +6,8 @@
     - view binding
     - extension functions
     - single activity app
+    - multi graph navigation
+    - explosion animation
+    - findViewById and setContent (old school, but good to know)
+    - toolbar and up arrow navigation
+    - tab fragments and ViewPager
