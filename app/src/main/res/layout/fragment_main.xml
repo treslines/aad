@@ -143,6 +143,17 @@
             tools:ignore="RtlHardcoded" />
 
         <Button
+            android:id="@+id/codelab_user_navigation_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="left|center_vertical"
+            android:text="User navigation with tabs"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
             android:id="@+id/codelab_material_components"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

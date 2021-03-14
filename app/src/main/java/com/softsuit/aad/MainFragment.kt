@@ -25,5 +25,6 @@ class MainFragment : Fragment(R.layout.fragment_main) {
         // | Navigation between activities (no more fragments for show case) |
         // +-----------------------------------------------------------------+
         binding.codelabUserNavigation.setOnClickListener { navTo(R.id.showTabsActivity) }
+        binding.codelabUserNavigationTab.setOnClickListener { navTo(R.id.tabHostFragment) }
     }
 }
