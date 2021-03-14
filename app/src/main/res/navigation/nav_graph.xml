@@ -5,11 +5,13 @@
     android:id="@+id/nav_graph"
     app:startDestination="@id/mainFragment">
 
+    <include app:graph="@navigation/user_tab_graph" />
+
     <fragment
         android:id="@+id/notificationFragment"
         android:name="com.softsuit.aad.codelab.core.notification.NotificationFragment"
         android:label="fragment_notification"
-        tools:layout="@layout/fragment_notification" >
+        tools:layout="@layout/fragment_notification">
         <action
             android:id="@+id/action_notificationFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
@@ -18,7 +20,7 @@
         android:id="@+id/mainFragment"
         android:name="com.softsuit.aad.MainFragment"
         android:label="fragment_main"
-        tools:layout="@layout/fragment_main" >
+        tools:layout="@layout/fragment_main">
         <action
             android:id="@+id/action_mainFragment_to_notificationFragment"
             app:destination="@id/notificationFragment" />
@@ -50,7 +52,7 @@
         android:id="@+id/toastSnakeFragment"
         android:name="com.softsuit.aad.codelab.core.toast.ToastSnakeFragment"
         android:label="fragment_toast_snake"
-        tools:layout="@layout/fragment_toast_snake" >
+        tools:layout="@layout/fragment_toast_snake">
         <action
             android:id="@+id/action_toastSnakeFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
@@ -59,7 +61,7 @@
         android:id="@+id/blurFragment"
         android:name="com.softsuit.aad.codelab.core.workmanager.BlurFragment"
         android:label="fragment_workmanager"
-        tools:layout="@layout/fragment_blur" >
+        tools:layout="@layout/fragment_blur">
         <action
             android:id="@+id/action_blurFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
@@ -68,7 +70,7 @@
         android:id="@+id/selectImageFragment"
         android:name="com.softsuit.aad.codelab.core.workmanager.SelectImageFragment"
         android:label="fragment_select_image"
-        tools:layout="@layout/fragment_select_image" >
+        tools:layout="@layout/fragment_select_image">
         <action
             android:id="@+id/action_selectImageFragment_to_blurFragment"
             app:destination="@id/blurFragment" />
@@ -77,7 +79,7 @@
         android:id="@+id/materialComponentsFragment"
         android:name="com.softsuit.aad.codelab.userinterface.materialcomponents.MaterialComponentsFragment"
         android:label="fragment_material_components"
-        tools:layout="@layout/fragment_material_components" >
+        tools:layout="@layout/fragment_material_components">
         <action
             android:id="@+id/action_materialComponentsFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
@@ -89,7 +91,7 @@
         android:id="@+id/productGridFragment"
         android:name="com.softsuit.aad.codelab.userinterface.materialcomponents.ProductGridFragment"
         android:label="fragment_product_grid"
-        tools:layout="@layout/fragment_product_grid" >
+        tools:layout="@layout/fragment_product_grid">
         <action
             android:id="@+id/action_productGridFragment_to_materialComponentsFragment"
             app:destination="@id/materialComponentsFragment" />
@@ -98,7 +100,7 @@
         android:id="@+id/interactiveUiFragment"
         android:name="com.softsuit.aad.codelab.userinterface.interactiveui.InteractiveUiFragment"
         android:label="fragment_interactive_ui"
-        tools:layout="@layout/fragment_interactive_ui" >
+        tools:layout="@layout/fragment_interactive_ui">
         <action
             android:id="@+id/action_interactiveUiFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
@@ -107,7 +109,7 @@
         android:id="@+id/sendFragment"
         android:name="com.softsuit.aad.codelab.userinterface.activityintents.SendFragment"
         android:label="fragment_activity_intents"
-        tools:layout="@layout/fragment_send" >
+        tools:layout="@layout/fragment_send">
         <action
             android:id="@+id/action_sendFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
@@ -119,7 +121,7 @@
         android:id="@+id/replyFragment"
         android:name="com.softsuit.aad.codelab.userinterface.activityintents.ReplyFragment"
         android:label="fragment_reply"
-        tools:layout="@layout/fragment_reply" >
+        tools:layout="@layout/fragment_reply">
         <action
             android:id="@+id/action_replyFragment_to_sendFragment"
             app:destination="@id/sendFragment" />
@@ -128,7 +130,7 @@
         android:id="@+id/recyclerViewFragment"
         android:name="com.softsuit.aad.codelab.userinterface.recyclerview.RecyclerViewFragment"
         android:label="fragment_recycler_view"
-        tools:layout="@layout/fragment_recycler_view" >
+        tools:layout="@layout/fragment_recycler_view">
         <action
             android:id="@+id/action_recyclerViewFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
