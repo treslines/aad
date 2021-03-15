@@ -51,6 +51,9 @@
         <action
             android:id="@+id/action_mainFragment_to_tabExperimentActivity"
             app:destination="@id/tabHostFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_drawerFragment"
+            app:destination="@id/drawerFragment" />
     </fragment>
     <fragment
         android:id="@+id/toastSnakeFragment"
@@ -141,7 +144,7 @@
     </fragment>
     <activity
         android:id="@+id/showTabsActivity"
-        android:name="com.softsuit.aad.codelab.userinterface.usernavigation.UserNavigationActivity"
+        android:name="com.softsuit.aad.codelab.userinterface.usernavigation.oldschool.UserNavigationActivity"
         android:label="activity_show_tabs"
         tools:layout="@layout/activity_user_navigation" />
     <fragment
@@ -149,5 +152,13 @@
         android:name="com.softsuit.aad.codelab.userinterface.usernavigation.tab.TabHostFragment"
         android:label="fragment_tab_host"
         tools:layout="@layout/fragment_tab_host" />
+    <fragment
+        android:id="@+id/drawerFragment"
+        android:name="com.softsuit.aad.codelab.userinterface.usernavigation.drawer.DrawerFragment"
+        android:label="DrawerFragment" >
+        <action
+            android:id="@+id/action_drawerFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
 
 </navigation>

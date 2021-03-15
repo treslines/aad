@@ -21,10 +21,11 @@ class MainFragment : Fragment(R.layout.fragment_main) {
         binding.codelabInteractiveUi.setOnClickListener { navTo(R.id.interactiveUiFragment) }
         binding.codelabActivitiesIntents.setOnClickListener { navTo(R.id.sendFragment) }
         binding.codelabRecyclerview.setOnClickListener { navTo(R.id.recyclerViewFragment) }
+        binding.codelabUserNavigationTab.setOnClickListener { navTo(R.id.tabHostFragment) }
+        binding.codelabUserNavigationDrawer.setOnClickListener { navTo(R.id.drawerFragment) }
         // +-----------------------------------------------------------------+
-        // | Navigation between activities (no more fragments for show case) |
+        // | Navigation between activities (no fragments for show case)      |
         // +-----------------------------------------------------------------+
         binding.codelabUserNavigation.setOnClickListener { navTo(R.id.showTabsActivity) }
-        binding.codelabUserNavigationTab.setOnClickListener { navTo(R.id.tabHostFragment) }
     }
 }

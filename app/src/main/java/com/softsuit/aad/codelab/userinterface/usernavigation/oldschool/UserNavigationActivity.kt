@@ -1,4 +1,4 @@
-package com.softsuit.aad.codelab.userinterface.usernavigation
+package com.softsuit.aad.codelab.userinterface.usernavigation.oldschool
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

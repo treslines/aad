@@ -54,4 +54,20 @@
     <string name="tab_label1">Top Stories</string>
     <string name="tab_label2">Tech News</string>
     <string name="tab_label3">Cooking</string>
+    <string name="communicate">Communicate</string>
+    <string name="share">Share</string>
+    <string name="send">Send</string>
+    <string name="chose_camera">You chose Camera Import.</string>
+    <string name="chose_gallery">You chose the Gallery.</string>
+    <string name="chose_slideshow">You chose the Slideshow.</string>
+    <string name="chose_tools">You chose Tools.</string>
+    <string name="chose_share">You chose Share.</string>
+    <string name="chose_send">You chose Send.</string>
+    <string name="import_camera">Import</string>
+    <string name="gallery">Gallery</string>
+    <string name="slideshow">Slideshow</string>
+    <string name="tools">Tools</string>
+    <string name="tab_label4">Drawer</string>
+    <string name="swipe_left_to_right">Swipe from Left to Right</string>
+    <string name="drawer">Drawer</string>
 </resources>

@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:gravity="center_horizontal"
-            android:text="Android Associated Developer"
+            android:text="Google Developer Certification"
             android:textSize="28sp"
             android:textStyle="bold" />
 
@@ -150,6 +150,17 @@
             android:layout_marginEnd="16dp"
             android:gravity="left|center_vertical"
             android:text="User navigation with tabs"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/codelab_user_navigation_drawer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="left|center_vertical"
+            android:text="User navigation with Drawer"
             android:textAllCaps="false"
             tools:ignore="RtlHardcoded" />
 

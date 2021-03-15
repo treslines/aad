@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".codelab.userinterface.usernavigation.UserNavigationActivity"
+            android:name=".codelab.userinterface.usernavigation.oldschool.UserNavigationActivity"
             android:label="@string/title_activity_show_tabs"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">

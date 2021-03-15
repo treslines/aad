@@ -6,10 +6,33 @@
     android:layout_height="match_parent"
     tools:context=".codelab.userinterface.usernavigation.tab.TabHostFragment">
 
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/pager"
+<!--    Old school way before ViewPager2-->
+<!--    <androidx.viewpager.widget.ViewPager-->
+<!--        android:id="@+id/pager"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--        <com.google.android.material.tabs.TabLayout-->
+<!--            android:id="@+id/tab_layout"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="?attr/colorError"-->
+<!--            android:minHeight="?attr/actionBarSize"-->
+<!--            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+<!--    </androidx.viewpager.widget.ViewPager>-->
+
+    <LinearLayout
+        android:id="@+id/tab_layout_container"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,13 +41,13 @@
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tab_layout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="?attr/colorError"
-            android:minHeight="?attr/actionBarSize"
-            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.viewpager.widget.ViewPager>
+            android:layout_height="wrap_content" />
 
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
