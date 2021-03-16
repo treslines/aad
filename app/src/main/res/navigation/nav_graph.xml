@@ -54,6 +54,9 @@
         <action
             android:id="@+id/action_mainFragment_to_drawerFragment"
             app:destination="@id/drawerFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
     </fragment>
     <fragment
         android:id="@+id/toastSnakeFragment"
@@ -158,6 +161,27 @@
         android:label="DrawerFragment" >
         <action
             android:id="@+id/action_drawerFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderFragment"
+        android:name="com.softsuit.aad.codelab.userinterface.menu.OrderFragment"
+        android:label="fragment_order"
+        tools:layout="@layout/fragment_order" >
+        <action
+            android:id="@+id/action_orderFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.softsuit.aad.codelab.userinterface.menu.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_orderFragment"
+            app:destination="@id/orderFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
     </fragment>
 
