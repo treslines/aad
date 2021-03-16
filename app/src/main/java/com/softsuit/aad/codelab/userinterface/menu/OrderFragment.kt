@@ -1,7 +1,10 @@
 package com.softsuit.aad.codelab.userinterface.menu
 
 import android.os.Bundle
-import android.view.*
+import android.view.ContextMenu
+import android.view.MenuItem
+import android.view.View
+import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
 import com.softsuit.aad.R
 import com.softsuit.aad.codelab.util.toast
@@ -15,6 +18,20 @@ class OrderFragment : Fragment(R.layout.fragment_order) {
         binding = FragmentOrderBinding.bind(view)
         setHasOptionsMenu(true)
         registerForContextMenu(binding.title)
+
+        binding.alertButton.setOnClickListener {
+            AlertDialog
+                .Builder(requireContext())
+                .setTitle("Alerta")
+                .setMessage("Olá!")
+                .setPositiveButton("OK") { _, _ -> toast("Pressed OK") }
+                .setNegativeButton("Cancel") { _, _ -> toast("Pressed Cancel") }
+                .show()
+        }
+        binding.datePickerButton.setOnClickListener {
+            DatePickerFragment { result -> binding.selectedDateText.text = result }
+                .show(childFragmentManager,"datePicker")
+        }
     }
 
     override fun onCreateContextMenu(

@@ -171,6 +171,9 @@
         <action
             android:id="@+id/action_orderFragment_to_menuFragment"
             app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_orderFragment_to_datePickerFragment"
+            app:destination="@id/datePickerFragment" />
     </fragment>
     <fragment
         android:id="@+id/menuFragment"
@@ -184,5 +187,14 @@
             android:id="@+id/action_menuFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
     </fragment>
+    <dialog
+        android:id="@+id/datePickerFragment"
+        android:name="com.softsuit.aad.codelab.userinterface.menu.DatePickerFragment"
+        android:label="fragment_date_picker"
+        tools:layout="@layout/fragment_date_picker" >
+        <action
+            android:id="@+id/action_datePickerFragment_to_orderFragment"
+            app:destination="@id/orderFragment" />
+    </dialog>
 
 </navigation>
