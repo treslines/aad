@@ -32,6 +32,10 @@ class OrderFragment : Fragment(R.layout.fragment_order) {
             DatePickerFragment { result -> binding.selectedDateText.text = result }
                 .show(childFragmentManager,"datePicker")
         }
+        binding.timePickerButton.setOnClickListener {
+            TimePickerFragment { result -> binding.selectedTimeText.text = result }
+                .show(childFragmentManager,"timePicker")
+        }
     }
 
     override fun onCreateContextMenu(
