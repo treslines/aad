@@ -23,4 +23,23 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="ScoreButtons" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button_background</item>
+    </style>
+
+    <style name="PlusButtons" parent="ScoreButtons">
+        <item name="android:src">@drawable/ic_plus</item>
+        <item name=
+            "android:contentDescription">@string/plus_button_description</item>
+    </style>
+
+    <style name="MinusButtons" parent="ScoreButtons">
+        <item name="android:src">@drawable/ic_minus</item>
+        <item name=
+            "android:contentDescription">@string/minus_button_description</item>
+    </style>
+
+
+    <string name="plus_button_description">increase score plus one</string>
+    <string name="minus_button_description">decrease score minus one</string>
 </resources>

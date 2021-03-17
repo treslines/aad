@@ -24,6 +24,7 @@ class MainFragment : Fragment(R.layout.fragment_main) {
         binding.codelabUserNavigationTab.setOnClickListener { navTo(R.id.tabHostFragment) }
         binding.codelabUserNavigationDrawer.setOnClickListener { navTo(R.id.drawerFragment) }
         binding.codelabMenuPickers.setOnClickListener { navTo(R.id.menuFragment) }
+        binding.codelabThemesTouches.setOnClickListener { navTo(R.id.themeFragment) }
         // +-----------------------------------------------------------------+
         // | Navigation between activities (no fragments for show case)      |
         // +-----------------------------------------------------------------+
