@@ -63,6 +63,9 @@
         <action
             android:id="@+id/action_mainFragment_to_batteryFragment"
             app:destination="@id/batteryFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_wordFragment"
+            app:destination="@id/wordFragment" />
     </fragment>
     <fragment
         android:id="@+id/toastSnakeFragment"
@@ -207,6 +210,27 @@
         <action
             android:id="@+id/action_batteryFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/wordFragment"
+        android:name="com.softsuit.aad.codelab.datamanagement.roomwithview.WordFragment"
+        android:label="fragment_word"
+        tools:layout="@layout/fragment_word" >
+        <action
+            android:id="@+id/action_wordFragment_to_newWordFragment"
+            app:destination="@id/newWordFragment" />
+        <action
+            android:id="@+id/action_wordFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newWordFragment"
+        android:name="com.softsuit.aad.codelab.datamanagement.roomwithview.NewWordFragment"
+        android:label="fragment_new_word"
+        tools:layout="@layout/fragment_new_word" >
+        <action
+            android:id="@+id/action_newWordFragment_to_wordFragment"
+            app:destination="@id/wordFragment" />
     </fragment>
 
 </navigation>
