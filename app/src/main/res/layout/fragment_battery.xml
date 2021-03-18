@@ -29,7 +29,7 @@
         android:id="@+id/battery_level_image"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:src="@drawable/ic_wifi_signal_1"
+        android:src="@drawable/battery_level"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

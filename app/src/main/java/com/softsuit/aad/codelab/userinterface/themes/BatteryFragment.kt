@@ -2,14 +2,9 @@ package com.softsuit.aad.codelab.userinterface.themes
 
 import android.os.Bundle
 import android.view.View
-import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
 import com.softsuit.aad.R
-import com.softsuit.aad.codelab.userinterface.menu.DatePickerFragment
-import com.softsuit.aad.codelab.userinterface.menu.TimePickerFragment
-import com.softsuit.aad.codelab.util.toast
 import com.softsuit.aad.databinding.FragmentBatteryBinding
-import com.softsuit.aad.databinding.FragmentOrderBinding
 
 class BatteryFragment : Fragment(R.layout.fragment_battery) {
     private lateinit var binding: FragmentBatteryBinding
@@ -25,7 +20,7 @@ class BatteryFragment : Fragment(R.layout.fragment_battery) {
         }
         binding.plusButton.setOnClickListener {
             ++imageLevel
-            if (imageLevel > 4) imageLevel = 4
+            if (imageLevel > 3) imageLevel = 3
             binding.batteryLevelImage.setImageLevel(imageLevel)
         }
     }
