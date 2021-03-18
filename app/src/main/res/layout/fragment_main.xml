@@ -99,13 +99,24 @@
             tools:ignore="RtlHardcoded" />
 
         <Button
-            android:id="@+id/codelab_themes_touches"
+        android:id="@+id/codelab_themes_touches"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="left|center_vertical"
+        android:text="Themes and touches"
+        android:textAllCaps="false"
+        tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/codelab_themes_touches_baterry"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:gravity="left|center_vertical"
-            android:text="Themes and final touches"
+            android:text="Themes and touches (Level List)"
             android:textAllCaps="false"
             tools:ignore="RtlHardcoded" />
 

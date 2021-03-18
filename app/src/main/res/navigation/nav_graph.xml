@@ -60,6 +60,9 @@
         <action
             android:id="@+id/action_mainFragment_to_themeFragment"
             app:destination="@id/themeFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_batteryFragment"
+            app:destination="@id/batteryFragment" />
     </fragment>
     <fragment
         android:id="@+id/toastSnakeFragment"
@@ -194,6 +197,15 @@
         tools:layout="@layout/fragment_theme" >
         <action
             android:id="@+id/action_themeFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/batteryFragment"
+        android:name="com.softsuit.aad.codelab.userinterface.themes.BatteryFragment"
+        android:label="fragment_battery"
+        tools:layout="@layout/fragment_battery" >
+        <action
+            android:id="@+id/action_batteryFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
     </fragment>
 

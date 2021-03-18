@@ -50,7 +50,7 @@ class ThemeFragment : Fragment(R.layout.fragment_theme) {
         outState.putInt(STATE_SCORE_2, scoreTeam2)
         super.onSaveInstanceState(outState)
     }
-    
+
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         requireActivity().menuInflater.inflate(R.menu.theme_menu, menu)
         val nightMode = AppCompatDelegate.getDefaultNightMode()
