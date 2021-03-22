@@ -80,6 +80,11 @@
     <string name="action_contact_message">You selected Contact.</string>
     <string name="night_mode">Night Mode</string>
     <string name="day_mode">Day Mode</string>
+    <string name="hint_word">Word...</string>
+    <string name="button_save">Save</string>
+    <string name="empty_not_saved">Word not saved because it is empty.</string>
+    <string name="add_word">Add word</string>
+
 
 
 </resources>
