@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import com.softsuit.aad.codelab.util.navTo
+import com.softsuit.aad.codelab.util.toast
 import com.softsuit.aad.databinding.FragmentMainBinding
 
 /** Main Menu Study Guide */
@@ -27,6 +28,9 @@ class MainFragment : Fragment(R.layout.fragment_main) {
         binding.codelabThemesTouches.setOnClickListener { navTo(R.id.themeFragment) }
         binding.codelabThemesTouchesBaterry.setOnClickListener { navTo(R.id.batteryFragment) }
         binding.codelabRoomWithView.setOnClickListener { navTo(R.id.wordFragment) }
+        binding.codelabRoomLivedataViewmodel.setOnClickListener { toast("Visto em: Room with View") }
+        binding.codelabRepository.setOnClickListener { toast("Visto em: Room with View") }
+        binding.codelabSharedPreferences.setOnClickListener { navTo(R.id.sharedPrefFragment)  }
         // +-----------------------------------------------------------------+
         // | Navigation between activities (no fragments for show case)      |
         // +-----------------------------------------------------------------+

@@ -13,8 +13,6 @@ import com.softsuit.aad.databinding.FragmentWordBinding
 
 class WordFragment : Fragment(R.layout.fragment_word) {
 
-    private val newWordActivityRequestCode = 1
-
     private lateinit var binding: FragmentWordBinding
     private val wordViewModel: WordViewModel by viewModels {
         WordViewModelFactory((requireActivity().application as MainApplication).repository)
