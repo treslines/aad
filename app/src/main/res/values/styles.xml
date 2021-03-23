@@ -39,6 +39,11 @@
             "android:contentDescription">@string/minus_button_description</item>
     </style>
 
+    <style name="AppTheme.Button" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+    </style>
+
 
     <string name="plus_button_description">increase score plus one</string>
     <string name="minus_button_description">decrease score minus one</string>
