@@ -11,32 +11,56 @@ import com.softsuit.aad.databinding.FragmentSharedPrefBinding
 
 class SharedPrefFragment : Fragment(R.layout.fragment_shared_pref) {
 
-    private val COUNT_KEY = "COUNT_KEY"
-    private val COLOR_KEY = "COLOR_KEY"
+    companion object {
+        const val COUNT_KEY = "COUNT_KEY"
+        const val COLOR_KEY = "COLOR_KEY"
+        const val SHARED_PREFS = "com.softsuit.codelab.datamanagement.sharedprefs"
+    }
+
     private var mCount = 0
     private var mColor = 0
     private var mPreferences: SharedPreferences? = null
-    private val sharedPrefFile = "com.example.android.hellosharedprefs"
+
 
     private lateinit var binding: FragmentSharedPrefBinding
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        savedInstanceState?.getInt(COUNT_KEY)?.let {
-            mCount = it
-        }
-        if (mCount != 0) {
-            //mShowCountTextView.setText(String.format("%s", mCount));
-        }
-        savedInstanceState?.getInt(COLOR_KEY)?.let {
-            mColor = it
-        }
-
-
         binding = FragmentSharedPrefBinding.bind(view)
-        mPreferences = requireActivity().getSharedPreferences(sharedPrefFile, MODE_PRIVATE)
 
+        mPreferences = requireActivity().getSharedPreferences(SHARED_PREFS, MODE_PRIVATE)
+        mPreferences?.getInt(COUNT_KEY, 0)?.let { mCount = it }
+        mPreferences?.getInt(COLOR_KEY, 0)?.let { mColor = it }
+        if (mCount != 0) {
+            binding.countText.text = String.format("%s", mCount)
+        }
+        if (mColor != 0) {
+            binding.countText.setTextColor(requireContext().getColor(mColor))
+        }
+        binding.reset.setOnClickListener { reset() }
+        binding.blackButton.setOnClickListener {
+            mColor = R.color.design_default_color_on_secondary
+            updateUi(requireContext().getColor(R.color.design_default_color_on_secondary))
+        }
+        binding.greenButton.setOnClickListener {
+            mColor = R.color.design_default_color_secondary
+            updateUi(requireContext().getColor(R.color.design_default_color_secondary))
+        }
+        binding.blueButton.setOnClickListener {
+            mColor = R.color.design_default_color_primary
+            updateUi(requireContext().getColor(R.color.design_default_color_primary))
+        }
+        binding.redButton.setOnClickListener {
+            mColor = R.color.design_default_color_error
+            updateUi(requireContext().getColor(R.color.design_default_color_error))
+        }
+        binding.count.setOnClickListener {
+            binding.countText.text = (++mCount).toString()
+        }
+    }
+
+    private fun updateUi(color: Int) {
+        binding.countText.setTextColor(color)
     }
 
     override fun onPause() {
@@ -49,14 +73,12 @@ class SharedPrefFragment : Fragment(R.layout.fragment_shared_pref) {
         }
     }
 
-    fun reset(view: View) {
-        // Reset count
-        mCount = 0;
-        //mShowCountTextView.setText(String.format("%s", mCount))
+    private fun reset() {
+        mCount = 0
+        binding.countText.text = String.format("%s", mCount)
 
-        // Reset color
-        //mColor = requireContext().getColor(requireContext(), R.color.buttonLabel)
-        //mShowCountTextView.setBackgroundColor(mColor);
+        mColor = 0
+        binding.countText.setBackgroundColor(mColor)
 
         mPreferences?.let {
             val editor = it.edit()
