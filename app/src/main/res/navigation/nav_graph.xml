@@ -255,6 +255,23 @@
         <action
             android:id="@+id/action_pulseExplodeFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_pulseExplodeFragment_to_pulseExplodeDestinationFragment"
+            app:destination="@id/pulseExplodeDestinationFragment" />
+        <action
+            android:id="@+id/pulseExplodeDestinationFragment_with_custom_animation"
+            app:destination="@id/pulseExplodeDestinationFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/pulseExplodeDestinationFragment"
+        android:name="com.softsuit.aad.codelab.animation.PulseExplodeDestinationFragment"
+        android:label="fragment_pulse_explode_destination"
+        tools:layout="@layout/fragment_pulse_explode_destination" >
+        <action
+            android:id="@+id/action_pulseExplodeDestinationFragment_to_pulseExplodeFragment"
+            app:destination="@id/pulseExplodeFragment" />
     </fragment>
 
 </navigation>
