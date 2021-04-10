@@ -31,6 +31,7 @@ class MainFragment : Fragment(R.layout.fragment_main) {
         binding.codelabRoomLivedataViewmodel.setOnClickListener { toast("Visto em: Room with View") }
         binding.codelabRepository.setOnClickListener { toast("Visto em: Room with View") }
         binding.codelabSharedPreferences.setOnClickListener { navTo(R.id.sharedPrefFragment)  }
+        binding.codelabAnimPulseExplode.setOnClickListener { navTo(R.id.pulseExplodeFragment)  }
         // +-----------------------------------------------------------------+
         // | Navigation between activities (no fragments for show case)      |
         // +-----------------------------------------------------------------+

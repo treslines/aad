@@ -69,6 +69,9 @@
         <action
             android:id="@+id/action_mainFragment_to_sharedPrefFragment"
             app:destination="@id/sharedPrefFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_pulseExplodeFragment"
+            app:destination="@id/pulseExplodeFragment" />
     </fragment>
     <fragment
         android:id="@+id/toastSnakeFragment"
@@ -242,6 +245,15 @@
         tools:layout="@layout/fragment_shared_pref" >
         <action
             android:id="@+id/action_sharedPrefFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pulseExplodeFragment"
+        android:name="com.softsuit.aad.codelab.animation.PulseExplodeFragment"
+        android:label="fragment_pulse_explode"
+        tools:layout="@layout/fragment_pulse_explode" >
+        <action
+            android:id="@+id/action_pulseExplodeFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
     </fragment>
 
