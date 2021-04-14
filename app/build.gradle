@@ -12,7 +12,7 @@ android {
     buildToolsVersion "29.0.3"
 
     defaultConfig {
-        applicationId "com.softsuit.aad"
+        applicationId "br.com.progradordeelite.gdc"
         minSdkVersion 23
         targetSdkVersion 30
         versionCode 1

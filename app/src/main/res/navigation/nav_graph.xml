@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/notificationFragment"
-        android:name="com.softsuit.aad.codelab.core.notification.NotificationFragment"
+        android:name="br.com.programadordeelite.gdc.codelab.core.notification.NotificationFragment"
         android:label="fragment_notification"
         tools:layout="@layout/fragment_notification">
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.softsuit.aad.MainFragment"
+        android:name="br.com.programadordeelite.gdc.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main">
         <action
@@ -75,7 +75,7 @@
     </fragment>
     <fragment
         android:id="@+id/toastSnakeFragment"
-        android:name="com.softsuit.aad.codelab.core.toast.ToastSnakeFragment"
+        android:name="br.com.programadordeelite.gdc.codelab.core.toast.ToastSnakeFragment"
         android:label="fragment_toast_snake"
         tools:layout="@layout/fragment_toast_snake">
         <action
@@ -84,7 +84,7 @@
     </fragment>
     <fragment
         android:id="@+id/blurFragment"
-        android:name="com.softsuit.aad.codelab.core.workmanager.BlurFragment"
+        android:name="br.com.programadordeelite.gdc.codelab.core.workmanager.BlurFragment"
         android:label="fragment_workmanager"
         tools:layout="@layout/fragment_blur">
         <action
@@ -93,7 +93,7 @@
     </fragment>
     <fragment
         android:id="@+id/selectImageFragment"
-        android:name="com.softsuit.aad.codelab.core.workmanager.SelectImageFragment"
+        android:name="br.com.programadordeelite.gdc.codelab.core.workmanager.SelectImageFragment"
         android:label="fragment_select_image"
         tools:layout="@layout/fragment_select_image">
         <action
@@ -102,7 +102,7 @@
     </fragment>
     <fragment
         android:id="@+id/materialComponentsFragment"
-        android:name="com.softsuit.aad.codelab.userinterface.materialcomponents.MaterialComponentsFragment"
+        android:name="br.com.programadordeelite.gdc.codelab.userinterface.materialcomponents.MaterialComponentsFragment"
         android:label="fragment_material_components"
         tools:layout="@layout/fragment_material_components">
         <action
@@ -114,7 +114,7 @@
     </fragment>
     <fragment
         android:id="@+id/productGridFragment"
-        android:name="com.softsuit.aad.codelab.userinterface.materialcomponents.ProductGridFragment"
+        android:name="br.com.programadordeelite.gdc.codelab.userinterface.materialcomponents.ProductGridFragment"
         android:label="fragment_product_grid"
         tools:layout="@layout/fragment_product_grid">
         <action
@@ -123,7 +123,7 @@
     </fragment>
     <fragment
         android:id="@+id/interactiveUiFragment"
-        android:name="com.softsuit.aad.codelab.userinterface.interactiveui.InteractiveUiFragment"
+        android:name="br.com.programadordeelite.gdc.codelab.userinterface.interactiveui.InteractiveUiFragment"
         android:label="fragment_interactive_ui"
         tools:layout="@layout/fragment_interactive_ui">
         <action
@@ -132,7 +132,7 @@
     </fragment>
     <fragment
         android:id="@+id/sendFragment"
-        android:name="com.softsuit.aad.codelab.userinterface.activityintents.SendFragment"
+        android:name="br.com.programadordeelite.gdc.codelab.userinterface.activityintents.SendFragment"
         android:label="fragment_activity_intents"
         tools:layout="@layout/fragment_send">
         <action
@@ -144,7 +144,7 @@
     </fragment>
     <fragment
         android:id="@+id/replyFragment"
-        android:name="com.softsuit.aad.codelab.userinterface.activityintents.ReplyFragment"
+        android:name="br.com.programadordeelite.gdc.codelab.userinterface.activityintents.ReplyFragment"
         android:label="fragment_reply"
         tools:layout="@layout/fragment_reply">
         <action
@@ -153,7 +153,7 @@
     </fragment>
     <fragment
         android:id="@+id/recyclerViewFragment"
-        android:name="com.softsuit.aad.codelab.userinterface.recyclerview.RecyclerViewFragment"
+        android:name="br.com.programadordeelite.gdc.codelab.userinterface.recyclerview.RecyclerViewFragment"
         android:label="fragment_recycler_view"
         tools:layout="@layout/fragment_recycler_view">
         <action
@@ -162,17 +162,17 @@
     </fragment>
     <activity
         android:id="@+id/showTabsActivity"
-        android:name="com.softsuit.aad.codelab.userinterface.usernavigation.oldschool.UserNavigationActivity"
+        android:name="br.com.programadordeelite.gdc.codelab.userinterface.usernavigation.oldschool.UserNavigationActivity"
         android:label="activity_show_tabs"
         tools:layout="@layout/activity_user_navigation" />
     <fragment
         android:id="@+id/tabHostFragment"
-        android:name="com.softsuit.aad.codelab.userinterface.usernavigation.tab.TabHostFragment"
+        android:name="br.com.programadordeelite.gdc.codelab.userinterface.usernavigation.tab.TabHostFragment"
         android:label="fragment_tab_host"
         tools:layout="@layout/fragment_tab_host" />
     <fragment
         android:id="@+id/drawerFragment"
-        android:name="com.softsuit.aad.codelab.userinterface.usernavigation.drawer.DrawerFragment"
+        android:name="br.com.programadordeelite.gdc.codelab.userinterface.usernavigation.drawer.DrawerFragment"
         android:label="DrawerFragment" >
         <action
             android:id="@+id/action_drawerFragment_to_mainFragment"
@@ -180,7 +180,7 @@
     </fragment>
     <fragment
         android:id="@+id/orderFragment"
-        android:name="com.softsuit.aad.codelab.userinterface.menu.OrderFragment"
+        android:name="br.com.programadordeelite.gdc.codelab.userinterface.menu.OrderFragment"
         android:label="fragment_order"
         tools:layout="@layout/fragment_order" >
         <action
@@ -189,7 +189,7 @@
     </fragment>
     <fragment
         android:id="@+id/menuFragment"
-        android:name="com.softsuit.aad.codelab.userinterface.menu.MenuFragment"
+        android:name="br.com.programadordeelite.gdc.codelab.userinterface.menu.MenuFragment"
         android:label="fragment_menu"
         tools:layout="@layout/fragment_menu" >
         <action
@@ -201,7 +201,7 @@
     </fragment>
     <fragment
         android:id="@+id/themeFragment"
-        android:name="com.softsuit.aad.codelab.userinterface.themes.ThemeFragment"
+        android:name="br.com.programadordeelite.gdc.codelab.userinterface.themes.ThemeFragment"
         android:label="fragment_theme"
         tools:layout="@layout/fragment_theme" >
         <action
@@ -210,7 +210,7 @@
     </fragment>
     <fragment
         android:id="@+id/batteryFragment"
-        android:name="com.softsuit.aad.codelab.userinterface.themes.BatteryFragment"
+        android:name="br.com.programadordeelite.gdc.codelab.userinterface.themes.BatteryFragment"
         android:label="fragment_battery"
         tools:layout="@layout/fragment_battery" >
         <action
@@ -219,7 +219,7 @@
     </fragment>
     <fragment
         android:id="@+id/wordFragment"
-        android:name="com.softsuit.aad.codelab.datamanagement.roomwithview.WordFragment"
+        android:name="br.com.programadordeelite.gdc.codelab.datamanagement.roomwithview.WordFragment"
         android:label="fragment_word"
         tools:layout="@layout/fragment_word" >
         <action
@@ -231,7 +231,7 @@
     </fragment>
     <fragment
         android:id="@+id/newWordFragment"
-        android:name="com.softsuit.aad.codelab.datamanagement.roomwithview.NewWordFragment"
+        android:name="br.com.programadordeelite.gdc.codelab.datamanagement.roomwithview.NewWordFragment"
         android:label="fragment_new_word"
         tools:layout="@layout/fragment_new_word" >
         <action
@@ -240,7 +240,7 @@
     </fragment>
     <fragment
         android:id="@+id/sharedPrefFragment"
-        android:name="com.softsuit.aad.codelab.datamanagement.sharedprefs.SharedPrefFragment"
+        android:name="br.com.programadordeelite.gdc.codelab.datamanagement.sharedprefs.SharedPrefFragment"
         android:label="fragment_shared_pref"
         tools:layout="@layout/fragment_shared_pref" >
         <action
@@ -249,7 +249,7 @@
     </fragment>
     <fragment
         android:id="@+id/pulseExplodeFragment"
-        android:name="com.softsuit.aad.codelab.animation.PulseExplodeFragment"
+        android:name="br.com.programadordeelite.gdc.codelab.animation.PulseExplodeFragment"
         android:label="fragment_pulse_explode"
         tools:layout="@layout/fragment_pulse_explode" >
         <action
@@ -266,7 +266,7 @@
     </fragment>
     <fragment
         android:id="@+id/pulseExplodeDestinationFragment"
-        android:name="com.softsuit.aad.codelab.animation.PulseExplodeDestinationFragment"
+        android:name="br.com.programadordeelite.gdc.codelab.animation.PulseExplodeDestinationFragment"
         android:label="fragment_pulse_explode_destination"
         tools:layout="@layout/fragment_pulse_explode_destination" >
         <action
