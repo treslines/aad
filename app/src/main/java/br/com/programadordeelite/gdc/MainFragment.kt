@@ -1,10 +1,12 @@
 package br.com.programadordeelite.gdc
 
+import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.view.View
 import br.com.programadordeelite.gdc.codelab.util.navTo
 import br.com.programadordeelite.gdc.codelab.util.toast
 import br.com.programadordeelite.gdc.databinding.FragmentMainBinding
+import java.net.Authenticator
 
 /** Main Menu Study Guide */
 class MainFragment : androidx.fragment.app.Fragment(R.layout.fragment_main) {
@@ -13,6 +15,10 @@ class MainFragment : androidx.fragment.app.Fragment(R.layout.fragment_main) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        // if you not define it in the manifest, you could also do it that way programmatically
+        //requireActivity().requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
+
         binding = FragmentMainBinding.bind(view)
         binding.codelabNotification.setOnClickListener { navTo(R.id.notificationFragment) }
         binding.codelabToastSnake.setOnClickListener { navTo(R.id.toastSnakeFragment) }
@@ -27,10 +33,10 @@ class MainFragment : androidx.fragment.app.Fragment(R.layout.fragment_main) {
         binding.codelabThemesTouches.setOnClickListener { navTo(R.id.themeFragment) }
         binding.codelabThemesTouchesBaterry.setOnClickListener { navTo(R.id.batteryFragment) }
         binding.codelabRoomWithView.setOnClickListener { navTo(R.id.wordFragment) }
-        binding.codelabRoomLivedataViewmodel.setOnClickListener { toast("Visto em: Room with View") }
-        binding.codelabRepository.setOnClickListener { toast("Visto em: Room with View") }
-        binding.codelabSharedPreferences.setOnClickListener { navTo(R.id.sharedPrefFragment)  }
-        binding.codelabAnimPulseExplode.setOnClickListener { navTo(R.id.pulseExplodeFragment)  }
+        binding.codelabRoomLivedataViewmodel.setOnClickListener { toast(getString(R.string.duplicated)) }
+        binding.codelabRepository.setOnClickListener { toast(getString(R.string.duplicated)) }
+        binding.codelabSharedPreferences.setOnClickListener { navTo(R.id.sharedPrefFragment) }
+        binding.codelabAnimPulseExplode.setOnClickListener { navTo(R.id.pulseExplodeFragment) }
         // +-----------------------------------------------------------------+
         // | Navigation between activities (no fragments for show case)      |
         // +-----------------------------------------------------------------+

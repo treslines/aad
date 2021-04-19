@@ -1,5 +1,6 @@
 package br.com.programadordeelite.gdc.codelab.userinterface.interactiveui
 
+import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
@@ -10,6 +11,11 @@ import br.com.programadordeelite.gdc.databinding.FragmentInteractiveUiBinding
 class InteractiveUiFragment : Fragment(R.layout.fragment_interactive_ui) {
     private lateinit var binding: FragmentInteractiveUiBinding
     private var count = 0
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        requireActivity().requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED
+    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

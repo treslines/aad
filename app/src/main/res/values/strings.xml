@@ -84,6 +84,7 @@
     <string name="button_save">Save</string>
     <string name="empty_not_saved">Word not saved because it is empty.</string>
     <string name="add_word">Add word</string>
+    <string name="duplicated">Duplicado - já visto em: Room with View</string>
 
 
 </resources>
