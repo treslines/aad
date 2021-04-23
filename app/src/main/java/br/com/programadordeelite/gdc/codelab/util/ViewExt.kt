@@ -13,9 +13,5 @@ fun View.startAnimation(anim: Animation, onEnd: () -> Unit) {
 }
 
 fun View.setVisible(show: Boolean) {
-    if (show) {
-        this.visibility = View.VISIBLE
-    } else {
-        this.visibility = View.GONE
-    }
+    if (show) this.visibility = View.VISIBLE else this.visibility = View.GONE
 }
