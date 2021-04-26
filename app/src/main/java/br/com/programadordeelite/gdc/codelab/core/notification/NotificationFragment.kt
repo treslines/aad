@@ -7,7 +7,6 @@ import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
-import android.content.pm.ActivityInfo
 import android.graphics.BitmapFactory
 import android.graphics.Color
 import android.os.Bundle
@@ -19,12 +18,13 @@ import kotlinx.android.synthetic.main.fragment_notification.*
 
 private const val NOTIFICATION_ID = 0
 private const val PRIMARY_CHANNEL_ID = "primary_notification_channel"
-private const val ACTION_UPDATE_NOTIFICATION = "ACTION_UPDATE_NOTIFICATION"
-private const val ACTION_DELETED_NOTIFICATIONS = "ACTION_DELETED_NOTIFICATIONS"
+private const val ACTION_UPDATE = "ACTION_UPDATE_NOTIFICATION"
+private const val ACTION_CANCEL = "ACTION_CANCEL_NOTIFICATION"
+private const val ACTION_DELETE_ALL = "ACTION_DELETED_NOTIFICATIONS"
 
 class NotificationFragment : Fragment(R.layout.fragment_notification) {
 
-    private lateinit var mNotifyManager: NotificationManager
+    private lateinit var notificationManager: NotificationManager
     private val notificationReceiver = NotificationReceiver()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -36,19 +36,14 @@ class NotificationFragment : Fragment(R.layout.fragment_notification) {
     }
 
     private fun setupUiButtonListeners() {
-        notify.setOnClickListener { sendNotification() }
-        update.setOnClickListener { updateNotification() }
-        cancel.setOnClickListener { cancelNotification() }
+        // Não estou usando o binding aqui propositalmente para vcs aprenderem mais uma coisa
+        notify.setOnClickListener { sendNotification() }    // enviar notificação padrão
+        update.setOnClickListener { updateNotification() }  // customizar / personalizar
+        cancel.setOnClickListener { cancelNotification() }  // remover da barra de status
+        // snake.setOnClickListener{ }
     }
 
-    private fun registerNotificationReceiver() {
-        val notificationActionFilters = IntentFilter()
-        notificationActionFilters.addAction(ACTION_UPDATE_NOTIFICATION)
-        notificationActionFilters.addAction(ACTION_DELETED_NOTIFICATIONS)
-        requireActivity().registerReceiver(notificationReceiver, notificationActionFilters)
-    }
-
-    private fun setupUiButtonStates(
+    private fun setupUiButtonStates( // assegurar o estado inicial dos botões
         enableNotify: Boolean,
         enableUpdate: Boolean,
         enableCancel: Boolean
@@ -58,68 +53,93 @@ class NotificationFragment : Fragment(R.layout.fragment_notification) {
         cancel.isEnabled = enableCancel
     }
 
-    private fun cancelNotification() {
-        mNotifyManager.cancel(NOTIFICATION_ID)
-        setupUiButtonStates(enableNotify = true, enableUpdate = false, enableCancel = false)
-    }
-
-    private fun updateNotification() {
-        val androidImage = BitmapFactory.decodeResource(resources, R.drawable.ic_android)
-        val notification = getNotificationBuilder()
-            .setStyle(
-                NotificationCompat.BigPictureStyle()
-                    .bigPicture(androidImage)
-                    .setBigContentTitle("Notification Updated!")
-            )
-        mNotifyManager.notify(NOTIFICATION_ID, notification.build())
-        setupUiButtonStates(enableNotify = false, enableUpdate = false, enableCancel = true)
-    }
-
-    private fun sendNotification() {
-        val notificationBuilder = getNotificationBuilder()
-
-        // for broadcast receiver
-        val updateActionFilter = Intent(ACTION_UPDATE_NOTIFICATION)
-        val updateAction = PendingIntent.getBroadcast(
-            requireContext(),
-            NOTIFICATION_ID,
-            updateActionFilter,
-            PendingIntent.FLAG_ONE_SHOT
-        )
-        notificationBuilder.addAction(
-            R.drawable.ic_update,
-            "Update Notification",
-            updateAction
-        )
-        // for broadcast receiver
-        val deletedActionFilter = Intent(ACTION_DELETED_NOTIFICATIONS)
-        val deletedAction = PendingIntent.getBroadcast(
-            requireContext(),
-            NOTIFICATION_ID,
-            deletedActionFilter,
-            PendingIntent.FLAG_ONE_SHOT
-        )
-        notificationBuilder.setDeleteIntent(deletedAction)
-
-        mNotifyManager.notify(NOTIFICATION_ID, notificationBuilder.build())
-        setupUiButtonStates(enableNotify = false, enableUpdate = true, enableCancel = true)
-    }
-
+    // A partir do android 8.0 (api 26) temos que definir o canal para que o usuário possa
+    // eventualmente desabilitar as notificações do aplicativo através das configurações
     private fun createNotificationChannel() {
-        mNotifyManager =
+        notificationManager =
             requireActivity().getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
-            // Create a NotificationChannel
+            // Isso aqui é que aparece nas configurações do aparelho la no seu aplicativo
             val notificationChannel = NotificationChannel(
                 PRIMARY_CHANNEL_ID,
                 "Mascot Notification", NotificationManager.IMPORTANCE_HIGH
             )
-            notificationChannel.enableLights(true)
-            notificationChannel.lightColor = Color.RED
             notificationChannel.enableVibration(true)
             notificationChannel.description = "Notification from Mascot"
-            mNotifyManager.createNotificationChannel(notificationChannel)
+            // serão exibidas se o telefone der suporte a essas coisas
+            notificationChannel.enableLights(true)
+            notificationChannel.lightColor = Color.RED
+            // criar o canal com as propriedades definidas
+            notificationManager.createNotificationChannel(notificationChannel)
+        } else {
+            // sua tarefinha de casa :) caso vc tenha um aparelho inferior a api 26
         }
+    }
+
+    private fun cancelNotification() {
+        notificationManager.cancel(NOTIFICATION_ID)
+        setupUiButtonStates(enableNotify = true, enableUpdate = false, enableCancel = false)
+    }
+
+    private fun updateNotification() {
+        // personalização dinamica da notificação adicionando um icone
+        val androidImage = BitmapFactory.decodeResource(resources, R.drawable.ic_notification)
+        // atualizando o estilo e o titulo
+        val notification = getNotificationBuilder()
+            .setStyle(
+                NotificationCompat.BigPictureStyle()
+                    .bigPicture(androidImage)
+                    .setBigContentTitle("Notificação atualizada!")
+            )
+        // atualizar a notificação atual
+        notificationManager.notify(NOTIFICATION_ID, notification.build())
+        // e habilitar o botão de cancelamento
+        setupUiButtonStates(enableNotify = false, enableUpdate = false, enableCancel = true)
+    }
+
+    private fun sendNotification() {
+        val builder = getNotificationBuilder()
+
+        createNotificationAction(builder, NOTIFICATION_ID, ACTION_UPDATE, "Atualize")
+        createNotificationAction(builder, NOTIFICATION_ID, ACTION_CANCEL, "Remover")
+
+        val deleteAllAction = Intent(ACTION_DELETE_ALL) // remove com slide left/right ou lixeira
+        val deletedAction = PendingIntent.getBroadcast(
+            requireContext(),
+            NOTIFICATION_ID,
+            deleteAllAction,
+            PendingIntent.FLAG_ONE_SHOT
+        )
+        builder.setDeleteIntent(deletedAction)
+
+        notificationManager.notify(NOTIFICATION_ID, builder.build())
+        // como neste passo aqui a notificação foi enviada, eu deshabilito o botão de enviar
+        // e habilito os botões de customização e cancelamento
+        setupUiButtonStates(enableNotify = false, enableUpdate = true, enableCancel = true)
+    }
+
+    private fun createNotificationAction(
+        builder: NotificationCompat.Builder,
+        notificationId: Int,
+        actionId: String,
+        actionTitle: String
+    ) {
+        val updateActionFilter = Intent(actionId) // for broadcast receiver
+        val updateAction = PendingIntent.getBroadcast(
+            requireContext(),
+            notificationId,
+            updateActionFilter,
+            PendingIntent.FLAG_ONE_SHOT
+        )
+        builder.addAction(
+            // mudanças nas notificação desde o Android N
+            // esse icone nao aparece mais e esta presente apenas para manter compatibilidade
+            // em aparelhos antigos. Em compensação se ganhou mais espaço para os titulos
+            // // https://android-developers.googleblog.com/2016/06/notifications-in-android-n.html
+            R.drawable.ic_android,
+            actionTitle,
+            updateAction
+        )
     }
 
     private fun getNotificationBuilder(): NotificationCompat.Builder {
@@ -129,13 +149,21 @@ class NotificationFragment : Fragment(R.layout.fragment_notification) {
             NOTIFICATION_ID, notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT
         )
         return NotificationCompat.Builder(requireContext(), PRIMARY_CHANNEL_ID)
-            .setContentTitle("You've been notified!")
-            .setContentText("This is your notification text.")
-            .setSmallIcon(R.drawable.ic_android)
+            .setContentTitle("Você recebeu uma notificação!")
+            .setContentText("Valeu, já vou me inscrever no canal!")
+            .setSmallIcon(R.drawable.ic_notification_update)
             .setContentIntent(notificationPendingIntent)
             .setPriority(NotificationCompat.PRIORITY_HIGH)
             .setDefaults(NotificationCompat.DEFAULT_ALL)
-            .setAutoCancel(true)
+            .setAutoCancel(false)
+    }
+
+    private fun registerNotificationReceiver() {
+        val notificationActionFilters = IntentFilter()
+        notificationActionFilters.addAction(ACTION_UPDATE)
+        notificationActionFilters.addAction(ACTION_DELETE_ALL)
+        notificationActionFilters.addAction(ACTION_CANCEL)
+        requireActivity().registerReceiver(notificationReceiver, notificationActionFilters)
     }
 
     // for broadcast receiver
@@ -148,8 +176,16 @@ class NotificationFragment : Fragment(R.layout.fragment_notification) {
         override fun onReceive(context: Context, intent: Intent) {
             // Update the notification
             when (intent.action) {
-                ACTION_UPDATE_NOTIFICATION -> updateNotification()
-                ACTION_DELETED_NOTIFICATIONS -> setupUiButtonStates(
+                ACTION_UPDATE -> updateNotification()
+                ACTION_CANCEL -> {
+                    notificationManager.cancel(NOTIFICATION_ID)
+                    setupUiButtonStates(
+                        enableNotify = true,
+                        enableUpdate = false,
+                        enableCancel = false
+                    )
+                }
+                ACTION_DELETE_ALL -> setupUiButtonStates(
                     enableNotify = true,
                     enableUpdate = false,
                     enableCancel = false
