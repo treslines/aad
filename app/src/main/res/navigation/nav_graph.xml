@@ -72,9 +72,6 @@
         <action
             android:id="@+id/action_mainFragment_to_pulseExplodeFragment"
             app:destination="@id/pulseExplodeFragment" />
-        <action
-            android:id="@+id/action_mainFragment_to_blankFragment"
-            app:destination="@id/blankFragment" />
     </fragment>
     <fragment
         android:id="@+id/toastSnakeFragment"
@@ -275,15 +272,6 @@
         <action
             android:id="@+id/action_pulseExplodeDestinationFragment_to_pulseExplodeFragment"
             app:destination="@id/pulseExplodeFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/blankFragment"
-        android:name="br.com.programadordeelite.gdc.codelab.core.toast.BlankFragment"
-        android:label="fragment_blank"
-        tools:layout="@layout/fragment_blank" >
-        <action
-            android:id="@+id/action_blankFragment_to_mainFragment"
-            app:destination="@id/mainFragment" />
     </fragment>
 
 </navigation>
