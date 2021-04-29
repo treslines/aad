@@ -6,6 +6,9 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
+    <!-- broadcast receiver -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
     <application
         android:name="br.com.programadordeelite.gdc.MainApplication"
         android:allowBackup="true"
@@ -32,6 +35,12 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="br.com.programadordeelite.gdc.MainActivity" />
         </activity>
+
+        <receiver android:name=".codelab.core.notification.DynamicReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

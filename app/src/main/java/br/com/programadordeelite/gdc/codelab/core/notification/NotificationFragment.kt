@@ -26,6 +26,7 @@ class NotificationFragment : Fragment(R.layout.fragment_notification) {
 
     private lateinit var notificationManager: NotificationManager
     private val notificationReceiver = NotificationReceiver()
+    private val dynamicReceiver = DynamicReceiver()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -33,6 +34,7 @@ class NotificationFragment : Fragment(R.layout.fragment_notification) {
         setupUiButtonStates(enableNotify = true, enableUpdate = false, enableCancel = false)
         createNotificationChannel()
         registerNotificationReceiver()
+        registerDynamicReceiver(dynamicReceiver)
     }
 
     private fun setupUiButtonListeners() {
@@ -192,5 +194,21 @@ class NotificationFragment : Fragment(R.layout.fragment_notification) {
                 )
             }
         }
+    }
+
+    // API level 26 a maioria dos broadcastreceiver sao declarados dinamicamente
+    private fun registerDynamicReceiver(dynamicReceiver: BroadcastReceiver) {
+        IntentFilter(Intent.ACTION_AIRPLANE_MODE_CHANGED).also {
+            requireActivity().registerReceiver(dynamicReceiver, it)
+        }
+    }
+
+    private fun unregisterDynamicReceiver() {
+        requireActivity().unregisterReceiver(dynamicReceiver)
+    }
+
+    override fun onStop() {
+        super.onStop()
+        unregisterDynamicReceiver()
     }
 }
