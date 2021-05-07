@@ -53,6 +53,7 @@ android {
         }
         // debug don't need to be specified, only if you want to change something
         debug {
+            pseudoLocalesEnabled true
             minifyEnabled false
             debuggable true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'

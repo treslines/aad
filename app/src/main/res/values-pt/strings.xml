@@ -1,5 +1,5 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string translatable="false" name="app_name">Study Guide: Programador de Elite <xliff:g id="star">\u2605</xliff:g></string>
+    <string name="app_name">Guida de Estudo: Programador de Elite <xliff:g id="star">\u2605</xliff:g></string>
     <string name="channel_name">notification_channel_simple_msg</string>
     <string name="channel_description">Channel Simple Message Description</string>
     <!-- TODO: Remove or change this placeholder text -->
@@ -86,6 +86,6 @@
     <string name="add_word">Add word</string>
     <string name="duplicated">Duplicado - já visto em: Room with View</string>
     <string name="notify_me">Notify Me!</string>
-
-
+    <string name="plus_button_description">incrementar o score em mais 1</string>
+    <string name="minus_button_description">decrementar o score em menos 1</string>
 </resources>
