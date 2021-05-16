@@ -1,6 +1,7 @@
 package br.com.programadordeelite.gdc.codelab.core.workmanager
 
 import android.content.Intent
+import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
@@ -19,6 +20,8 @@ class BlurFragment : Fragment(R.layout.fragment_blur) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentBlurBinding.bind(view)
+
+        requireActivity().requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED
 
         // ATUALIZADO
         // viewModel = ViewModelProviders.of(this).get(BlurViewModel::class.java)
@@ -46,18 +49,13 @@ class BlurFragment : Fragment(R.layout.fragment_blur) {
 
         // Hookup the Cancel button
         binding.cancelButton.setOnClickListener { viewModel.cancelWork() }
-
         viewModel.outputWorkInfos.observe(requireActivity(), workInfosObserver())
     }
 
     private fun workInfosObserver(): Observer<List<WorkInfo>> {
         return Observer { listOfWorkInfo ->
 
-            // Note that these next few lines grab a single WorkInfo if it exists
-            // This code could be in a Transformation in the ViewModel; they are included here
-            // so that the entire process of displaying a WorkInfo is in one location.
-
-            // If there are no matching work info, do nothing
+            // se nao tiver info, continuar sem fazer nada
             if (listOfWorkInfo.isNullOrEmpty()) {
                 return@Observer
             }
@@ -67,26 +65,24 @@ class BlurFragment : Fragment(R.layout.fragment_blur) {
             val workInfo = listOfWorkInfo[0]
 
             if (workInfo.state.isFinished) {
-                showWorkFinished()
+                showWorkFinished() // exibir botão
 
                 // Normally this processing, which is not directly related to drawing views on
                 // screen would be in the ViewModel. For simplicity we are keeping it here.
                 val outputImageUri = workInfo.outputData.getString(KEY_IMAGE_URI)
 
-                // If there is an output file show "See File" button
+                // se existir um arquivo com blur, exibir botão "See File"
                 if (!outputImageUri.isNullOrEmpty()) {
                     viewModel.setOutputUri(outputImageUri as String)
                     binding.seeFileButton.visibility = View.VISIBLE
                 }
             } else {
-                showWorkInProgress()
+                showWorkInProgress() // do contrário exibir loading
             }
         }
     }
 
-    /**
-     * Shows and hides views for when the Activity is processing an image
-     */
+    // UI control
     private fun showWorkInProgress() {
         with(binding) {
             progressBar.visibility = View.VISIBLE
@@ -96,9 +92,6 @@ class BlurFragment : Fragment(R.layout.fragment_blur) {
         }
     }
 
-    /**
-     * Shows and hides views for when the Activity is done processing an image
-     */
     private fun showWorkFinished() {
         with(binding) {
             progressBar.visibility = View.GONE

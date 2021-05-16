@@ -36,11 +36,11 @@ class BlurViewModel(application: Application) : AndroidViewModel(application) {
     }
 
     /**
-     * Create the WorkRequest to apply the blur and save the resulting image
-     * @param blurLevel The amount to blur the image
+     * Cria uma requisição de trabalho para liberar espaço, realizar o blur e salvar a imagem
+     * @param blurLevel nivel do blur como reflexo da seleção do usuario nos radio buttons
      */
     internal fun applyBlur(blurLevel: Int) {
-        // Add WorkRequest to Cleanup temporary images
+        // 1) Adiciona o worker de cleanup para limpar arquivos temporarios
         var continuation = workManager
                 .beginUniqueWork(
                         IMAGE_MANIPULATION_WORK_NAME,
@@ -48,7 +48,7 @@ class BlurViewModel(application: Application) : AndroidViewModel(application) {
                         OneTimeWorkRequest.from(CleanupWorker::class.java)
                 )
 
-        // Add WorkRequests to blur the image the number of times requested
+        // 2) adiciona tarefa de blur a quantidade de vezes requisitada
         for (i in 0 until blurLevel) {
             val blurBuilder = OneTimeWorkRequestBuilder<BlurWorker>()
 
@@ -62,12 +62,12 @@ class BlurViewModel(application: Application) : AndroidViewModel(application) {
             continuation = continuation.then(blurBuilder.build())
         }
 
-        // Create charging constraint
+        // Criar um pre-requisito(constraint) de carregamento de bateria
         val constraints = Constraints.Builder()
                 .setRequiresCharging(true)
                 .build()
 
-        // Add WorkRequest to save the image to the filesystem
+        // 3) criar terceira tarefa agora para salvar o arquivo mas so quando estiver carregando
         val save = OneTimeWorkRequestBuilder<SaveImageToFileWorker>()
                 .setConstraints(constraints)
                 .addTag(TAG_OUTPUT)
@@ -76,7 +76,7 @@ class BlurViewModel(application: Application) : AndroidViewModel(application) {
 
         continuation = continuation.then(save)
 
-        // Actually start the work
+        // Por ultimo coloca tudo em uma fila sequencial e inicia o trabalho
         continuation.enqueue()
     }
 
@@ -88,9 +88,6 @@ class BlurViewModel(application: Application) : AndroidViewModel(application) {
         }
     }
 
-    /**
-     * Setters
-     */
     internal fun setImageUri(uri: String?) {
         imageUri = uriOrNull(uri)
     }
