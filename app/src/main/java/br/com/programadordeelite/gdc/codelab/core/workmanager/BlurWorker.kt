@@ -12,6 +12,7 @@ import androidx.work.WorkerParameters
 import br.com.programadordeelite.gdc.R
 import timber.log.Timber
 
+// worker que vai aplicar o blur
 class BlurWorker(private val ctx: Context, params: WorkerParameters) : Worker(ctx, params) {
     @RequiresApi(Build.VERSION_CODES.P)
     override fun doWork(): Result {

@@ -87,7 +87,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:gravity="left|center_vertical"
-            android:backgroundTint="@color/design_default_color_background"
+            android:backgroundTint="@color/design_default_color_secondary"
             android:text="Broadcast Receiver (not mentioned)"
             android:textAllCaps="false"
             tools:ignore="RtlHardcoded" />

@@ -1,6 +1,6 @@
 package br.com.programadordeelite.gdc.codelab.core.workmanager
 
-// Notification Channel constants
+// Constants
 
 // Name of Notification Channel for verbose notifications of background work
 @JvmField

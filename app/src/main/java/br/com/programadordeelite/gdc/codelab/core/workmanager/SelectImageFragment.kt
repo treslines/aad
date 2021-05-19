@@ -19,6 +19,7 @@ import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import br.com.programadordeelite.gdc.R
+import br.com.programadordeelite.gdc.codelab.util.navTo
 import br.com.programadordeelite.gdc.databinding.FragmentSelectImageBinding
 import timber.log.Timber
 
@@ -72,11 +73,12 @@ class SelectImageFragment : Fragment(R.layout.fragment_select_image) {
         if(!hasPermissionsAlready){
             if (permissionRequestCount < MAX_NUMBER_REQUEST_PERMISSIONS) {
                 permissionRequestCount += 1
+                // NOVA API: PRESTA A ATENCÃO AGORA
                 val permissionChecker = registerForActivityResult(
                     ActivityResultContracts.RequestMultiplePermissions()
-                ) { permissionsAccepted ->
-                    val permissionsIdentified = permissionsAccepted.all{it.key in permissions}
-                    val permissionsGrant = permissionsAccepted.all{it.value == true}
+                ) { acceptedPermissions ->
+                    val permissionsIdentified = acceptedPermissions.all{it.key in permissions}
+                    val permissionsGrant = acceptedPermissions.all{it.value == true}
                     if(permissionsIdentified && permissionsGrant) {
                         permissionRequestCount = 0
                         userHasPermission = true
@@ -98,7 +100,8 @@ class SelectImageFragment : Fragment(R.layout.fragment_select_image) {
 
     private fun handleImageRequestResult(uri: Uri) {
         // navegar para proxima etapa onde exibimos as opções de blur
-        findNavController().navigate(R.id.blurFragment, bundleOf(Pair(KEY_IMAGE_URI, uri.toString())))
+        navTo(R.id.blurFragment, bundleOf(Pair(KEY_IMAGE_URI, uri.toString())))
+        //findNavController().navigate(R.id.blurFragment, bundleOf(Pair(KEY_IMAGE_URI, uri.toString())))
     }
 
     // salvar estados em caso que o usuario rotacione o aparelho

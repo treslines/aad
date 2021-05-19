@@ -6,6 +6,7 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.work.*
 
+// Modelo que retem as informações e faz a mediação entre workers e observa os estados
 class BlurViewModel(application: Application) : AndroidViewModel(application) {
 
     internal var imageUri: Uri? = null
@@ -14,19 +15,13 @@ class BlurViewModel(application: Application) : AndroidViewModel(application) {
     internal val outputWorkInfos: LiveData<List<WorkInfo>>
 
     init {
-        // This transformation makes sure that whenever the current work Id changes the WorkInfo
-        // the UI is listening to changes
+        // Adquire um live data do workmanager, para poder observar as mudanças de estado na view
         outputWorkInfos = workManager.getWorkInfosByTagLiveData(TAG_OUTPUT)
     }
 
-    internal fun cancelWork() {
-        workManager.cancelUniqueWork(IMAGE_MANIPULATION_WORK_NAME)
-    }
+    internal fun cancelWork() = workManager.cancelUniqueWork(IMAGE_MANIPULATION_WORK_NAME)
 
-    /**
-     * Creates the input data bundle which includes the Uri to operate on
-     * @return Data which contains the Image Uri as a String
-     */
+    // cria o input data para o worker
     private fun createInputDataForUri(): Data {
         val builder = Data.Builder()
         imageUri?.let {
@@ -81,11 +76,7 @@ class BlurViewModel(application: Application) : AndroidViewModel(application) {
     }
 
     private fun uriOrNull(uriString: String?): Uri? {
-        return if (!uriString.isNullOrEmpty()) {
-            Uri.parse(uriString)
-        } else {
-            null
-        }
+        return if (!uriString.isNullOrEmpty()) Uri.parse(uriString) else null
     }
 
     internal fun setImageUri(uri: String?) {

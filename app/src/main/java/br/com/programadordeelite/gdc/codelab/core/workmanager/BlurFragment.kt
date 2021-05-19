@@ -21,13 +21,11 @@ class BlurFragment : Fragment(R.layout.fragment_blur) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentBlurBinding.bind(view)
 
-        requireActivity().requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED
-
-        // ATUALIZADO
+        // ATUALIZADO: Obtenho o viewmodel
         // viewModel = ViewModelProviders.of(this).get(BlurViewModel::class.java)
         viewModel = ViewModelProvider(this).get(BlurViewModel::class.java)
 
-        // ATUALIZADO
+        // pego a uri da imagem selecionada que passei como argumento na tela anterior
         val imageUriExtra = arguments?.getString(KEY_IMAGE_URI)
 
         viewModel.setImageUri(imageUriExtra)
@@ -49,6 +47,7 @@ class BlurFragment : Fragment(R.layout.fragment_blur) {
 
         // Hookup the Cancel button
         binding.cancelButton.setOnClickListener { viewModel.cancelWork() }
+
         viewModel.outputWorkInfos.observe(requireActivity(), workInfosObserver())
     }
 

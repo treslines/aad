@@ -7,7 +7,7 @@ import timber.log.Timber
 import java.io.File
 
 /**
- * Cleans up temporary files generated during blurring process
+ * Worker que limpa arquivos anteriores antes de executar a proxima tarefa
  */
 class CleanupWorker(ctx: Context, params: WorkerParameters) : Worker(ctx, params) {
 
