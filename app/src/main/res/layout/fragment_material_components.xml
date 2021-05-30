@@ -22,7 +22,8 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="48dp"
             android:layout_marginBottom="16dp"
-            app:srcCompat="@drawable/ic_baseline_shr_logo" />
+            android:tint="@color/colorPrimaryDark"
+            app:srcCompat="@drawable/ic_login" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -40,6 +41,7 @@
             android:hint="@string/shr_hint_username">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/username"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </com.google.android.material.textfield.TextInputLayout>
