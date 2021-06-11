@@ -137,7 +137,12 @@
         tools:layout="@layout/fragment_send">
         <action
             android:id="@+id/action_sendFragment_to_mainFragment"
-            app:destination="@id/mainFragment" />
+            app:destination="@id/mainFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/replyFragment"
+            app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_sendFragment_to_replyFragment"
             app:destination="@id/replyFragment" />
@@ -149,7 +154,10 @@
         tools:layout="@layout/fragment_reply">
         <action
             android:id="@+id/action_replyFragment_to_sendFragment"
-            app:destination="@id/sendFragment" />
+            app:destination="@id/sendFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/sendFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/recyclerViewFragment"

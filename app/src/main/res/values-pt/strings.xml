@@ -36,7 +36,7 @@
     <string name="toast_message">Hello toast!</string>
     <string name="send_button">Send</string>
     <string name="input_send_text">Enter Your Message Here</string>
-    <string name="text_header">Message Received</string>
+    <string name="text_header_reply_fragment">Message Received</string>
     <string name="reply_button">Reply</string>
     <string name="title_activity_show_tabs">ShowTabsActivity</string>
     <!-- Strings used for fragments for navigation -->
