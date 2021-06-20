@@ -17,12 +17,15 @@ import br.com.programadordeelite.gdc.codelab.util.startAnimation
 import br.com.programadordeelite.gdc.databinding.FragmentRecyclerViewBinding
 
 class RecyclerViewFragment : Fragment(R.layout.fragment_recycler_view) {
+
     private lateinit var binding: FragmentRecyclerViewBinding
 
+    // 0 Defina seu modelo
     private var words = mutableListOf("Ricardo", "Julia", "Pedro", "Alfred")
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding = FragmentRecyclerViewBinding.bind(view)
 
         // +-----------------------------------------------------------------+
         // | Cool explosion animation                                        |
@@ -33,6 +36,7 @@ class RecyclerViewFragment : Fragment(R.layout.fragment_recycler_view) {
         }
 
         binding = FragmentRecyclerViewBinding.bind(view)
+        // 3 atribua o adapter ao seu recyclerView
         binding.wordRecycler.adapter = WordListAdapter(requireActivity(), words)
         binding.addWordButton.setOnClickListener {
             binding.root.setBackgroundColor(0) // make sure this is set to re-trigger the anim again
@@ -51,8 +55,8 @@ class RecyclerViewFragment : Fragment(R.layout.fragment_recycler_view) {
         }
     }
 
-    class WordListAdapter(context: Context, val words: MutableList<String>) :
-        RecyclerView.Adapter<WordListAdapter.WordViewHolder>() {
+    // 1 Crie seu viewAdapter
+    class WordListAdapter(context: Context, val words: MutableList<String>) : RecyclerView.Adapter<WordListAdapter.WordViewHolder>() {
 
         private val inflater: LayoutInflater = LayoutInflater.from(context)
 
@@ -61,6 +65,7 @@ class RecyclerViewFragment : Fragment(R.layout.fragment_recycler_view) {
             return WordViewHolder(item, this)
         }
 
+        // Aqui é onde acontece a "adaptação" do modelo para o layout .xml
         override fun onBindViewHolder(holder: WordViewHolder, position: Int) {
             holder.wordItemView.text = words[position]
         }
@@ -69,8 +74,8 @@ class RecyclerViewFragment : Fragment(R.layout.fragment_recycler_view) {
             return words.size
         }
 
-        inner class WordViewHolder(item: View, private val adapter: WordListAdapter) :
-            RecyclerView.ViewHolder(item), View.OnClickListener {
+//        // 2 Defina um viewHolder e implemente o onclick de cada item
+        inner class WordViewHolder(item: View, private val adapter: WordListAdapter) : RecyclerView.ViewHolder(item), View.OnClickListener {
 
             val wordItemView: TextView = item.findViewById(R.id.word)
 
