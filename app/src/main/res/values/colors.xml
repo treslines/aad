@@ -4,4 +4,11 @@
     <color name="colorPrimaryDark">#005ecb</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="buttonLabel">#FFFFFF</color>
+
+    <!-- paging 3 library colors -->
+    <color name="titleColor">#1F75FE</color>
+    <color name="titleColorAlpha">#551F75FE</color>
+    <color name="greyAlpha">#55999999</color>
+    <color name="separatorBackground">#AAAAAA</color>
+    <color name="separatorText">#FFFFFF</color>
 </resources>

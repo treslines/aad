@@ -57,16 +57,16 @@
             tools:ignore="RtlHardcoded" />
 
         <Button
-        android:id="@+id/codelab_work_manager"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:backgroundTint="@color/design_default_color_secondary"
-        android:gravity="left|center_vertical"
-        android:text="Work Manager"
-        android:textAllCaps="false"
-        tools:ignore="RtlHardcoded" />
+            android:id="@+id/codelab_work_manager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_secondary"
+            android:gravity="left|center_vertical"
+            android:text="Work Manager"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
 
         <Button
             android:id="@+id/codelab_service"
@@ -74,8 +74,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:gravity="left|center_vertical"
             android:backgroundTint="@color/design_default_color_background"
+            android:gravity="left|center_vertical"
             android:text="Service (not mentioned)"
             android:textAllCaps="false"
             tools:ignore="RtlHardcoded" />
@@ -86,8 +86,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:gravity="left|center_vertical"
             android:backgroundTint="@color/design_default_color_secondary"
+            android:gravity="left|center_vertical"
             android:text="Broadcast Receiver (not mentioned)"
             android:textAllCaps="false"
             tools:ignore="RtlHardcoded" />
@@ -98,8 +98,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:gravity="left|center_vertical"
             android:backgroundTint="@color/design_default_color_background"
+            android:gravity="left|center_vertical"
             android:text="Content Provider (not mentioned)"
             android:textAllCaps="false"
             tools:ignore="RtlHardcoded" />
@@ -132,12 +132,13 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_secondary"
             android:gravity="left|center_vertical"
             android:text="Recyclerview with Paging Library"
             android:textAllCaps="false"
             tools:ignore="RtlHardcoded" />
 
-<!--        https://developer.android.com/guide/topics/ui/look-and-feel/themes-->
+        <!--        https://developer.android.com/guide/topics/ui/look-and-feel/themes-->
         <Button
             android:id="@+id/codelab_custom_theme"
             android:layout_width="match_parent"

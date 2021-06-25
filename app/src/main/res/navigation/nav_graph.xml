@@ -72,6 +72,9 @@
         <action
             android:id="@+id/action_mainFragment_to_pulseExplodeFragment"
             app:destination="@id/pulseExplodeFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_recyclerViewPagingFragment"
+            app:destination="@id/recyclerViewPagingFragment" />
     </fragment>
     <fragment
         android:id="@+id/toastSnakeFragment"
@@ -280,6 +283,14 @@
         <action
             android:id="@+id/action_pulseExplodeDestinationFragment_to_pulseExplodeFragment"
             app:destination="@id/pulseExplodeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recyclerViewPagingFragment"
+        android:name="br.com.programadordeelite.gdc.codelab.userinterface.recyclerview.paging.RecyclerViewPagingFragment"
+        android:label="RecyclerViewPagingFragment" >
+        <action
+            android:id="@+id/action_recyclerViewPagingFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
 
 </navigation>

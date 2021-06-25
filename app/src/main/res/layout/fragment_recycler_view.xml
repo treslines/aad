@@ -29,7 +29,8 @@
         android:src="@drawable/ic_explosion"
         app:tint="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="content description" />
 
     <View
         android:id="@+id/anim_circle"

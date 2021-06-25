@@ -1,6 +1,6 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
-    ext.kotlin_version = "1.4.21"
+    ext.kotlin_version = "1.5.10"
 
     // +-----------------------------------------------------------------+
     // | Google way to define versions                                   |
@@ -9,12 +9,12 @@ buildscript {
     versions.compileSdk = 30
     versions.minSdk = 23
     versions.targetSdk = 30
-    versions.kotlin = '1.4.10'
+    versions.kotlin = '1.5.10'
     versions.work = "2.4.0"
 
     repositories {
         google()
-        jcenter()
+        mavenCentral()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:4.2.1'
@@ -28,7 +28,7 @@ buildscript {
 allprojects {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
     }
 }
 

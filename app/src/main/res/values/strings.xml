@@ -1,5 +1,5 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string translatable="false" name="app_name">Study Guide: Programador de Elite <xliff:g id="star">\u2605</xliff:g></string>
+    <string name="app_name" translatable="false">Study Guide: Programador de Elite <xliff:g id="star">\u2605</xliff:g></string>
     <string name="channel_name">notification_channel_simple_msg</string>
     <string name="channel_description">Channel Simple Message Description</string>
     <!-- TODO: Remove or change this placeholder text -->
@@ -37,7 +37,7 @@
     <string name="send_button">Send</string>
     <string name="input_send_text">Enter Your Message Here</string>
     <string name="text_header_reply_fragment">Message Received (Reply Fragment)</string>
-    <string name="text_header_send_fragment">Message Received (Send Fragment)</string>
+    <string name="text_header_send_fragment" translatable="false">Message Received (Send Fragment)</string>
     <string name="reply_button">Reply</string>
     <string name="title_activity_show_tabs">ShowTabsActivity</string>
     <!-- Strings used for fragments for navigation -->
@@ -88,5 +88,12 @@
     <string name="duplicated">Duplicado - já visto em: Room with View</string>
     <string name="notify_me">Notify Me!</string>
 
+    <!-- paging 3 library colors -->
+    <string name="loading" translatable="false">Loading</string>
+    <string name="language" translatable="false">Language: %s</string>
+    <string name="search_hint" translatable="false">GitHub Repository</string>
+    <string name="no_results" translatable="false">No results 😓</string>
+    <string name="unknown" translatable="false">\?</string>
+    <string name="retry" translatable="false">Retry</string>
 
 </resources>
