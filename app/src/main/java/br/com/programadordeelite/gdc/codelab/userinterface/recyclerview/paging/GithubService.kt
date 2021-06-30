@@ -15,6 +15,7 @@ const val IN_QUALIFIER = "in:name,description"
  * Github API communication setup via Retrofit.
  */
 interface GithubService {
+
     /**
      * Get repos ordered by stars.
      */
@@ -28,6 +29,7 @@ interface GithubService {
     companion object {
         private const val BASE_URL = "https://api.github.com/"
 
+        // factory method para criar serviços
         fun create(): GithubService {
             val logger = HttpLoggingInterceptor()
             logger.level = Level.BASIC

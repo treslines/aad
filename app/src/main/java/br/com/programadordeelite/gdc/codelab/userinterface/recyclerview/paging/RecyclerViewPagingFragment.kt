@@ -46,8 +46,7 @@ class RecyclerViewPagingFragment : Fragment(R.layout.fragment_recycler_view_pagi
         binding = FragmentRecyclerViewPagingBinding.bind(view)
 
         // get the view model
-        viewModel = ViewModelProvider(this, Injection.provideViewModelFactory())
-            .get(SearchRepositoriesViewModel::class.java)
+        viewModel = ViewModelProvider(this, Injection.provideViewModelFactory()).get(SearchRepositoriesViewModel::class.java)
 
         // add dividers between RecyclerView's row items
         val decoration = DividerItemDecoration(requireContext(), DividerItemDecoration.VERTICAL)
@@ -106,6 +105,17 @@ class RecyclerViewPagingFragment : Fragment(R.layout.fragment_recycler_view_pagi
             }
         }
     }
+
+    private fun showEmptyList(show: Boolean) {
+        if (show) {
+            binding.emptyList.visibility = View.VISIBLE
+            binding.list.visibility = View.GONE
+        } else {
+            binding.emptyList.visibility = View.GONE
+            binding.list.visibility = View.VISIBLE
+        }
+    }
+
 
     companion object {
         private const val LAST_SEARCH_QUERY: String = "last_search_query"
