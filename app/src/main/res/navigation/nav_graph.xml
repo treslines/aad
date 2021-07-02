@@ -75,6 +75,9 @@
         <action
             android:id="@+id/action_mainFragment_to_recyclerViewPagingFragment"
             app:destination="@id/recyclerViewPagingFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_accessibilityFragment"
+            app:destination="@id/accessibilityFragment" />
     </fragment>
     <fragment
         android:id="@+id/toastSnakeFragment"
@@ -290,6 +293,15 @@
         android:label="RecyclerViewPagingFragment" >
         <action
             android:id="@+id/action_recyclerViewPagingFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/accessibilityFragment"
+        android:name="br.com.programadordeelite.gdc.codelab.userinterface.accessibility.AccessibilityFragment"
+        android:label="fragment_accessibility"
+        tools:layout="@layout/fragment_accessibility" >
+        <action
+            android:id="@+id/action_accessibilityFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
     </fragment>
 

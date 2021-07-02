@@ -122,7 +122,19 @@
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:gravity="left|center_vertical"
-            android:text="Custom view with accessibility hooks"
+            android:text="Custom view"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/codelab_accessibility"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="left|center_vertical"
+            android:backgroundTint="@color/design_default_color_secondary"
+            android:text="Accessibility hooks &amp; Tests"
             android:textAllCaps="false"
             tools:ignore="RtlHardcoded" />
 
