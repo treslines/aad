@@ -3,7 +3,6 @@ package br.com.programadordeelite.gdc
 import android.os.Bundle
 import android.view.View
 import br.com.programadordeelite.gdc.codelab.util.navTo
-import br.com.programadordeelite.gdc.codelab.util.resetGlobalAppStyle
 import br.com.programadordeelite.gdc.codelab.util.toast
 import br.com.programadordeelite.gdc.databinding.FragmentMainBinding
 
