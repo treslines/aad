@@ -14,19 +14,24 @@ class ThemeFragment : Fragment(R.layout.fragment_theme) {
 
     private var scoreTeam1 = 0
     private var scoreTeam2 = 0
-    private val STATE_SCORE_1 = "Team 1 Score"
-    private val STATE_SCORE_2 = "Team 2 Score"
+    private val stateScore1 = "Team 1 Score"
+    private val stateScore2 = "Team 2 Score"
 
     private lateinit var binding: FragmentThemeBinding
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+    }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+
         super.onViewCreated(view, savedInstanceState)
         setHasOptionsMenu(true)
         binding = FragmentThemeBinding.bind(view)
 
         if (savedInstanceState != null) {
-            scoreTeam1 = savedInstanceState.getInt(STATE_SCORE_1)
-            scoreTeam2 =savedInstanceState.getInt(STATE_SCORE_2)
+            scoreTeam1 = savedInstanceState.getInt(stateScore1)
+            scoreTeam2 =savedInstanceState.getInt(stateScore2)
             binding.score1.text = scoreTeam1.toString()
             binding.score2.text = scoreTeam2.toString()
         }
@@ -46,8 +51,8 @@ class ThemeFragment : Fragment(R.layout.fragment_theme) {
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
-        outState.putInt(STATE_SCORE_1, scoreTeam1)
-        outState.putInt(STATE_SCORE_2, scoreTeam2)
+        outState.putInt(stateScore1, scoreTeam1)
+        outState.putInt(stateScore2, scoreTeam2)
         super.onSaveInstanceState(outState)
     }
 

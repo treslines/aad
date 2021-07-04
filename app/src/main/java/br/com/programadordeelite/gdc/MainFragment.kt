@@ -3,6 +3,7 @@ package br.com.programadordeelite.gdc
 import android.os.Bundle
 import android.view.View
 import br.com.programadordeelite.gdc.codelab.util.navTo
+import br.com.programadordeelite.gdc.codelab.util.resetGlobalAppStyle
 import br.com.programadordeelite.gdc.codelab.util.toast
 import br.com.programadordeelite.gdc.databinding.FragmentMainBinding
 
@@ -12,6 +13,7 @@ class MainFragment : androidx.fragment.app.Fragment(R.layout.fragment_main) {
     private lateinit var binding: FragmentMainBinding
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+
         super.onViewCreated(view, savedInstanceState)
 
         // if you not define it in the manifest, you could also do it that way programmatically

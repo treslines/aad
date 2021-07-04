@@ -5,13 +5,12 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.annotation.IdRes
-import androidx.core.content.ContentProviderCompat.requireContext
+import androidx.annotation.StyleRes
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import androidx.viewbinding.ViewBinding
-import br.com.programadordeelite.gdc.databinding.FragmentToastSnakeBinding
+import br.com.programadordeelite.gdc.R
 import com.google.android.material.snackbar.Snackbar
-import org.jetbrains.annotations.NotNull
 
 fun Fragment.navTo(@IdRes dest: Int) = findNavController().navigate(dest)
 fun Fragment.navTo(@IdRes dest: Int, args: Bundle) = findNavController().navigate(dest, args)
