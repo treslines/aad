@@ -2,6 +2,15 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
+// ATENCAO, NAO FUNCIONA, POR ISSO, JOGA EXCECAO:
+// Class 'ActionGameToScore' is not abstract and does not implement abstract member public abstract val actionId: Int defined in androidx.navigation.NavDirections
+//apply plugin: 'androidx.navigation.safeargs.kotlin' // Codelabs -> ViewModel and ViewModelFactory
+
+// POR ISSO OPTEI POR ESSA SOLUCAO, ATE ELES ENTREGAREM UM FIX
+apply plugin: 'androidx.navigation.safeargs' // Codelabs -> ViewModel and ViewModelFactory
+
+
+
 // +-----------------------------------------------------------------+
 // | Annotation processor for Room                                   |
 // +-----------------------------------------------------------------+
@@ -199,8 +208,8 @@ dependencies {
     // +-----------------------------------------------------------------+
     def nav_version = "2.3.5"
     // Kotlin
-    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
-    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version" //Codelabs -> ViewModel and ViewModelFactory
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version" //Codelabs -> ViewModel and ViewModelFactory
     // Feature module Support
     implementation "androidx.navigation:navigation-dynamic-features-fragment:$nav_version"
     // Jetpack Compose Integration

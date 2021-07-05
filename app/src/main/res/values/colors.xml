@@ -11,4 +11,13 @@
     <color name="greyAlpha">#55999999</color>
     <color name="separatorBackground">#AAAAAA</color>
     <color name="separatorText">#FFFFFF</color>
+
+    <color name="ok_green_color">#6ab343</color>
+    <color name="selected_green_color">#388310</color>
+    <color name="skip_red_color">#f44336</color>
+    <color name="selected_red_color">#ba000d</color>
+    <color name="black_text_color">#de000000</color>
+    <color name="grey_text_color">#99000000</color>
+    <color name="grey_button_color">#606060</color>
+    <color name="white_text_color">#ffffff</color>
 </resources>

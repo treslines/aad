@@ -394,6 +394,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_secondary"
             android:gravity="left|center_vertical"
             android:text="ViewModel and ViewModelFactory"
             android:textAllCaps="false"

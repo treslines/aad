@@ -78,6 +78,9 @@
         <action
             android:id="@+id/action_mainFragment_to_accessibilityFragment"
             app:destination="@id/accessibilityFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_title_destination"
+            app:destination="@id/title_destination" />
     </fragment>
     <fragment
         android:id="@+id/toastSnakeFragment"
@@ -303,6 +306,59 @@
         <action
             android:id="@+id/action_accessibilityFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/titleFragment"
+        android:name="br.com.programadordeelite.gdc.codelab.datamanagement.viewmodelfactory.TitleFragment"
+        android:label="fragment_title"
+        tools:layout="@layout/fragment_title">
+        <action
+            android:id="@+id/action_title_to_game"
+            app:destination="@id/gameFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_title_destination_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="br.com.programadordeelite.gdc.codelab.datamanagement.viewmodelfactory.GameFragment"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game">
+        <action
+            android:id="@+id/action_game_to_score"
+            app:destination="@id/scoreFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left"
+            app:popUpTo="@+id/title_destination" />
+    </fragment>
+    <fragment
+        android:id="@+id/scoreFragment"
+        android:name="br.com.programadordeelite.gdc.codelab.datamanagement.viewmodelfactory.ScoreFragment"
+        android:label="fragment_score"
+        tools:layout="@layout/fragment_score">
+        <action
+            android:id="@+id/action_restart"
+            app:destination="@+id/game_destination"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left"
+            app:popUpTo="@+id/title_destination" />
+        <argument
+            android:name="score"
+            android:defaultValue="0"
+            app:argType="integer" />
     </fragment>
 
 </navigation>

@@ -38,6 +38,7 @@ class MainFragment : androidx.fragment.app.Fragment(R.layout.fragment_main) {
         binding.codelabRepository.setOnClickListener { toast(getString(R.string.duplicated)) }
         binding.codelabSharedPreferences.setOnClickListener { navTo(R.id.sharedPrefFragment) }
         binding.codelabAnimPulseExplode.setOnClickListener { navTo(R.id.pulseExplodeFragment) }
+        binding.codelabViewmodelViewmodelfactory.setOnClickListener { navTo(R.id.titleFragment) }
         // +-----------------------------------------------------------------+
         // | Navigation between activities (no fragments for show case)      |
         // +-----------------------------------------------------------------+
