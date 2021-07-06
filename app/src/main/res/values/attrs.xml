@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PasswordItem">
+        <attr name="passwordForgottenButtonText" format="string" />
+        <attr name="passwordForgottenButtonEnabled" format="boolean"/>
+        <attr name="passwordCounterEnabled" format="boolean"/>
+        <attr name="passwordCounterMaxLength" format="integer"/>
+        <attr name="passwordCounterMinLength" format="integer"/>
+        <attr name="passwordSuccessTextEnabled" format="boolean"/>
+        <attr name="passwordSuccessText" format="string"/>
+        <attr name="passwordErrorText" format="string"/>
+        <attr name="passwordHintText" format="string"/>
+    </declare-styleable>
+
+</resources>

@@ -81,6 +81,9 @@
         <action
             android:id="@+id/action_mainFragment_to_title_destination"
             app:destination="@id/title_destination" />
+        <action
+            android:id="@+id/action_mainFragment_to_customViewFragment"
+            app:destination="@id/customViewFragment" />
     </fragment>
     <fragment
         android:id="@+id/toastSnakeFragment"
@@ -359,6 +362,15 @@
             android:name="score"
             android:defaultValue="0"
             app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/customViewFragment"
+        android:name="br.com.programadordeelite.gdc.codelab.userinterface.customview.CustomViewFragment"
+        android:label="fragment_custom_view"
+        tools:layout="@layout/fragment_custom_view" >
+        <action
+            android:id="@+id/action_customViewFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
 
 </navigation>

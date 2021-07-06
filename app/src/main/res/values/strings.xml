@@ -105,5 +105,8 @@
     <string name="got_it">Got it</string>
     <string name="end_game">End game</string>
     <string name="word_is">The word is…</string>
+    <string name="input_password_hint_text">Password</string>
+    <string name="input_password_error_text_default">Default Error Text</string>
+    <string name="input_helper_text_blank_space">default Helper Text</string>
 
 </resources>

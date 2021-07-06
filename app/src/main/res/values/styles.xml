@@ -62,4 +62,35 @@
         <item name="colorControlHighlight">@color/skip_red_color</item>
     </style>
 
+
+
+
+    <style name="CustomComponents.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.CustomComponents.TextInputLayout</item>
+        <item name="errorIconDrawable">@null</item>
+    </style>
+
+    <style name="ThemeOverlay.CustomComponents.TextInputLayout" parent="">
+        <item name="android:background">@null</item>
+        <item name="android:textColorPrimary">@color/white_text_color</item>
+        <item name="colorError">#995254</item>
+        <item name="errorIconDrawable">@null</item>
+        <!-- Selector color -->
+        <item name="colorControlActivated">?colorPrimary</item>
+        <item name="colorOnSurface">?colorPrimary</item>
+        <item name="editTextStyle">@style/Widget.MaterialComponents.TextInputEditText.FilledBox</item>
+    </style>
+
+    <style name="CustomComponents.TextInputLayout.OutlinedBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.CustomComponents.TextInputLayout.OutlinedBox</item>
+        <item name="errorIconDrawable">@null</item>
+    </style>
+
+    <style name="ThemeOverlay.CustomComponents.TextInputLayout.OutlinedBox" parent="">
+        <item name="colorError">#995254</item>
+
+        <item name="editTextStyle">@style/Widget.MaterialComponents.TextInputEditText.OutlinedBox</item>
+        <item name="android:background">@null</item>
+    </style>
+
 </resources>
