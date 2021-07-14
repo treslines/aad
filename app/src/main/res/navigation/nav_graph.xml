@@ -84,6 +84,9 @@
         <action
             android:id="@+id/action_mainFragment_to_customViewFragment"
             app:destination="@id/customViewFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_appSettingsFragment"
+            app:destination="@id/appSettingsFragment" />
     </fragment>
     <fragment
         android:id="@+id/toastSnakeFragment"
@@ -371,6 +374,26 @@
         <action
             android:id="@+id/action_customViewFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/appSettingsFragment"
+        android:name="br.com.programadordeelite.gdc.codelab.datamanagement.appsettings.AppSettingsFragment"
+        android:label="fragment_app_settings"
+        tools:layout="@layout/fragment_app_settings" >
+        <action
+            android:id="@+id/action_appSettingsFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_appSettingsFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="br.com.programadordeelite.gdc.codelab.datamanagement.appsettings.SettingsFragment"
+        android:label="SettingsFragment" >
+        <action
+            android:id="@+id/action_settingsFragment_to_appSettingsFragment"
+            app:destination="@id/appSettingsFragment" />
     </fragment>
 
 </navigation>

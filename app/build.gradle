@@ -156,6 +156,11 @@ dependencies {
     implementation "androidx.fragment:fragment-ktx:1.3.5"
 
     // +-----------------------------------------------------------------+
+    // | Codelab App Settings                                            |
+    // +-----------------------------------------------------------------+
+    implementation 'androidx.preference:preference-ktx:1.1.1'
+
+    // +-----------------------------------------------------------------+
     // | Room with view                                                  |
     // +-----------------------------------------------------------------+
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1"

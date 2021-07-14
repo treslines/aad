@@ -5,6 +5,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
     </style>
 
     <style name="word_title">
@@ -63,8 +64,7 @@
     </style>
 
 
-
-
+    <!-- codelab custom view -->
     <style name="CustomComponents.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
         <item name="materialThemeOverlay">@style/ThemeOverlay.CustomComponents.TextInputLayout</item>
         <item name="errorIconDrawable">@null</item>
@@ -92,5 +92,6 @@
         <item name="editTextStyle">@style/Widget.MaterialComponents.TextInputEditText.OutlinedBox</item>
         <item name="android:background">@null</item>
     </style>
+
 
 </resources>

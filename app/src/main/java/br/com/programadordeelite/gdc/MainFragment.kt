@@ -26,6 +26,7 @@ class MainFragment : androidx.fragment.app.Fragment(R.layout.fragment_main) {
         binding.codelabInteractiveUi.setOnClickListener { navTo(R.id.interactiveUiFragment) }
         binding.codelabActivitiesIntents.setOnClickListener { navTo(R.id.sendFragment) }
         binding.codelabRecyclerviewWithPaging.setOnClickListener{ navTo(R.id.recyclerViewPagingFragment) }
+        binding.codelabAppSettings.setOnClickListener{ navTo(R.id.appSettingsFragment) }
         binding.codelabRecyclerview.setOnClickListener { navTo(R.id.recyclerViewFragment) }
         binding.codelabAccessibility.setOnClickListener { navTo(R.id.accessibilityFragment) }
         binding.codelabCreateCustomView.setOnClickListener { navTo(R.id.customViewFragment) }
