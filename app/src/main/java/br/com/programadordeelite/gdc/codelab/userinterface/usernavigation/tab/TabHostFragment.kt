@@ -3,20 +3,28 @@ package br.com.programadordeelite.gdc.codelab.userinterface.usernavigation.tab
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import br.com.programadordeelite.gdc.R
 import br.com.programadordeelite.gdc.databinding.FragmentTabHostBinding
 import com.google.android.material.tabs.TabLayoutMediator
 
 // See doc: https://developer.android.com/training/animation/vp2-migration
+// See doc: https://developer.android.com/topic/libraries/architecture/livedata
 class TabHostFragment : Fragment(R.layout.fragment_tab_host) {
 
     private lateinit var binding: FragmentTabHostBinding
+    private val viewModel: TabViewModel by viewModels()
+
+    // Outra maneira de definir o view model
+    // private lateinit var viewModel: TabViewModel
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
-        // another way to bind while you are in the activity instead of fragment
         binding = FragmentTabHostBinding.bind(view)
+
+        // outra maneira de inicializar o view model
+        // viewModel = ViewModelProvider(this).get(TabViewModel::class.java)
 
         // setup tabs
         val tabLayout = binding.tabLayout
@@ -35,7 +43,7 @@ class TabHostFragment : Fragment(R.layout.fragment_tab_host) {
 //        tabLayout.addTab(tabLayout.newTab().setText(R.string.tab_label3))
 //
 //
-//        pager.adapter = TabPagerAdapter(tabLayout.tabCount, childFragmentManager)
+//        pager.adapter = TabPagerAdapter(tabLayout.tabCount, viewModel, childFragmentManager)
 //        pager.addOnPageChangeListener(TabLayout.TabLayoutOnPageChangeListener(tabLayout))
 //        tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
 //            override fun onTabSelected(tab: TabLayout.Tab?) {
@@ -46,4 +54,6 @@ class TabHostFragment : Fragment(R.layout.fragment_tab_host) {
 //        })
 //        tabLayout.setupWithViewPager(pager)
     }
+
+    fun getTabViewModel(): TabViewModel = viewModel
 }
