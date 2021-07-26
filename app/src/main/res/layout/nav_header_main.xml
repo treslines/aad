@@ -4,7 +4,7 @@
     android:layout_height="60dp"
     android:background="@drawable/side_nav_bar"
     android:gravity="bottom"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:padding="5dp"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
@@ -18,8 +18,8 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="5dp"
-        android:text="@string/app_name"
+        android:text="Menu Hamburger"
+        android:layout_gravity="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
 </LinearLayout>
