@@ -26,6 +26,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
+            android:textColor="@color/colorPrimary"
             android:text="Team 1"
             android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
 

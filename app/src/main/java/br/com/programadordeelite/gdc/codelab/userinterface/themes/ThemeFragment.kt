@@ -1,5 +1,6 @@
 package br.com.programadordeelite.gdc.codelab.userinterface.themes
 
+import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuInflater
@@ -19,16 +20,17 @@ class ThemeFragment : Fragment(R.layout.fragment_theme) {
 
     private lateinit var binding: FragmentThemeBinding
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
         super.onViewCreated(view, savedInstanceState)
-        setHasOptionsMenu(true)
         binding = FragmentThemeBinding.bind(view)
 
+        // possibilitar mudanças de orientações nessa tela
+        requireActivity().requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED
+
+        setHasOptionsMenu(true) // importante para que o menu seja exibido
+
+        // recuperar valores em rotacões ou quando o tema recriar o app
         if (savedInstanceState != null) {
             scoreTeam1 = savedInstanceState.getInt(stateScore1)
             scoreTeam2 =savedInstanceState.getInt(stateScore2)
@@ -79,5 +81,11 @@ class ThemeFragment : Fragment(R.layout.fragment_theme) {
             requireActivity().recreate()
         }
         return true
+    }
+
+    override fun onDetach() {
+        super.onDetach()
+        // assegurar que tudo esta como era antes
+        requireActivity().requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
     }
 }

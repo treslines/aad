@@ -24,10 +24,12 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <!-- Definicao do estilo das bordas dos botoes de score - o outline que usa o primary color -->
     <style name="ScoreButtons" parent="Widget.AppCompat.Button">
         <item name="android:background">@drawable/button_background</item>
     </style>
 
+    <!-- Definicao do estilo dos botoes que herda do ScoreButtons -->
     <style name="PlusButtons" parent="ScoreButtons">
         <item name="android:src">@drawable/ic_plus</item>
         <item name=
