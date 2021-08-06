@@ -5,9 +5,7 @@ import android.util.Log
 import android.view.View
 import androidx.fragment.app.Fragment
 import br.com.programadordeelite.gdc.R
-import br.com.programadordeelite.gdc.codelab.util.setVisible
 import br.com.programadordeelite.gdc.databinding.FragmentCalcBinding
-import br.com.programadordeelite.gdc.databinding.FragmentPulseExplodeBinding
 import timber.log.Timber
 import java.lang.IllegalArgumentException
 
@@ -37,7 +35,8 @@ class CalcFragment : Fragment(R.layout.fragment_calc) {
                     Calculator.Operator.SUB -> calculator.sub(operandOne, operandTwo).toString()
                     Calculator.Operator.MUL -> calculator.mul(operandOne, operandTwo).toString()
                     Calculator.Operator.DIV -> try {
-                        calculator.div(operandOne, operandTwo).toString()
+                        val division = calculator.div(operandOne, operandTwo)
+                        if(division.isFinite()) division.toString() else throw IllegalArgumentException("Illegal Division")
                     } catch (iae: IllegalArgumentException) {
                         Log.e(logTag, "IllegalArgumentException", iae) // para exemplificar o uso de Log
                         getString(R.string.computationError)
