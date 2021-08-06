@@ -7,6 +7,7 @@ import android.view.View
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
 import br.com.programadordeelite.gdc.R
+import br.com.programadordeelite.gdc.codelab.util.snake
 import br.com.programadordeelite.gdc.codelab.util.toast
 import br.com.programadordeelite.gdc.databinding.FragmentOrderBinding
 
@@ -25,7 +26,7 @@ class OrderFragment : Fragment(R.layout.fragment_order) {
                 .setTitle("Alerta")
                 .setMessage("Olá!")
                 .setPositiveButton("OK") { _, _ -> toast("Pressed OK") }
-                .setNegativeButton("Cancel") { _, _ -> toast("Pressed Cancel") }
+                .setNegativeButton("Cancel") { _, _ -> snake(it,"Pressed Cancel") }
                 .show()
         }
         binding.datePickerButton.setOnClickListener {

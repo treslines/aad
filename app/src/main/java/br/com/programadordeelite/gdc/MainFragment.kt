@@ -36,11 +36,14 @@ class MainFragment : androidx.fragment.app.Fragment(R.layout.fragment_main) {
         binding.codelabThemesTouches.setOnClickListener { navTo(R.id.themeFragment) }
         binding.codelabThemesTouchesBaterry.setOnClickListener { navTo(R.id.batteryFragment) }
         binding.codelabRoomWithView.setOnClickListener { navTo(R.id.wordFragment) }
+        binding.codelabCustomTheme.setOnClickListener { toast(getString(R.string.duplicated_dynamic, "Day / Night")) }
+        binding.codelabDrawableStyleThemes.setOnClickListener { toast(getString(R.string.duplicated_dynamic, "Day / Night")) }
         binding.codelabRoomLivedataViewmodel.setOnClickListener { toast(getString(R.string.duplicated)) }
         binding.codelabRepository.setOnClickListener { toast(getString(R.string.duplicated)) }
         binding.codelabSharedPreferences.setOnClickListener { navTo(R.id.sharedPrefFragment) }
         binding.codelabAnimPulseExplode.setOnClickListener { navTo(R.id.pulseExplodeFragment) }
         binding.codelabViewmodelViewmodelfactory.setOnClickListener { navTo(R.id.titleFragment) }
+        binding.codelabAndroidStudioDebugger.setOnClickListener { navTo(R.id.calcFragment) }
         // +-----------------------------------------------------------------+
         // | Navigation between activities (no fragments for show case)      |
         // +-----------------------------------------------------------------+

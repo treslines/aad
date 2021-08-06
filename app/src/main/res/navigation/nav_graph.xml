@@ -87,6 +87,9 @@
         <action
             android:id="@+id/action_mainFragment_to_appSettingsFragment"
             app:destination="@id/appSettingsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_calcFragment"
+            app:destination="@id/calcFragment" />
     </fragment>
     <fragment
         android:id="@+id/toastSnakeFragment"
@@ -394,6 +397,15 @@
         <action
             android:id="@+id/action_settingsFragment_to_appSettingsFragment"
             app:destination="@id/appSettingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/calcFragment"
+        android:name="br.com.programadordeelite.gdc.codelab.debugging.calc.CalcFragment"
+        android:label="fragment_calc"
+        tools:layout="@layout/fragment_calc" >
+        <action
+            android:id="@+id/action_calcFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
 
 </navigation>

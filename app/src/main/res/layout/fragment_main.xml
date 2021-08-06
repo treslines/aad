@@ -133,8 +133,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:gravity="left|center_vertical"
             android:backgroundTint="@color/design_default_color_secondary"
+            android:gravity="left|center_vertical"
             android:text="Accessibility hooks &amp; Tests"
             android:textAllCaps="false"
             tools:ignore="RtlHardcoded" />
@@ -158,6 +158,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_secondary_variant"
             android:gravity="left|center_vertical"
             android:text="Custom theme"
             android:textAllCaps="false"
@@ -419,6 +420,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_secondary_variant"
             android:gravity="left|center_vertical"
             android:text="Drawable, Styles, and Themes"
             android:textAllCaps="false"
@@ -436,11 +438,12 @@
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/codelab_androis_studio_debugger"
+            android:id="@+id/codelab_android_studio_debugger"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_secondary_variant"
             android:gravity="left|center_vertical"
             android:text="Android Studio debugger"
             android:textAllCaps="false"
