@@ -1,6 +1,6 @@
 # Google Developer Certification 🥇 (Android Associated Certification)
 
-🇧🇷 **Preparatório** para Certificação de desenvolvedor do Google **EM APENAS DIAS** (Android Associate Certification) - um guia passo a passo completo com vídeos no Youtube passando por todas as seções oficiais de cada codelab, POREM TUDO EM PORTUGUÊS 🇧🇷 E EM **KOTLIN!** ⚽😀
+🇧🇷 **Preparatório** para Certificação de desenvolvedor do Google 🏁 **EM APENAS 23 DIAS** (Android Associate Certification) - um guia passo a passo completo com vídeos no Youtube passando por todas as seções oficiais de cada codelab, POREM TUDO EM PORTUGUÊS 🇧🇷 E EM **KOTLIN!** ⚽😀
 
 ⚙️ **SETUP PROJETO**
 - Criando o projeto e fazendo todo o setup já com navigation graph 📺 [Youtube](https://youtu.be/NjhT6ZA62LQ) 
@@ -15,7 +15,7 @@
 - Como executar tarefas em Segundo Plano - Parte 2 📺 [Youtube](https://youtu.be/MJpeoRopmgw)
 
 
-🧪 **CODELAB: INTERFACE(INTERAçÃO COM O USUÁRIO)**
+🧪 **CODELAB: USER INTERFACE(INTERAçÃO COM O USUÁRIO)**
 - Como criar textos, campos, botões e reagir a eventos de click 📺 [Youtube](https://youtu.be/qE5lZRSrgxo) 
 - Como criar um app layout profissional em 10min 📺 [Youtube](https://youtu.be/XBUbvKczRRI) 
 - Como abrir uma segunda tela (Activity/Fragment) e navegar entre elas 📺 [Youtube](https://youtu.be/5gqNUeNi9es) 
