@@ -15,6 +15,9 @@ class MainFragment : androidx.fragment.app.Fragment(R.layout.fragment_main) {
 
         super.onViewCreated(view, savedInstanceState)
 
+        // +-------------------------------------------------------------------------------------+
+        // | Orientação do app: Portrait(em pé) or Landscape(deitado) or Unspecified (os dois)   |
+        // +-------------------------------------------------------------------------------------+
         // if you not define it in the manifest, you could also do it that way programmatically
         //requireActivity().requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
 
@@ -44,9 +47,20 @@ class MainFragment : androidx.fragment.app.Fragment(R.layout.fragment_main) {
         binding.codelabAnimPulseExplode.setOnClickListener { navTo(R.id.pulseExplodeFragment) }
         binding.codelabViewmodelViewmodelfactory.setOnClickListener { navTo(R.id.titleFragment) }
         binding.codelabAndroidStudioDebugger.setOnClickListener { navTo(R.id.calcFragment) }
+        binding.codelabAddLogStatements.setOnClickListener { toast(getString(R.string.duplicated_dynamic, "Debugger")) }
         // +-----------------------------------------------------------------+
-        // | Navigation between activities (no fragments for show case)      |
+        // | Codelab: Navegação entre activities (no fragments for show case) |
         // +-----------------------------------------------------------------+
         binding.codelabUserNavigation.setOnClickListener { navTo(R.id.showTabsActivity) }
+
+        // +-----------------------------------------------------------------+
+        // | Espresso Cheat Sheet (spike muito bom para quando for testar)   |
+        // +-----------------------------------------------------------------+
+        // https://android.github.io/android-test/downloads/espresso-cheat-sheet-2.1.0.pdf
+        // Melhores práticas de teste >> https://developer.android.com/training/testing
+
+        binding.codelabUnitTests.setOnClickListener { toast("Veja >> Pacote: test") }
+        binding.codelabTestingJunitMockito.setOnClickListener { toast("Veja >> Pacote: androidTest") }
+        binding.codelabEspressoUiTesting.setOnClickListener { toast("Veja >> Pacote: AndroidTest") }
     }
 }
