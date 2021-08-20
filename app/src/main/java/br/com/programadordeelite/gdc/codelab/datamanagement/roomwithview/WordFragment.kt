@@ -9,6 +9,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import br.com.programadordeelite.gdc.MainApplication
 import br.com.programadordeelite.gdc.R
+import br.com.programadordeelite.gdc.codelab.datamanagement.roomwithview.NewWordFragment.Companion.BUNDLE_KEY_WORD
 import br.com.programadordeelite.gdc.codelab.datamanagement.roomwithview.NewWordFragment.Companion.BUNDLE_REQUEST_KEY
 import br.com.programadordeelite.gdc.codelab.util.navTo
 import br.com.programadordeelite.gdc.databinding.FragmentWordBinding
@@ -44,8 +45,8 @@ class WordFragment : Fragment(R.layout.fragment_word) {
         })
 
         // DEFINIR O QUE SERA TETORNADO COMO PARAMETRO, QUANDO ESTA TELA FOR FECHADA
-        setFragmentResultListener(BUNDLE_REQUEST_KEY) { key, bundle ->
-            val result = bundle.getString(key, "vazio")
+        setFragmentResultListener(BUNDLE_REQUEST_KEY) { _, bundle ->
+            val result = bundle.getString(BUNDLE_KEY_WORD, "vazio")
             wordViewModel.insert(Word(result))
         }
     }
