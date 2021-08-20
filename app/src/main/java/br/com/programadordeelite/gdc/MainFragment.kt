@@ -38,7 +38,9 @@ class MainFragment : androidx.fragment.app.Fragment(R.layout.fragment_main) {
         binding.codelabMenuPickers.setOnClickListener { navTo(R.id.menuFragment) }
         binding.codelabThemesTouches.setOnClickListener { navTo(R.id.themeFragment) }
         binding.codelabThemesTouchesBaterry.setOnClickListener { navTo(R.id.batteryFragment) }
+
         binding.codelabRoomWithView.setOnClickListener { navTo(R.id.wordFragment) }
+
         binding.codelabCustomTheme.setOnClickListener { toast(getString(R.string.duplicated_dynamic, "Day / Night")) }
         binding.codelabDrawableStyleThemes.setOnClickListener { toast(getString(R.string.duplicated_dynamic, "Day / Night")) }
         binding.codelabRoomLivedataViewmodel.setOnClickListener { toast(getString(R.string.duplicated)) }

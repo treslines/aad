@@ -9,6 +9,11 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import br.com.programadordeelite.gdc.R
 
+// +----------------------------------------------------------------------------------+
+// | RECYCLE VIEW ADAPTER - NÃO TA ENTENDENDO? TEM UM VIDEO AQUI QUE EXPLICA TUDO :)  |
+// +----------------------------------------------------------------------------------+
+
+// ADAPTER - >>> 3° <<< COISA A SER DEFINIDA
 class WordListAdapter : ListAdapter<Word, WordListAdapter.WordViewHolder>(WordsComparator()) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): WordViewHolder {
@@ -20,6 +25,7 @@ class WordListAdapter : ListAdapter<Word, WordListAdapter.WordViewHolder>(WordsC
         holder.bind(current.word)
     }
 
+    // VIEW HOLDER - >>> 2° <<< COISA A SER DEFINIDA
     class WordViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val wordItemView: TextView = itemView.findViewById(R.id.textView)
 
@@ -36,6 +42,7 @@ class WordListAdapter : ListAdapter<Word, WordListAdapter.WordViewHolder>(WordsC
         }
     }
 
+    // COMPARADOR >>> 1° <<< COISA A SER DEFINIDA
     class WordsComparator : DiffUtil.ItemCallback<Word>() {
         override fun areItemsTheSame(oldItem: Word, newItem: Word): Boolean {
             return oldItem === newItem

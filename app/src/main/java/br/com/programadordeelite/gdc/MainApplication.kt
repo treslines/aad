@@ -9,9 +9,13 @@ import timber.log.Timber
 
 class MainApplication : Application() {
 
-    // No need to cancel this scope as it'll be torn down with the process
+    // NÃO HÁ NECESSIDADE DE CANCELAR ESTE ESCOPO, POIS ELE SERÁ DESTRUÍDO COM O PROCESSO
     private val applicationScope = CoroutineScope(SupervisorJob())
+
+    // CRIACAO DO NOSSO BANCO DE DADOS LAZY (SO SERA INSTANCIADO QUANDO FOR USADO PELA PRIMEIRA VEZ)
     private val database by lazy { WordRoomDatabase.getDatabase(this@MainApplication, applicationScope) }
+
+    // DEFINICAO DO NOSSO REPOSITORIO A NIVEL DE APLICACAO PARA FICAR DISPONIVEL EM TODO LUGAR
     val repository by lazy { WordRepository(database.wordDao()) }
 
     override fun onCreate() {
