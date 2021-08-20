@@ -38,7 +38,7 @@
 ### 🧪 **CODELAB: DATA MANAGEMENT(ROOM E ARMAZENAMENTO DE DADOS)**
 | Titulo        | 📺 Youtube Link |
 | :------------- |:-------------:|
-| Como usar o ViewModel com o banco de dados Room e LiveData no android studio Kotlin | <a href="XXXX" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/%5BMVVM%5D-Como-usar-o-ViewModel-com-o-banco-de-dados-Room-e-LiveData-no-android-studio-Kotlin_mini.png" width="100" height="56"></a> |
+| Como usar o ViewModel com o banco de dados Room e LiveData no android studio Kotlin | <a href="https://youtu.be/EqkqNjY7uGs" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/%5BMVVM%5D-Como-usar-o-ViewModel-com-o-banco-de-dados-Room-e-LiveData-no-android-studio-Kotlin_mini.png" width="100" height="56"></a> |
 
 
 ### 🧪 **CODELAB: DEGUBBING(CORRIGINDO BUGS DO SEU APP)**
