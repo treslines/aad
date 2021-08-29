@@ -143,7 +143,7 @@ dependencies {
     // | Material Components                                             |
     // +-----------------------------------------------------------------+
     implementation 'com.google.android.material:material:1.5.0-alpha02'
-    implementation 'com.android.volley:volley:1.2.0'
+    implementation 'com.android.volley:volley:1.2.1'
     implementation 'com.google.code.gson:gson:2.8.6'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.5.10"
     implementation 'androidx.viewpager2:viewpager2:1.0.0'

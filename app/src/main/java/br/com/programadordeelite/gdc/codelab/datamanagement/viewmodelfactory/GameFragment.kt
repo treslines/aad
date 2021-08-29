@@ -11,51 +11,38 @@ import br.com.programadordeelite.gdc.R
 import br.com.programadordeelite.gdc.codelab.util.navTo
 import br.com.programadordeelite.gdc.codelab.util.toast
 import br.com.programadordeelite.gdc.databinding.FragmentGameBinding
+import timber.log.Timber
 
 class GameFragment : Fragment(R.layout.fragment_game) {
-    private lateinit var binding: FragmentGameBinding
 
+    private lateinit var binding: FragmentGameBinding
     private lateinit var viewModel: GameViewModel
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentGameBinding.bind(view)
-        Log.i("GameFragment", "Called ViewModelProvider.get")
+        Timber.i("Called ViewModelProvider.get")
+
+        // USAR O VIEW MODEL PROVIDER PARA ADQUIRIR O MODEL
+        // FAVORITAAAA, NA HORA DA PROVA, SO VEM AQUI, RELEMBRA E CONTINUA NA PROVA!
         viewModel = ViewModelProvider(this).get(GameViewModel::class.java)
+
         binding.correctButton.setOnClickListener { onCorrect() }
         binding.skipButton.setOnClickListener { onSkip() }
         binding.endGameButton.setOnClickListener { onEndGame() }
 
         updateScoreText()
         updateWordText()
-
     }
 
-    /** Methods for button click handlers **/
+    /** Metodos para lidar com interações com a UI **/
+    private fun onSkip() { viewModel.onSkip(); updateWordText(); updateScoreText() }
+    private fun onCorrect() { viewModel.onCorrect(); updateScoreText(); updateWordText() }
 
-    private fun onSkip() {
-        viewModel.onSkip()
-        updateWordText()
-        updateScoreText()
-    }
-    private fun onCorrect() {
-        viewModel.onCorrect()
-        updateScoreText()
-        updateWordText()
-    }
-
-    /** Methods for updating the UI **/
-    private fun updateWordText() {
-        binding.wordText.text = viewModel.word
-    }
-
-    private fun updateScoreText() {
-        binding.scoreText.text = viewModel.score.toString()
-    }
-
-    private fun onEndGame() {
-        gameFinished()
-    }
+    /** Metodos para altualizar a UI **/
+    private fun updateWordText() { binding.wordText.text = viewModel.word }
+    private fun updateScoreText() { binding.scoreText.text = viewModel.score.toString() }
+    private fun onEndGame() = gameFinished()
 
     /**
      * Called when the game is finished
@@ -67,7 +54,10 @@ class GameFragment : Fragment(R.layout.fragment_game) {
         // bacana para passar actions embora tbm possivel por bundles
         val action = GameFragmentDirections.actionGameToScore()
         action.score = viewModel.score
-        // outra maneira de navegar
+        // MAIS UMA MANEIRA DE NAVEGAR
+        // >>> APROVEITA TE INSCREVE, PRA NA HORA DA PROVA TER UM SPIQUE! :)
         NavHostFragment.findNavController(this).navigate(action)
+        // findNavController().navigate(action)
+        // navTo(action)
     }
 }

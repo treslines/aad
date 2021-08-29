@@ -5,7 +5,6 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import br.com.programadordeelite.gdc.R
-import br.com.programadordeelite.gdc.databinding.FragmentSharedPrefBinding
 import br.com.programadordeelite.gdc.databinding.FragmentTitleBinding
 
 class TitleFragment : Fragment(R.layout.fragment_title) {
@@ -17,7 +16,11 @@ class TitleFragment : Fragment(R.layout.fragment_title) {
         binding = FragmentTitleBinding.bind(view)
 
         binding.playGameButton.setOnClickListener {
-            findNavController().navigate(TitleFragmentDirections.actionTitleToGame())
+            val navDirection = TitleFragmentDirections.actionTitleToGame()
+            findNavController().navigate(navDirection)
+            // >>> APROVEITA TE INSCREVE, PRA NA HORA DA PROVA NÃO FICAR APERRIADO! :)
+            // NavHostFragment.findNavController(this).navigate(navDirection)
+            // navTo(action)
         }
     }
 }

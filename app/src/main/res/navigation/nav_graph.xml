@@ -199,7 +199,7 @@
     <fragment
         android:id="@+id/drawerFragment"
         android:name="br.com.programadordeelite.gdc.codelab.userinterface.usernavigation.drawer.DrawerFragment"
-        android:label="DrawerFragment" >
+        android:label="DrawerFragment">
         <action
             android:id="@+id/action_drawerFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
@@ -208,7 +208,7 @@
         android:id="@+id/orderFragment"
         android:name="br.com.programadordeelite.gdc.codelab.userinterface.menu.OrderFragment"
         android:label="fragment_order"
-        tools:layout="@layout/fragment_order" >
+        tools:layout="@layout/fragment_order">
         <action
             android:id="@+id/action_orderFragment_to_menuFragment"
             app:destination="@id/menuFragment" />
@@ -217,7 +217,7 @@
         android:id="@+id/menuFragment"
         android:name="br.com.programadordeelite.gdc.codelab.userinterface.menu.MenuFragment"
         android:label="fragment_menu"
-        tools:layout="@layout/fragment_menu" >
+        tools:layout="@layout/fragment_menu">
         <action
             android:id="@+id/action_menuFragment_to_orderFragment"
             app:destination="@id/orderFragment" />
@@ -229,7 +229,7 @@
         android:id="@+id/themeFragment"
         android:name="br.com.programadordeelite.gdc.codelab.userinterface.themes.ThemeFragment"
         android:label="fragment_theme"
-        tools:layout="@layout/fragment_theme" >
+        tools:layout="@layout/fragment_theme">
         <action
             android:id="@+id/action_themeFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
@@ -238,7 +238,7 @@
         android:id="@+id/batteryFragment"
         android:name="br.com.programadordeelite.gdc.codelab.userinterface.themes.BatteryFragment"
         android:label="fragment_battery"
-        tools:layout="@layout/fragment_battery" >
+        tools:layout="@layout/fragment_battery">
         <action
             android:id="@+id/action_batteryFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
@@ -247,7 +247,7 @@
         android:id="@+id/wordFragment"
         android:name="br.com.programadordeelite.gdc.codelab.datamanagement.roomwithview.WordFragment"
         android:label="fragment_word"
-        tools:layout="@layout/fragment_word" >
+        tools:layout="@layout/fragment_word">
         <action
             android:id="@+id/action_wordFragment_to_newWordFragment"
             app:destination="@id/newWordFragment" />
@@ -259,7 +259,7 @@
         android:id="@+id/newWordFragment"
         android:name="br.com.programadordeelite.gdc.codelab.datamanagement.roomwithview.NewWordFragment"
         android:label="fragment_new_word"
-        tools:layout="@layout/fragment_new_word" >
+        tools:layout="@layout/fragment_new_word">
         <action
             android:id="@+id/action_newWordFragment_to_wordFragment"
             app:destination="@id/wordFragment" />
@@ -268,7 +268,7 @@
         android:id="@+id/sharedPrefFragment"
         android:name="br.com.programadordeelite.gdc.codelab.datamanagement.sharedprefs.SharedPrefFragment"
         android:label="fragment_shared_pref"
-        tools:layout="@layout/fragment_shared_pref" >
+        tools:layout="@layout/fragment_shared_pref">
         <action
             android:id="@+id/action_sharedPrefFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
@@ -277,7 +277,7 @@
         android:id="@+id/pulseExplodeFragment"
         android:name="br.com.programadordeelite.gdc.codelab.animation.PulseExplodeFragment"
         android:label="fragment_pulse_explode"
-        tools:layout="@layout/fragment_pulse_explode" >
+        tools:layout="@layout/fragment_pulse_explode">
         <action
             android:id="@+id/action_pulseExplodeFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
@@ -294,7 +294,7 @@
         android:id="@+id/pulseExplodeDestinationFragment"
         android:name="br.com.programadordeelite.gdc.codelab.animation.PulseExplodeDestinationFragment"
         android:label="fragment_pulse_explode_destination"
-        tools:layout="@layout/fragment_pulse_explode_destination" >
+        tools:layout="@layout/fragment_pulse_explode_destination">
         <action
             android:id="@+id/action_pulseExplodeDestinationFragment_to_pulseExplodeFragment"
             app:destination="@id/pulseExplodeFragment" />
@@ -302,7 +302,7 @@
     <fragment
         android:id="@+id/recyclerViewPagingFragment"
         android:name="br.com.programadordeelite.gdc.codelab.userinterface.recyclerview.paging.RecyclerViewPagingFragment"
-        android:label="RecyclerViewPagingFragment" >
+        android:label="RecyclerViewPagingFragment">
         <action
             android:id="@+id/action_recyclerViewPagingFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
@@ -311,7 +311,7 @@
         android:id="@+id/accessibilityFragment"
         android:name="br.com.programadordeelite.gdc.codelab.userinterface.accessibility.AccessibilityFragment"
         android:label="fragment_accessibility"
-        tools:layout="@layout/fragment_accessibility" >
+        tools:layout="@layout/fragment_accessibility">
         <action
             android:id="@+id/action_accessibilityFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
@@ -350,6 +350,7 @@
             app:popEnterAnim="@anim/slide_in_right"
             app:popExitAnim="@anim/slide_out_left"
             app:popUpTo="@+id/title_destination" />
+
     </fragment>
     <fragment
         android:id="@+id/scoreFragment"
@@ -373,7 +374,7 @@
         android:id="@+id/customViewFragment"
         android:name="br.com.programadordeelite.gdc.codelab.userinterface.customview.CustomViewFragment"
         android:label="fragment_custom_view"
-        tools:layout="@layout/fragment_custom_view" >
+        tools:layout="@layout/fragment_custom_view">
         <action
             android:id="@+id/action_customViewFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
@@ -382,7 +383,7 @@
         android:id="@+id/appSettingsFragment"
         android:name="br.com.programadordeelite.gdc.codelab.datamanagement.appsettings.AppSettingsFragment"
         android:label="fragment_app_settings"
-        tools:layout="@layout/fragment_app_settings" >
+        tools:layout="@layout/fragment_app_settings">
         <action
             android:id="@+id/action_appSettingsFragment_to_settingsFragment"
             app:destination="@id/settingsFragment" />
@@ -393,7 +394,7 @@
     <fragment
         android:id="@+id/settingsFragment"
         android:name="br.com.programadordeelite.gdc.codelab.datamanagement.appsettings.SettingsFragment"
-        android:label="SettingsFragment" >
+        android:label="SettingsFragment">
         <action
             android:id="@+id/action_settingsFragment_to_appSettingsFragment"
             app:destination="@id/appSettingsFragment" />
@@ -402,7 +403,7 @@
         android:id="@+id/calcFragment"
         android:name="br.com.programadordeelite.gdc.codelab.debugging.calc.CalcFragment"
         android:label="fragment_calc"
-        tools:layout="@layout/fragment_calc" >
+        tools:layout="@layout/fragment_calc">
         <action
             android:id="@+id/action_calcFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
