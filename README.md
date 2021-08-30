@@ -40,7 +40,7 @@
 | :------------- |:-------------:|
 | Como usar o ViewModel com o banco de dados Room e LiveData no android studio Kotlin STUDIO | <a href="https://youtu.be/EqkqNjY7uGs" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/%5BMVVM%5D-Como-usar-o-ViewModel-com-o-banco-de-dados-Room-e-LiveData-no-android-studio-Kotlin_mini.png" width="100" height="56"></a> |
 | Como USAR SHARED PREFERENCES e PERSISTIR na MEMÓRIA? KOTLIN ANDROID  | <a href="https://youtu.be/ScctmGl47tc" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/%5BSALVAR-PREFER%C3%8ANCIAS%5D-Como-USAR-SHARED-PREFERENCES-e-PERSISTIR-na-MEM%C3%93RIA-KOTLIN-ANDROID-STUDIO_mini.png" width="100" height="56"></a> |
-| INJEÇÃO DE DEPENDÊNCIA - APRENDA A CRIAR E USAR O VIEWMODELFACTORY - KOTLIN ANDROID STUDIO  | <a href="https://youtu.be/xxxxx" target="_blank"><img src="xxxx" width="100" height="56"></a> |
+| INJEÇÃO DE DEPENDÊNCIA - APRENDA A CRIAR E USAR O ViewModelFactory & ViewModelProvider - KOTLIN ANDROID STUDIO  | <a href="https://youtu.be/A9-BDZ9kpU8" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/%5BINJE%C3%87%C3%83O-DE-DEPEND%C3%8ANCIA%5D-APRENDA-A-CRIAR-E-USAR-O-VIEWMODELFACTORY-KOTLIN-ANDROID-STUDIO.png" width="100" height="56"></a> |
 
 ### 🧪 **CODELAB: DEGUBBING(CORRIGINDO BUGS DO SEU APP)**
 - EM ANDAMENTO
