@@ -379,6 +379,7 @@
             android:id="@+id/action_customViewFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/appSettingsFragment"
         android:name="br.com.programadordeelite.gdc.codelab.datamanagement.appsettings.AppSettingsFragment"
@@ -399,6 +400,7 @@
             android:id="@+id/action_settingsFragment_to_appSettingsFragment"
             app:destination="@id/appSettingsFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/calcFragment"
         android:name="br.com.programadordeelite.gdc.codelab.debugging.calc.CalcFragment"

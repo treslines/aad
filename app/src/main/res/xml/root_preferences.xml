@@ -2,13 +2,16 @@
 
     <PreferenceCategory app:title="@string/messages_header">
 
+        <!-- video: como criar icones que não perdem resolução -->
         <EditTextPreference
             app:key="signature"
+            app:icon="@drawable/ic_login"
             app:title="@string/signature_title"
+            app:defaultValue="Não Definida"
             app:useSimpleSummaryProvider="true" />
 
         <ListPreference
-            app:defaultValue="reply"
+            app:defaultValue="Responder apenas ao remetente"
             app:entries="@array/reply_entries"
             app:entryValues="@array/reply_values"
             app:key="reply"
@@ -23,6 +26,7 @@
             app:key="sync"
             app:title="@string/sync_title" />
 
+        <!-- dependência de sync - so ativo quando sync estiver ativo -->
         <SwitchPreferenceCompat
             app:dependency="sync"
             app:key="attachment"

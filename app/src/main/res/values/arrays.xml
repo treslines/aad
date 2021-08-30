@@ -1,12 +1,13 @@
 <resources>
-    <!-- Reply Preference -->
+    <!-- Possiveis alternativas das configurações -->
+    <!-- Aqui você pode internacionalizar/traduzir os valores -->
     <string-array name="reply_entries">
-        <item>Reply</item>
-        <item>Reply to all</item>
+        <item>Responder apenas ao remetente</item>
+        <item>Responder a todos</item>
     </string-array>
 
     <string-array name="reply_values">
-        <item>reply</item>
-        <item>reply_all</item>
+        <item>Responder apenas ao remetente</item>
+        <item>Responder a todos</item>
     </string-array>
 </resources>

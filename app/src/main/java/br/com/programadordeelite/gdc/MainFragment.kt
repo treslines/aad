@@ -29,7 +29,9 @@ class MainFragment : androidx.fragment.app.Fragment(R.layout.fragment_main) {
         binding.codelabInteractiveUi.setOnClickListener { navTo(R.id.interactiveUiFragment) }
         binding.codelabActivitiesIntents.setOnClickListener { navTo(R.id.sendFragment) }
         binding.codelabRecyclerviewWithPaging.setOnClickListener{ navTo(R.id.recyclerViewPagingFragment) }
+
         binding.codelabAppSettings.setOnClickListener{ navTo(R.id.appSettingsFragment) }
+
         binding.codelabRecyclerview.setOnClickListener { navTo(R.id.recyclerViewFragment) }
         binding.codelabAccessibility.setOnClickListener { navTo(R.id.accessibilityFragment) }
         binding.codelabCreateCustomView.setOnClickListener { navTo(R.id.customViewFragment) }
@@ -38,9 +40,7 @@ class MainFragment : androidx.fragment.app.Fragment(R.layout.fragment_main) {
         binding.codelabMenuPickers.setOnClickListener { navTo(R.id.menuFragment) }
         binding.codelabThemesTouches.setOnClickListener { navTo(R.id.themeFragment) }
         binding.codelabThemesTouchesBaterry.setOnClickListener { navTo(R.id.batteryFragment) }
-
         binding.codelabRoomWithView.setOnClickListener { navTo(R.id.wordFragment) }
-
         binding.codelabCustomTheme.setOnClickListener { toast(getString(R.string.duplicated_dynamic, "Day / Night")) }
         binding.codelabDrawableStyleThemes.setOnClickListener { toast(getString(R.string.duplicated_dynamic, "Day / Night")) }
         binding.codelabRoomLivedataViewmodel.setOnClickListener { toast(getString(R.string.duplicated)) }
