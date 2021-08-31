@@ -9,6 +9,7 @@ import br.com.programadordeelite.gdc.databinding.FragmentCalcBinding
 import timber.log.Timber
 import java.lang.IllegalArgumentException
 
+// LINK PARA VC SE APROFUNDAR NOS ESTUDOS
 // https://developer.android.com/studio/command-line/adb.html
 class CalcFragment : Fragment(R.layout.fragment_calc) {
 
@@ -38,13 +39,14 @@ class CalcFragment : Fragment(R.layout.fragment_calc) {
                         val division = calculator.div(operandOne, operandTwo)
                         if(division.isFinite()) division.toString() else throw IllegalArgumentException("Illegal Division")
                     } catch (iae: IllegalArgumentException) {
+                        Timber.i("IllegalArgumentException") // Timber sem exception
                         Log.e(logTag, "IllegalArgumentException", iae) // para exemplificar o uso de Log
                         getString(R.string.computationError)
                     }
                 }
             )
         } catch (nfe: NumberFormatException) {
-            Timber.e(nfe, "NumberFormatException") // para exemplificar o uso do timber
+            Timber.e(nfe, "NumberFormatException") // para exemplificar o uso do timber - com exception
             binding.operationResultTextView.setText(getString(R.string.computationError))
             return
         }
