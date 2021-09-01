@@ -29,9 +29,7 @@ class MainFragment : androidx.fragment.app.Fragment(R.layout.fragment_main) {
         binding.codelabInteractiveUi.setOnClickListener { navTo(R.id.interactiveUiFragment) }
         binding.codelabActivitiesIntents.setOnClickListener { navTo(R.id.sendFragment) }
         binding.codelabRecyclerviewWithPaging.setOnClickListener{ navTo(R.id.recyclerViewPagingFragment) }
-
         binding.codelabAppSettings.setOnClickListener{ navTo(R.id.appSettingsFragment) }
-
         binding.codelabRecyclerview.setOnClickListener { navTo(R.id.recyclerViewFragment) }
         binding.codelabAccessibility.setOnClickListener { navTo(R.id.accessibilityFragment) }
         binding.codelabCreateCustomView.setOnClickListener { navTo(R.id.customViewFragment) }
@@ -48,19 +46,19 @@ class MainFragment : androidx.fragment.app.Fragment(R.layout.fragment_main) {
         binding.codelabSharedPreferences.setOnClickListener { navTo(R.id.sharedPrefFragment) }
         binding.codelabAnimPulseExplode.setOnClickListener { navTo(R.id.pulseExplodeFragment) }
         binding.codelabViewmodelViewmodelfactory.setOnClickListener { navTo(R.id.titleFragment) }
+
         binding.codelabAndroidStudioDebugger.setOnClickListener { navTo(R.id.calcFragment) }
+
         binding.codelabAddLogStatements.setOnClickListener { toast(getString(R.string.duplicated_dynamic, "Debugger")) }
         // +-----------------------------------------------------------------+
         // | Codelab: Navegação entre activities (no fragments for show case) |
         // +-----------------------------------------------------------------+
         binding.codelabUserNavigation.setOnClickListener { navTo(R.id.showTabsActivity) }
-
         // +-----------------------------------------------------------------+
         // | Espresso Cheat Sheet (spike muito bom para quando for testar)   |
         // +-----------------------------------------------------------------+
         // https://android.github.io/android-test/downloads/espresso-cheat-sheet-2.1.0.pdf
         // Melhores práticas de teste >> https://developer.android.com/training/testing
-
         binding.codelabUnitTests.setOnClickListener { toast("Veja >> Pacote: test") }
         binding.codelabTestingJunitMockito.setOnClickListener { toast("Veja >> Pacote: androidTest") }
         binding.codelabEspressoUiTesting.setOnClickListener { toast("Veja >> Pacote: AndroidTest") }

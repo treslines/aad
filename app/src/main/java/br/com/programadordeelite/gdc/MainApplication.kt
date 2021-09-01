@@ -15,13 +15,14 @@ class MainApplication : Application() {
     // CRIACAO DO NOSSO BANCO DE DADOS LAZY (SO SERA INSTANCIADO QUANDO FOR USADO PELA PRIMEIRA VEZ)
     private val database by lazy { WordRoomDatabase.getDatabase(this@MainApplication, applicationScope) }
 
-    // DEFINICAO DO NOSSO REPOSITORIO A NIVEL DE APLICACAO PARA FICAR DISPONIVEL EM TODO LUGAR
+    // DEFINICAO DO NOSSO REPOSITORIO A NIVEL DE APLICACAO PARA FICAR DISPONIVEL EM TODOS OS LUGARES
     val repository by lazy { WordRepository(database.wordDao()) }
 
     override fun onCreate() {
         super.onCreate()
         if (BuildConfig.DEBUG) {
-            Timber.plant(Timber.DebugTree()) // Timber é o "novo" Logger recomendado pela google
+            // Timber é o "novo" Logger recomendado pela google
+            Timber.plant(Timber.DebugTree())
         }
     }
 }

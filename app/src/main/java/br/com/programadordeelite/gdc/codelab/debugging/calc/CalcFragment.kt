@@ -28,8 +28,10 @@ class CalcFragment : Fragment(R.layout.fragment_calc) {
 
     private fun compute(operation: Calculator.Operator) {
         try {
+            // Observar variavel
             val operandOne = binding.operandOneEditText.text.toString().toDouble()
             val operandTwo = binding.operandTwoEditText.text.toString().toDouble()
+            // TODO: rfer criar filtro para minhas tarefas
             binding.operationResultTextView.setText(
                 when (operation) {
                     Calculator.Operator.ADD -> calculator.add(operandOne, operandTwo).toString()
@@ -39,14 +41,14 @@ class CalcFragment : Fragment(R.layout.fragment_calc) {
                         val division = calculator.div(operandOne, operandTwo)
                         if(division.isFinite()) division.toString() else throw IllegalArgumentException("Illegal Division")
                     } catch (iae: IllegalArgumentException) {
-                        Timber.i("IllegalArgumentException") // Timber sem exception
-                        Log.e(logTag, "IllegalArgumentException", iae) // para exemplificar o uso de Log
+                        Timber.i("IllegalArgumentException Com Timber") // Timber sem exception
+                        Log.e(logTag, "IllegalArgumentException Com LogCat", iae) // para exemplificar o uso de Log
                         getString(R.string.computationError)
                     }
                 }
             )
         } catch (nfe: NumberFormatException) {
-            Timber.e(nfe, "NumberFormatException") // para exemplificar o uso do timber - com exception
+            Timber.e(nfe, "NumberFormatException com Timber") // para exemplificar o uso do timber - com exception
             binding.operationResultTextView.setText(getString(R.string.computationError))
             return
         }
