@@ -1,6 +1,11 @@
 # Google Developer Certification 🥇 (Android Associated Certification)
 
-🇧🇷 **Preparatório** para Certificação de desenvolvedor do Google 🏁 **EM APENAS 23 DIAS** (Android Associate Certification) - um guia passo a passo completo com vídeos no Youtube passando por todas as seções oficiais de cada codelab, POREM TUDO EM PORTUGUÊS 🇧🇷 E EM **KOTLIN!** ⚽😀
+🇧🇷 **Preparatório** para Certificação de desenvolvedor do Google 🏁 **EM APENAS 23 DIAS** (Android Associate Certification) - um guia passo a passo completo com vídeos no Youtube passando por todas as seções oficiais de cada codelab, **POREM TUDO EM PORTUGUÊS** 🇧🇷 E EM **KOTLIN!** ⚽😀
+
+🎉 **Ta curtindo esse Projeto?** 🎉 Deixa uma estrelinha ⭐ ai para me motivar! 😉
+
+💻 **Quer programar mais rápido?** Da uma sacada nestes atalhos do Intellij: https://programadordeelite.com.br/android
+
 
 ### ⚙️ **SETUP PROJETO**
 | Titulo        | 📺 Youtube Link |
