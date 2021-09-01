@@ -49,7 +49,9 @@
 | CONFIGURAÇÕES DO APP - COMO CRIAR TELA DE CONFIGURAÇÕES OU SETTINGS NO SEU APLICATIVO ANDROID  | <a href="https://youtu.be/GTCqufPTi1o" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/%5BCONFIGURA%C3%87%C3%95ES-DO-APP%5D-COMO-CRIAR-TELA-DE-CONFIGURA%C3%87%C3%95ES-OU-SETTINGS-NO-SEU-APLICATIVO-ANDROID.png" width="100" height="56"></a> |
 
 ### 🧪 **CODELAB: DEGUBBING(CORRIGINDO BUGS DO SEU APP)**
-- EM ANDAMENTO
+| Titulo        | 📺 Youtube Link |
+| :------------- |:-------------:|
+| DEPURAÇÃO - COMO CORRIGIR ERROS USANDO DEBUG, LOGCAT, TIMBER E BREAK POINTS NO ANDROID STUDIO | <a href="https://www.youtube.com/channel/UCsEdUK6zNAA95aGlqoBOclQ" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/%5BDEBUGANDO%5D-COMO-CORRIGIR-ERROS-USANDO-DEBUG-LOGCAT-TIMBER-E-BREAK-POINTS-NO-ANDROID-STUDIO.png" width="100" height="56"></a> |
 
 
 ### 🧪 **CODELAB: TESTING(APRENDA A TESTAR SEU APP > INTERFACE GRÁFICA e CÓDIGO)**
