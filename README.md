@@ -48,7 +48,7 @@
 | INJEÇÃO DE DEPENDÊNCIA - APRENDA A CRIAR E USAR O ViewModelFactory & ViewModelProvider - KOTLIN ANDROID STUDIO  | <a href="https://youtu.be/A9-BDZ9kpU8" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/%5BINJE%C3%87%C3%83O-DE-DEPEND%C3%8ANCIA%5D-APRENDA-A-CRIAR-E-USAR-O-VIEWMODELFACTORY-KOTLIN-ANDROID-STUDIO.png" width="100" height="56"></a> |
 | CONFIGURAÇÕES DO APP - COMO CRIAR TELA DE CONFIGURAÇÕES OU SETTINGS NO SEU APLICATIVO ANDROID  | <a href="https://youtu.be/GTCqufPTi1o" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/%5BCONFIGURA%C3%87%C3%95ES-DO-APP%5D-COMO-CRIAR-TELA-DE-CONFIGURA%C3%87%C3%95ES-OU-SETTINGS-NO-SEU-APLICATIVO-ANDROID.png" width="100" height="56"></a> |
 
-### 🧪 **CODELAB: DEGUBBING(CORRIGINDO BUGS DO SEU APP)**
+### 🧪 **CODELAB: DEBUGGING(DEPURANDO/CORRIGINDO BUGS/ERROS DO SEU APP)**
 | Titulo        | 📺 Youtube Link |
 | :------------- |:-------------:|
 | DEPURAÇÃO - COMO CORRIGIR ERROS USANDO DEBUG, LOGCAT, TIMBER E BREAK POINTS NO ANDROID STUDIO | <a href="https://www.youtube.com/channel/UCsEdUK6zNAA95aGlqoBOclQ" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/%5BDEBUGANDO%5D-COMO-CORRIGIR-ERROS-USANDO-DEBUG-LOGCAT-TIMBER-E-BREAK-POINTS-NO-ANDROID-STUDIO.png" width="100" height="56"></a> |
