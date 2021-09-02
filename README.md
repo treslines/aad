@@ -51,7 +51,7 @@
 ### 🧪 **CODELAB: DEBUGGING(DEPURANDO/CORRIGINDO BUGS/ERROS DO SEU APP)**
 | Titulo        | 📺 Youtube Link |
 | :------------- |:-------------:|
-| DEPURAÇÃO - COMO CORRIGIR ERROS USANDO DEBUG, LOGCAT, TIMBER E BREAK POINTS NO ANDROID STUDIO | <a href="https://www.youtube.com/channel/UCsEdUK6zNAA95aGlqoBOclQ" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/%5BDEBUGANDO%5D-COMO-CORRIGIR-ERROS-USANDO-DEBUG-LOGCAT-TIMBER-E-BREAK-POINTS-NO-ANDROID-STUDIO.png" width="100" height="56"></a> |
+| DEPURAÇÃO - COMO CORRIGIR ERROS USANDO DEBUG, LOGCAT, TIMBER E BREAK POINTS NO ANDROID STUDIO | <a href="https://youtu.be/hSsi_Gu8csw" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/%5BDEBUGANDO%5D-COMO-CORRIGIR-ERROS-USANDO-DEBUG-LOGCAT-TIMBER-E-BREAK-POINTS-NO-ANDROID-STUDIO.png" width="100" height="56"></a> |
 
 
 ### 🧪 **CODELAB: TESTING(APRENDA A TESTAR SEU APP > INTERFACE GRÁFICA e CÓDIGO)**
