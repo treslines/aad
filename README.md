@@ -3,7 +3,7 @@
 🇧🇷 **Preparatório** para Certificação de desenvolvedor do Google 🏁 **EM APENAS 23 DIAS** (Android Associate Certification) - um guia passo a passo completo com vídeos no Youtube passando por todas as seções oficiais de cada codelab, **POREM TUDO EM PORTUGUÊS** 🇧🇷 E EM **KOTLIN!** ⚽😀
 
 ⚡ **PARA VOCÊ ESTUDANTE:** ⚡ 
-Para aqueles que quiserem meter a mão na massa, eu criei uma branch chamada **"skeleton"** onde você encontra toda a estrutura base doo projeto, porém sem o código lógico. Esta estrutura contém apenas os arquivos de layout, navegação etc., para que você possa acompanhar as aulas a baixo e ir implementando você mesmo! Obrigado **Adilson Magalhaes Jäger** pelo valioso feedback e 💡 ideia para esta branch! 
+Para aqueles que quiserem meter a mão na massa, eu criei uma branch chamada **"skeleton"** onde você encontra toda a estrutura base do projeto, porém sem o código lógico. Esta estrutura contém apenas os arquivos de layout, navegação etc., para que você possa acompanhar as aulas a baixo e ir implementando você mesmo! Obrigado **Adilson Magalhaes Jäger** pelo valioso feedback e 💡 ideia para esta branch! 
 
 🎉 **Ta curtindo esse Projeto?** Deixa uma estrelinha ⭐ ai para me motivar! 😉
 
