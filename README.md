@@ -2,7 +2,10 @@
 
 🇧🇷 **Preparatório** para Certificação de desenvolvedor do Google 🏁 **EM APENAS 23 DIAS** (Android Associate Certification) - um guia passo a passo completo com vídeos no Youtube passando por todas as seções oficiais de cada codelab, **POREM TUDO EM PORTUGUÊS** 🇧🇷 E EM **KOTLIN!** ⚽😀
 
-🎉 **Ta curtindo esse Projeto?** 🎉 Deixa uma estrelinha ⭐ ai para me motivar! 😉
+⚡ **PARA VOCÊ ESTUDANTE:** ⚡ 
+Para aqueles que quiserem meter a mão na massa, eu criei uma branch chamada **"skeleton"** onde você encontra toda a estrutura base doo projeto, porém sem o código lógico. Esta estrutura contém apenas os arquivos de layout, navegação etc., para que você possa acompanhar as aulas a baixo e ir implementando você mesmo! Obrigado **Adilson Magalhaes Jäger** pelo valioso feedback e 💡 ideia para esta branch! 
+
+🎉 **Ta curtindo esse Projeto?** Deixa uma estrelinha ⭐ ai para me motivar! 😉
 
 💻 **Quer programar mais rápido?** Da uma sacada nestes atalhos do Intellij: https://programadordeelite.com.br/android
 
@@ -36,6 +39,7 @@
 | Como implementar a navegação de abas e guias usando TabLayout e ViewPager | <a href="https://youtu.be/SGazP_G4ek0" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/%5BFACIL%5D-Como-implementar-o-Tablayout-abas-usando-Fragments-e-ViewPager-Guia-no-Android-Studio_mini.png" width="100" height="56"></a> |
 | Como criar views e componentes personalizados com Custom Views | <a href="https://youtu.be/fpNEife2cYo" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/%5BANDROID-CUSTOM-VIEW-TUTORIAL%5D-Como-criar-componentes-personalizados-no-android-usando-KOTLIN_mini.png" width="100" height="56"></a> |
 | Como criar a navegação de hambuger lateral (Navigation Drawer) usando fragments | <a href="https://youtu.be/X5B8Q6q22FU" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/%5BDO%20ZERO%5D-Como-criar-ou-implementar-o-navigation-drawer-com-fragments-no-Android-Studio-kotlin_mini.png" width="100" height="56"></a> |
+| Como IMPLEMENTAR modo DIA e NOITE (DAY/NIGHT) no seu aplicativo dentro do ANDROID STUDIO com KOTLIN | <a href="https://youtu.be/hHgLmWk3iXQ" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/%5BDAYNIGHT%5D-Como-IMPLEMENTAR-modo-DIA-e-NOITE-no-seu-aplictivo-ANDROID-STUDIO-KOTLIN-2021_mini.png" width="100" height="56"></a> |
 | Como implementar TIME OU DATEPICKER (Data e Hora) com Fragments em KOTLIN no Android Studio | <a href="https://youtu.be/QJj3T8H8myI" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/%5BDATA-E-HORA%5D-Como-implementar-TIME-OU-DATEPICKER-com-Fragments-em-KOTLIN-no-Android-Studio-2021_mini.png" width="100" height="56"></a> |
 | Como criar ou alterar ÍCONE PADRÃO do aplicativo no Android Studio KOTLIN | <a href="https://youtu.be/JMvXUjISoFo" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/%5BCRIANDO-%C3%8DCONES%5D-Como-criar-ou-alterar-%C3%8DCONES-PADR%C3%83O-do-app-no-Android-Studio-din%C3%A2micamente-KOTLIN_mini.png" width="100" height="56"></a> |
 
