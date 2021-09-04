@@ -15,12 +15,9 @@ class TitleFragment : Fragment(R.layout.fragment_title) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentTitleBinding.bind(view)
 
-        binding.playGameButton.setOnClickListener {
-            val navDirection = TitleFragmentDirections.actionTitleToGame()
-            findNavController().navigate(navDirection)
-            // >>> APROVEITA TE INSCREVE, PRA NA HORA DA PROVA NÃO FICAR APERRIADO! :)
-            // NavHostFragment.findNavController(this).navigate(navDirection)
-            // navTo(action)
-        }
+        // +---------------------------------------------------------------------------------+
+        // | ESCREVA SEU CÓDIGO ACOMPANHANDO A AULA NO YOUTUBE                               |
+        // | EM ANDAMENTO, APROVEITA E JÁ SEGUE O CANAL PARA NÃO PERDER O VÍDEO              |
+        // +---------------------------------------------------------------------------------+
     }
 }

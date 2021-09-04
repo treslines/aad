@@ -16,12 +16,9 @@ class CustomViewFragment : Fragment(R.layout.fragment_custom_view) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentCustomViewBinding.bind(view)
 
-        binding.pwd.passwordForgottenButton?.setOnClickListener {
-            snake(it, "Esqueci minha senha!")
-        }
-
-        binding.pwdOutlined.passwordForgottenButton?.setOnClickListener {
-            snake(it, "Esqueci minha senha!")
-        }
+        // +---------------------------------------------------------------------------------+
+        // | ESCREVA SEU CÓDIGO ACOMPANHANDO A AULA NO YOUTUBE                               |
+        // | JÁ APROVEITA E SEGUE O CANAL >> LINK PARA A AULA: https://youtu.be/fpNEife2cYo  |
+        // +---------------------------------------------------------------------------------+
     }
 }

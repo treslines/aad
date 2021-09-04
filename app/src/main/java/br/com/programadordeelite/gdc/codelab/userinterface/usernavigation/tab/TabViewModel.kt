@@ -12,10 +12,10 @@ class TabViewModel : ViewModel() {
     // lógica é programada no view model a view geralmente so é atualizada
     // separando responsabilidades CoC (cerparation of concern)
     fun getCurrent(tab: String): String {
-        if (currentTab != tab) {
-            currentTabContent = "Toque anterior: $currentTab\nÚltimo toque: $tab"
-            currentTab = tab
-        }
+        // +---------------------------------------------------------------------------------+
+        // | ESCREVA SEU CÓDIGO ACOMPANHANDO A AULA NO YOUTUBE                               |
+        // | JÁ APROVEITA E SEGUE O CANAL >> LINK PARA A AULA: https://youtu.be/SGazP_G4ek0  |
+        // +---------------------------------------------------------------------------------+
         return currentTabContent
     }
 

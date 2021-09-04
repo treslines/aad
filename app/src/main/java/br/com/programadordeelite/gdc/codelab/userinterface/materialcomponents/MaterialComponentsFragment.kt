@@ -18,28 +18,9 @@ class MaterialComponentsFragment : Fragment(R.layout.fragment_material_component
 
         binding = FragmentMaterialComponentsBinding.bind(view) // inicializa o binding
 
-        binding.nextButton.setOnClickListener {
-            if (!isPasswordValid(password_edit_text.text.toString())) {
-                password_text_input.error = getString(R.string.shr_error_password)
-            } else {
-                password_text_input.error = null
-                navTo(R.id.productGridFragment)
-            }
-        }
-
-        // Clear the error once more than 8 characters are typed.
-        binding.passwordEditText.setOnKeyListener { _, _, _ ->
-            if (isPasswordValid(password_edit_text.text.toString())) {
-                password_text_input.error = null
-            }
-            false
-        }
-
-        binding.cancelButton.setOnClickListener {
-            binding.passwordEditText.setText("")
-            binding.username.setText("")
-        }
-
+        // +---------------------------------------------------------------------------------+
+        // | ESCREVA SEU CÓDIGO ACOMPANHANDO A AULA NO YOUTUBE                               |
+        // | JÁ APROVEITA E SEGUE O CANAL >> LINK PARA A AULA: https://youtu.be/qE5lZRSrgxo  |
+        // +---------------------------------------------------------------------------------+
     }
-    private fun isPasswordValid(text: String): Boolean = text.length >= 8
 }

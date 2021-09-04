@@ -11,5 +11,9 @@ class DrawerFragment : Fragment(R.layout.fragment_drawer) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        // +---------------------------------------------------------------------------------+
+        // | ESCREVA SEU CÓDIGO ACOMPANHANDO A AULA NO YOUTUBE                               |
+        // | JÁ APROVEITA E SEGUE O CANAL >> LINK PARA A AULA: https://youtu.be/X5B8Q6q22FU  |
+        // +---------------------------------------------------------------------------------+
     }
 }

@@ -18,15 +18,9 @@ class TabThreeFragment(val viewModel: TabViewModel) : Fragment(R.layout.fragment
 
         binding = FragmentTabThreeBinding.bind(view)
 
-        // Criar um observador que atualiza a UI
-        val tabContentObserver = Observer<String> { newContent ->
-            binding.contentTitle.text = viewModel.getCurrent(newContent)
-        }
-
-        viewModel.getContentObserver().observe(viewLifecycleOwner, tabContentObserver)
-
-        binding.btnTabThree.setOnClickListener {
-            viewModel.getContentObserver().setValue("Tab Three!")
-        }
+        // +---------------------------------------------------------------------------------+
+        // | ESCREVA SEU CÓDIGO ACOMPANHANDO A AULA NO YOUTUBE                               |
+        // | JÁ APROVEITA E SEGUE O CANAL >> LINK PARA A AULA: https://youtu.be/SGazP_G4ek0  |
+        // +---------------------------------------------------------------------------------+
     }
 }

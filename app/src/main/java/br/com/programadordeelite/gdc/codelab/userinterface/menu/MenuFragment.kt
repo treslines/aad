@@ -16,34 +16,9 @@ class MenuFragment : Fragment(R.layout.fragment_menu) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        setHasOptionsMenu(true)
-    }
-
-    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater.inflate(R.menu.menu_main, menu)
-        super.onCreateOptionsMenu(menu, inflater)
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
-            R.id.action_order -> {
-                navTo(R.id.action_menuFragment_to_orderFragment)
-                return true
-            }
-            R.id.action_status -> {
-                toast(getString(R.string.action_status_message))
-                return true
-            }
-            R.id.action_favorites -> {
-                toast(getString(R.string.action_favorites_message))
-                return true
-            }
-            R.id.action_contact -> {
-                toast(getString(R.string.action_contact_message))
-                return true
-            }
-            else -> Unit
-        }
-        return super.onOptionsItemSelected(item)
+        // +---------------------------------------------------------------------------------+
+        // | ESCREVA SEU CÓDIGO ACOMPANHANDO A AULA NO YOUTUBE                               |
+        // | JÁ APROVEITA E SEGUE O CANAL >> LINK PARA A AULA: https://youtu.be/QJj3T8H8myI  |
+        // +---------------------------------------------------------------------------------+
     }
 }

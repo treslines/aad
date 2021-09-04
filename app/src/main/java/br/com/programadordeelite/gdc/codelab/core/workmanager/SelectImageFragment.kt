@@ -40,7 +40,7 @@ class SelectImageFragment : Fragment(R.layout.fragment_select_image) {
         super.onCreate(savedInstanceState)
         // deve ser definido ou no onAttach ou onCreate
         launcher = registerForActivityResult(ActivityResultContracts.GetContent()){
-            handleImageRequestResult(it)
+            TODO("Not yet implemented")
         }
     }
 
@@ -49,65 +49,14 @@ class SelectImageFragment : Fragment(R.layout.fragment_select_image) {
 
         binding = FragmentSelectImageBinding.bind(view)
 
-        // recuperando o ultimo estado caso o usuário rotacione o aparelho
-        savedInstanceState?.let {
-            permissionRequestCount = it.getInt(KEY_PERMISSIONS_REQUEST_COUNT, 0)
-            userHasPermission = it.getBoolean(KEY_PERMISSIONS_GRANTED, false)
-        }
-
-        // asseguresse que o usuário tens as permissões necessárias
-        requestPermissionsOnlyTwice(userHasPermission)
-
-        // abrir o file chooser
-        binding.selectImage.setOnClickListener {
-            launcher.launch("image/*")
-        }
+        // +---------------------------------------------------------------------------------+
+        // | ESCREVA SEU CÓDIGO ACOMPANHANDO A AULA NO YOUTUBE                               |
+        // | JÁ APROVEITA E SEGUE O CANAL >> LINK PARA AS AULAS:                             |
+        // | https://youtu.be/5AGWzq9JpYo                                                    |
+        // | https://youtu.be/MJpeoRopmgw                                                    |
+        // | https://youtu.be/vGwr9XZ8xDY                                                    |
+        // +---------------------------------------------------------------------------------+
+        TODO("Not yet implemented")
     }
 
-    private var userHasPermission = false
-    private val permissions = arrayOf(
-        Manifest.permission.READ_EXTERNAL_STORAGE,
-        Manifest.permission.WRITE_EXTERNAL_STORAGE
-    )
-    private fun requestPermissionsOnlyTwice(hasPermissionsAlready: Boolean) {
-        if(!hasPermissionsAlready){
-            if (permissionRequestCount < MAX_NUMBER_REQUEST_PERMISSIONS) {
-                permissionRequestCount += 1
-                // NOVA API: PRESTA A ATENCÃO AGORA
-                val permissionChecker = registerForActivityResult(
-                    ActivityResultContracts.RequestMultiplePermissions()
-                ) { acceptedPermissions ->
-                    val permissionsIdentified = acceptedPermissions.all{it.key in permissions}
-                    val permissionsGrant = acceptedPermissions.all{it.value == true}
-                    if(permissionsIdentified && permissionsGrant) {
-                        permissionRequestCount = 0
-                        userHasPermission = true
-                    }
-                }
-                if(!userHasPermission){
-                    permissionChecker.launch(permissions)
-                }
-            } else {
-                Toast.makeText(
-                    requireContext(),
-                    R.string.set_permissions_in_settings,
-                    Toast.LENGTH_LONG
-                ).show()
-                binding.selectImage.isEnabled = false
-            }
-        }
-    }
-
-    private fun handleImageRequestResult(uri: Uri) {
-        // navegar para proxima etapa onde exibimos as opções de blur
-        navTo(R.id.blurFragment, bundleOf(Pair(KEY_IMAGE_URI, uri.toString())))
-        //findNavController().navigate(R.id.blurFragment, bundleOf(Pair(KEY_IMAGE_URI, uri.toString())))
-    }
-
-    // salvar estados em caso que o usuario rotacione o aparelho
-    override fun onSaveInstanceState(outState: Bundle) {
-        super.onSaveInstanceState(outState)
-        outState.putInt(KEY_PERMISSIONS_REQUEST_COUNT, permissionRequestCount)
-        outState.putBoolean(KEY_PERMISSIONS_GRANTED, userHasPermission)
-    }
 }

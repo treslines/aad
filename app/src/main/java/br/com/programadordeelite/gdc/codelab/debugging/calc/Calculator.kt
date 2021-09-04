@@ -1,13 +1,8 @@
 package br.com.programadordeelite.gdc.codelab.debugging.calc
 
 class Calculator {
-    enum class Operator { ADD, SUB, DIV, MUL }
-
-    fun add(firstOperand: Double, secondOperand: Double): Double = firstOperand + secondOperand
-
-    fun sub(firstOperand: Double, secondOperand: Double): Double = firstOperand - secondOperand
-
-    fun div(firstOperand: Double, secondOperand: Double): Double = firstOperand / secondOperand
-
-    fun mul(firstOperand: Double, secondOperand: Double): Double = firstOperand * secondOperand
+    // +---------------------------------------------------------------------------------+
+    // | ESCREVA SEU CÓDIGO ACOMPANHANDO A AULA NO YOUTUBE                               |
+    // | EM ANDAMENTO, APROVEITA E JÁ SEGUE O CANAL PARA NÃO PERDER O VÍDEO              |
+    // +---------------------------------------------------------------------------------+
 }

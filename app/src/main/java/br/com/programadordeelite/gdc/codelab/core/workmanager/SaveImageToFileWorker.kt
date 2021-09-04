@@ -11,9 +11,6 @@ import timber.log.Timber
 import java.text.SimpleDateFormat
 import java.util.*
 
-/**
- * Saves the image to a permanent file
- */
 class SaveImageToFileWorker(ctx: Context, params: WorkerParameters) : Worker(ctx, params) {
 
     private val title = "Blurred Image"
@@ -23,31 +20,13 @@ class SaveImageToFileWorker(ctx: Context, params: WorkerParameters) : Worker(ctx
     )
 
     override fun doWork(): Result {
-        // Makes a notification when the work starts and slows down the work so that
-        // it's easier to see each WorkRequest start, even on emulated devices
-        makeStatusNotification("Saving image", applicationContext)
-        sleep()
-
-        val resolver = applicationContext.contentResolver
-        return try {
-            val resourceUri = inputData.getString(KEY_IMAGE_URI)
-            if(resourceUri != null){
-                val bitmap = BitmapFactory.decodeStream(resolver.openInputStream(Uri.parse(resourceUri)))
-                val imageUrl = MediaStore.Images.Media.insertImage(resolver, bitmap, title, dateFormatter.format(Date()))
-                if (!imageUrl.isNullOrEmpty()) {
-                    val output = workDataOf(KEY_IMAGE_URI to imageUrl)
-                    Result.success(output)
-                } else {
-                    Timber.e("Writing to MediaStore failed")
-                    Result.failure()
-                }
-            }else{
-                Timber.e("Writing to MediaStore failed: Uri Null")
-                Result.failure()
-            }
-        } catch (exception: Exception) {
-            Timber.e(exception)
-            Result.failure()
-        }
+        // +---------------------------------------------------------------------------------+
+        // | ESCREVA SEU CÓDIGO ACOMPANHANDO A AULA NO YOUTUBE                               |
+        // | JÁ APROVEITA E SEGUE O CANAL >> LINK PARA AS AULAS:                             |
+        // | https://youtu.be/5AGWzq9JpYo                                                    |
+        // | https://youtu.be/MJpeoRopmgw                                                    |
+        // | https://youtu.be/vGwr9XZ8xDY                                                    |
+        // +---------------------------------------------------------------------------------+
+        TODO("Not yet implemented")
     }
 }

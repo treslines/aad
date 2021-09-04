@@ -13,44 +13,14 @@ import java.lang.IllegalArgumentException
 // https://developer.android.com/studio/command-line/adb.html
 class CalcFragment : Fragment(R.layout.fragment_calc) {
 
-    private val calculator by lazy { Calculator() }
     private lateinit var binding: FragmentCalcBinding
-    private val logTag by lazy { CalcFragment::class.java.simpleName }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentCalcBinding.bind(view)
-        binding.operationAddBtn.setOnClickListener { compute(Calculator.Operator.ADD) }
-        binding.operationSubBtn.setOnClickListener { compute(Calculator.Operator.SUB) }
-        binding.operationDivBtn.setOnClickListener { compute(Calculator.Operator.DIV) }
-        binding.operationMulBtn.setOnClickListener { compute(Calculator.Operator.MUL) }
-    }
-
-    private fun compute(operation: Calculator.Operator) {
-        try {
-            // Observar variavel
-            val operandOne = binding.operandOneEditText.text.toString().toDouble()
-            val operandTwo = binding.operandTwoEditText.text.toString().toDouble()
-            // TODO: rfer criar filtro para minhas tarefas
-            binding.operationResultTextView.setText(
-                when (operation) {
-                    Calculator.Operator.ADD -> calculator.add(operandOne, operandTwo).toString()
-                    Calculator.Operator.SUB -> calculator.sub(operandOne, operandTwo).toString()
-                    Calculator.Operator.MUL -> calculator.mul(operandOne, operandTwo).toString()
-                    Calculator.Operator.DIV -> try {
-                        val division = calculator.div(operandOne, operandTwo)
-                        if(division.isFinite()) division.toString() else throw IllegalArgumentException("Illegal Division")
-                    } catch (iae: IllegalArgumentException) {
-                        Timber.i("IllegalArgumentException Com Timber") // Timber sem exception
-                        Log.e(logTag, "IllegalArgumentException Com LogCat", iae) // para exemplificar o uso de Log
-                        getString(R.string.computationError)
-                    }
-                }
-            )
-        } catch (nfe: NumberFormatException) {
-            Timber.e(nfe, "NumberFormatException com Timber") // para exemplificar o uso do timber - com exception
-            binding.operationResultTextView.setText(getString(R.string.computationError))
-            return
-        }
+        // +---------------------------------------------------------------------------------+
+        // | ESCREVA SEU CÓDIGO ACOMPANHANDO A AULA NO YOUTUBE                               |
+        // | EM ANDAMENTO, APROVEITA E JÁ SEGUE O CANAL PARA NÃO PERDER O VÍDEO              |
+        // +---------------------------------------------------------------------------------+
     }
 }

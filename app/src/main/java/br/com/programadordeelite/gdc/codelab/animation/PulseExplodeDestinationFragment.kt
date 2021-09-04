@@ -11,6 +11,9 @@ class PulseExplodeDestinationFragment : Fragment(R.layout.fragment_pulse_explode
     private lateinit var binding: FragmentPulseExplodeDestinationBinding
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding = FragmentPulseExplodeDestinationBinding.bind(view)
+        // +---------------------------------------------------------------------------------+
+        // | ESCREVA SEU CÓDIGO ACOMPANHANDO A AULA NO YOUTUBE                               |
+        // | LINK PARA AULA: EM ANDAMENTO - JÁ SEGUE O CANLA PARA NÃO PERDER O VÍDEO         |
+        // +---------------------------------------------------------------------------------+
     }
 }
