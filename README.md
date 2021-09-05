@@ -59,7 +59,9 @@ Para aqueles que quiserem meter a mão na massa, eu criei uma branch chamada **"
 
 
 ### 🧪 **CODELAB: TESTING(APRENDA A TESTAR SEU APP > INTERFACE GRÁFICA e CÓDIGO)**
-- EM ANDAMENTO
+| Titulo        | 📺 Youtube Link |
+| :------------- |:-------------:|
+| TESTAR APP - Como escrever e executar testes unitários automatizados no ANDROID STUDIO JUNIT4 | <a href="https://youtu.be/9Pf-FJdLEEg" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/%5BTESTAR-APP%5D-COMO-escrever-e-executar-testes-unit%C3%A1rios-automatizados-no-ANDROID-STUDIO-JUNIT4.png" width="100" height="56"></a> |
 
 
 ### 🧪 **CODELAB: ANIMATION(ANIMAÇÕES COM KOTLIN)**
