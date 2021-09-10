@@ -1,16 +1,24 @@
 # Google Developer Certification 🥇 (Android Associated Certification)
 
-🇧🇷 **Preparatório** para Certificação de desenvolvedor do Google 🏁 **EM APENAS 23 DIAS** (Android Associate Certification) - um guia passo a passo completo com vídeos no Youtube passando por todas as seções oficiais de cada codelab, **POREM TUDO EM PORTUGUÊS** 🇧🇷 E EM **KOTLIN!** ⚽😀
+🇧🇷 **Preparatório** 🇵🇹 para Certificação de desenvolvedor do Google 🏁 **EM APENAS 23 DIAS** (Android Associate Certification) - um guia passo a passo completo com vídeos no Youtube passando por todas as seções oficiais de cada codelab, 🇵🇹 **POREM TUDO EM PORTUGUÊS** 🇧🇷 E EM **KOTLIN!** ⚽😀
 
-⚡ **PARA VOCÊ ESTUDANTE:** ⚡ 
+## ⚡ **Para você estudante:** ⚡ 
 Para aqueles que quiserem meter a mão na massa, eu criei uma branch chamada **"skeleton"** onde você encontra toda a estrutura base do projeto, porém sem o código lógico. Esta estrutura contém apenas os arquivos de layout, navegação etc., para que você possa acompanhar as aulas a baixo e ir implementando você mesmo! Obrigado **Adilson Magalhaes Jäger** pelo valioso feedback e 💡 ideia para esta branch! 
 
-🎉 **Ta curtindo esse Projeto?** Deixa uma estrelinha ⭐ ai para me motivar! 😉
+## ❤️‍🔥 **Mais uma novidade para te ajudar na PROVA:** ❤️‍🔥
+Agora, além de listar todo conteúdo programático da certificação Android Associated Developer, eu também coloquei **ÍNDICES** em todos os vídeos dessa série. 🎓 (ISSO MESMO, ÍNDICES 🔝) Assim, além dos títulos e thumbnails que te levam direto para o canal do <a href="https://www.youtube.com/c/ProgramadordeElite" target="_blank">Programador de Elite</a>, vocé também pode agora pular entre os capítulos facilmente durante a sua prova. 👉 Melhor do que isso, so dois disso né?😀
 
-💻 **Quer programar mais rápido?** Da uma sacada nestes atalhos do Intellij: https://programadordeelite.com.br/android
+## 🤝 **Gostaria de Contribuir de alguma maneira?**
+Me ajudem a fomentar e fortalecer nossa **🤖 COMUNIDADE ANDROID BRASIL/PORTUGAL 🤖** mostrando esse Projeto a grupos de #️⃣ slack, 💬 whatsapp, 📖 facebook etc. 
+Por mais conteúdo de qualidade e em 🇵🇹 Português! 🇧🇷 Estamos juntos!👊
 
+## 💻 **Quer programar mais rápido?** 
+Da uma sacada nestes atalhos (Shortcuts) do Intellij: https://programadordeelite.com.br/android que disponibilizei como overview para seu dia a dia **GRATUITAMENTE!**
 
-### ⚙️ **SETUP PROJETO**
+## 🎉 **Ta curtindo o Projeto?** 
+Deixa uma estrelinha ⭐ ai para me motivar! 😉 
+
+### ⚙️ **SETUP DO PROJETO ANDROID**
 | Titulo        | 📺 Youtube Link |
 | :------------- |:-------------:|
 | Criando o projeto e fazendo todo o setup usando navigation graph | <a href="https://youtu.be/NjhT6ZA62LQ" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/google_certification_android_associated_developer_setup_mini.png" width="100" height="56"></a> |
@@ -48,20 +56,20 @@ Para aqueles que quiserem meter a mão na massa, eu criei uma branch chamada **"
 | Titulo        | 📺 Youtube Link |
 | :------------- |:-------------:|
 | Como usar o ViewModel com o banco de dados Room e LiveData no android studio Kotlin STUDIO | <a href="https://youtu.be/EqkqNjY7uGs" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/%5BMVVM%5D-Como-usar-o-ViewModel-com-o-banco-de-dados-Room-e-LiveData-no-android-studio-Kotlin_mini.png" width="100" height="56"></a> |
-| **AGENDADO (JÁ SEGUE O CANAL PARA NAO PERDER O EPISÓDIO)** Como USAR SHARED PREFERENCES e PERSISTIR na MEMÓRIA? KOTLIN ANDROID  | <a href="https://youtu.be/ScctmGl47tc" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/%5BSALVAR-PREFER%C3%8ANCIAS%5D-Como-USAR-SHARED-PREFERENCES-e-PERSISTIR-na-MEM%C3%93RIA-KOTLIN-ANDROID-STUDIO_mini.png" width="100" height="56"></a> |
-| **AGENDADO (JÁ SEGUE O CANAL PARA NAO PERDER O EPISÓDIO)** INJEÇÃO DE DEPENDÊNCIA - APRENDA A CRIAR E USAR O ViewModelFactory & ViewModelProvider - KOTLIN ANDROID STUDIO  | <a href="https://youtu.be/A9-BDZ9kpU8" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/%5BINJE%C3%87%C3%83O-DE-DEPEND%C3%8ANCIA%5D-APRENDA-A-CRIAR-E-USAR-O-VIEWMODELFACTORY-KOTLIN-ANDROID-STUDIO.png" width="100" height="56"></a> |
-| **AGENDADO (JÁ SEGUE O CANAL PARA NAO PERDER O EPISÓDIO)** CONFIGURAÇÕES DO APP - COMO CRIAR TELA DE CONFIGURAÇÕES OU SETTINGS NO SEU APLICATIVO ANDROID  | <a href="https://youtu.be/GTCqufPTi1o" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/%5BCONFIGURA%C3%87%C3%95ES-DO-APP%5D-COMO-CRIAR-TELA-DE-CONFIGURA%C3%87%C3%95ES-OU-SETTINGS-NO-SEU-APLICATIVO-ANDROID.png" width="100" height="56"></a> |
+| **🚩AGENDADO: 13/09/2021** Como USAR SHARED PREFERENCES e PERSISTIR na MEMÓRIA? KOTLIN ANDROID  | <a href="https://youtu.be/ScctmGl47tc" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/%5BSALVAR-PREFER%C3%8ANCIAS%5D-Como-USAR-SHARED-PREFERENCES-e-PERSISTIR-na-MEM%C3%93RIA-KOTLIN-ANDROID-STUDIO_mini.png" width="100" height="56"></a> |
+| **🚩 AGENDADO: 20/09/2021** INJEÇÃO DE DEPENDÊNCIA - APRENDA A CRIAR E USAR O ViewModelFactory & ViewModelProvider - KOTLIN ANDROID STUDIO  | <a href="https://youtu.be/A9-BDZ9kpU8" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/%5BINJE%C3%87%C3%83O-DE-DEPEND%C3%8ANCIA%5D-APRENDA-A-CRIAR-E-USAR-O-VIEWMODELFACTORY-KOTLIN-ANDROID-STUDIO.png" width="100" height="56"></a> |
+| **🚩 AGENDADO: 27/09/2021** CONFIGURAÇÕES DO APP - COMO CRIAR TELA DE CONFIGURAÇÕES OU SETTINGS NO SEU APLICATIVO ANDROID  | <a href="https://youtu.be/GTCqufPTi1o" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/%5BCONFIGURA%C3%87%C3%95ES-DO-APP%5D-COMO-CRIAR-TELA-DE-CONFIGURA%C3%87%C3%95ES-OU-SETTINGS-NO-SEU-APLICATIVO-ANDROID.png" width="100" height="56"></a> |
 
 ### 🧪 **CODELAB: DEBUGGING(DEPURANDO/CORRIGINDO BUGS/ERROS DO SEU APP)**
 | Titulo        | 📺 Youtube Link |
 | :------------- |:-------------:|
-| **AGENDADO (JÁ SEGUE O CANAL PARA NAO PERDER O EPISÓDIO)** DEPURAÇÃO - COMO CORRIGIR ERROS USANDO DEBUG, LOGCAT, TIMBER E BREAK POINTS NO ANDROID STUDIO | <a href="https://youtu.be/hSsi_Gu8csw" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/%5BDEBUGANDO%5D-COMO-CORRIGIR-ERROS-USANDO-DEBUG-LOGCAT-TIMBER-E-BREAK-POINTS-NO-ANDROID-STUDIO.png" width="100" height="56"></a> |
+| **🚩 AGENDADO: 04/10/2021** DEPURAÇÃO - COMO CORRIGIR ERROS USANDO DEBUG, LOGCAT, TIMBER E BREAK POINTS NO ANDROID STUDIO | <a href="https://youtu.be/hSsi_Gu8csw" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/%5BDEBUGANDO%5D-COMO-CORRIGIR-ERROS-USANDO-DEBUG-LOGCAT-TIMBER-E-BREAK-POINTS-NO-ANDROID-STUDIO.png" width="100" height="56"></a> |
 
 
 ### 🧪 **CODELAB: TESTING(APRENDA A TESTAR SEU APP > INTERFACE GRÁFICA e CÓDIGO)**
 | Titulo        | 📺 Youtube Link |
 | :------------- |:-------------:|
-| **AGENDADO (JÁ SEGUE O CANAL PARA NAO PERDER O EPISÓDIO)** TESTAR APP - Como escrever e executar testes unitários automatizados no ANDROID STUDIO JUNIT4 | <a href="https://youtu.be/9Pf-FJdLEEg" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/%5BTESTAR-APP%5D-COMO-escrever-e-executar-testes-unit%C3%A1rios-automatizados-no-ANDROID-STUDIO-JUNIT4.png" width="100" height="56"></a> |
+| **🚩 AGENDADO: 11/10/2021** TESTAR APP - Como escrever e executar testes unitários automatizados no ANDROID STUDIO JUNIT4 | <a href="https://youtu.be/9Pf-FJdLEEg" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/%5BTESTAR-APP%5D-COMO-escrever-e-executar-testes-unit%C3%A1rios-automatizados-no-ANDROID-STUDIO-JUNIT4.png" width="100" height="56"></a> |
 
 
 ### 🧪 **CODELAB: ANIMATION(ANIMAÇÕES COM KOTLIN)**
