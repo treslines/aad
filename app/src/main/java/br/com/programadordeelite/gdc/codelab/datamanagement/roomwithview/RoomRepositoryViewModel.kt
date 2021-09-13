@@ -7,6 +7,7 @@ import androidx.room.*
 import androidx.sqlite.db.SupportSQLiteDatabase
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.launch
 
 // +----------------------------------------------------------------------+
@@ -35,20 +36,52 @@ interface WordDao {
 // +-----------------------------------------------------------------------------------------------+
 // Declare o DAO como uma propriedade privada no construtor. Passe apenas o DAO
 // em vez do banco de dados inteiro, porque você só precisamos acessar o DAO
-class WordRepository(private val wordDao: WordDao) {
+class WordRepository(private val wordDao: WordDao): Repository {
 
     // Room executa todas as consultas em um thread separado.
     // Flow observado notificará o observador quando os dados forem alterados.
-    val allWords: Flow<List<Word>> = wordDao.getAlphabetizedWords()
+    // val allWords: Flow<List<Word>> = wordDao.getAlphabetizedWords()
 
     // Por padrão, o Room executa consultas suspensas fora do thread principal, portanto,
     // não precisamos implementar qualquer outra coisa para garantir que não estamos fazendo
     // um trabalho de banco de dados de longa duração fora da Thread principal.
     @Suppress("RedundantSuspendModifier")
     @WorkerThread
-    suspend fun insert(word: Word) {
+    override suspend fun insert(word: Word) {
         wordDao.insert(word)
     }
+
+    override fun observeWords(): Flow<List<Word>> {
+        return wordDao.getAlphabetizedWords()
+    }
+}
+
+// +-----------------------------------------------------------------------+
+// | >>> TESTANDO REPOSITORY <<< INTERFACE TORNA REPOSITORIO INTERCAMBIÁVEL|
+// +-----------------------------------------------------------------------+
+class MockWordRepository(initialTestWords: List<Word>): Repository {
+    private val allWords = mutableListOf<Word>()
+    private var wordsFlow = flowOf<List<Word>>()
+
+    init {
+        allWords.addAll(initialTestWords)
+        wordsFlow = flowOf<List<Word>>(allWords)
+    }
+
+    override suspend fun insert(word: Word) {
+        allWords.add(word)
+        wordsFlow = flowOf<List<Word>>(allWords)
+    }
+
+    override fun observeWords(): Flow<List<Word>> = wordsFlow
+}
+
+// +-----------------------------------------------------------------------+
+// | >>> TESTANDO REPOSITORY <<< INTERFACE TORNA REPOSITORIO INTERCAMBIÁVEL|
+// +-----------------------------------------------------------------------+
+interface Repository {
+    suspend fun insert(word: Word)
+    fun observeWords(): Flow<List<Word>>
 }
 
 // +-----------------------------------------------------------------------+
@@ -109,13 +142,13 @@ abstract class WordRoomDatabase : RoomDatabase() {
 // +---------------------------------------------------------------------------+
 // | >>> 5° <<< VIEW MODEL: ATUALIZAR DADOS E RETEM A LÓGICA DA UI EM QUESTÃO  |
 // +---------------------------------------------------------------------------+
-class WordViewModel(private val repository: WordRepository) : ViewModel() {
+class WordViewModel(private val repository: Repository) : ViewModel() {
 
     // Usar LiveData e armazenar em cache o que allWords retorna tem vários benefícios:
     // - Podemos colocar um observador nos dados (em vez de pesquisar as alterações) e apenas
     //   atualizar a IU quando os dados realmente mudam.
     // - O repositório é completamente separado da IU por meio do ViewModel.
-    val allWords: LiveData<List<Word>> = repository.allWords.asLiveData()
+    val allWords: LiveData<List<Word>> = repository.observeWords().asLiveData()
 
     /** Lançamento de uma nova co-rotina para inserir os dados de forma não bloqueadora */
     fun insert(word: Word) = viewModelScope.launch {
@@ -126,7 +159,7 @@ class WordViewModel(private val repository: WordRepository) : ViewModel() {
 // +---------------------------------------------------------+
 // | >>> 6° <<< MODEL FACTORY: CRIADOR DE OBJETOS COMPLEXOS  |
 // +---------------------------------------------------------+
-class WordViewModelFactory(private val repository: WordRepository) : ViewModelProvider.Factory {
+class WordViewModelFactory(private val repository: Repository) : ViewModelProvider.Factory {
 
     @Suppress("UNCHECKED_CAST")
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
