@@ -1,23 +1,32 @@
 # Google Developer Certification 🥇 (Android Associated Certification)
 
-🇧🇷 **Preparatório** 🇵🇹 para Certificação de desenvolvedor do Google 🏁 **EM APENAS 23 DIAS** (Android Associate Certification) - um guia passo a passo completo com vídeos no Youtube passando por todas as seções oficiais de cada codelab, 🇵🇹 **POREM TUDO EM PORTUGUÊS** 🇧🇷 E EM **KOTLIN!** ⚽😀
 
+## 🇧🇷 **Preparatório** 🇵🇹 
+para Certificação de desenvolvedor do Google 🏁 **EM APENAS 23 DIAS** (Android Associate Certification) - um guia passo a passo completo com vídeos no Youtube passando por todas as seções oficiais de cada codelab, 🇵🇹 **POREM TUDO EM PORTUGUÊS** 🇧🇷 E EM **KOTLIN!** ⚽😀
+</br>
+</br>
 ## ⚡ **Para você estudante:** ⚡ 
 Para aqueles que quiserem meter a mão na massa, eu criei uma branch chamada **"skeleton"** onde você encontra toda a estrutura base do projeto, porém sem o código lógico. Esta estrutura contém apenas os arquivos de layout, navegação etc., para que você possa acompanhar as aulas a baixo e ir implementando você mesmo! Obrigado **Adilson Magalhaes Jäger** pelo valioso feedback e 💡 ideia para esta branch! 
-
-## ❤️‍🔥 **Mais uma novidade para te ajudar na PROVA:** ❤️‍🔥
+</br>
+</br>
+## ❤️ **Mais uma novidade para te ajudar na PROVA:** ❤️
 Agora, além de listar todo conteúdo programático da certificação Android Associated Developer, eu também coloquei **ÍNDICES** em todos os vídeos dessa série. 🎓 (ISSO MESMO, ÍNDICES 🔝) Assim, além dos títulos e thumbnails que te levam direto para o canal do <a href="https://www.youtube.com/c/ProgramadordeElite" target="_blank">Programador de Elite</a>, vocé também pode agora pular entre os capítulos facilmente durante a sua prova. 👉 Melhor do que isso, so dois disso né?😀
-
-## 🤝 **Gostaria de Contribuir de alguma maneira?**
-Me ajudem a fomentar e fortalecer nossa **🤖 COMUNIDADE ANDROID BRASIL/PORTUGAL 🤖** mostrando esse Projeto a grupos de #️⃣ slack, 💬 whatsapp, 📖 facebook etc. 
+</br>
+</br>
+## 🤝 **Gostaria de Contribuir de alguma maneira?** 🤝
+Me ajudem a fomentar e fortalecer nossa **🤖 COMUNIDADE ANDROID BRASIL/PORTUGAL 🤖** mostrando esse Projeto a grupos de #️⃣ **slack**, 💬 **whatsapp**, 📖 **facebook** etc. 
 Por mais conteúdo de qualidade e em 🇵🇹 Português! 🇧🇷 Estamos juntos!👊
-
-## 💻 **Quer programar mais rápido?** 
+</br>
+</br>
+## 💻 **Quer programar mais rápido?** 💻
 Da uma sacada nestes atalhos (Shortcuts) do Intellij: https://programadordeelite.com.br/android que disponibilizei como overview para seu dia a dia **GRATUITAMENTE!**
-
-## 🎉 **Ta curtindo o Projeto?** 
-Deixa uma estrelinha ⭐ ai para me motivar! 😉 
-
+</br>
+</br>
+## 🎉 **Ta curtindo o Projeto?** 🎉
+👉 Deixa uma estrelinha ⭐ ai para me motivar! 😉 
+</br>
+</br>
+</br>
 ### ⚙️ **SETUP DO PROJETO ANDROID**
 | Titulo        | 📺 Youtube Link |
 | :------------- |:-------------:|
@@ -70,7 +79,7 @@ Deixa uma estrelinha ⭐ ai para me motivar! 😉
 | Titulo        | 📺 Youtube Link |
 | :------------- |:-------------:|
 | **🚩 AGENDADO: 11/10/2021** TESTAR APP - Como escrever e executar testes unitários automatizados no ANDROID STUDIO JUNIT4 | <a href="https://youtu.be/9Pf-FJdLEEg" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/%5BTESTAR-APP%5D-COMO-escrever-e-executar-testes-unit%C3%A1rios-automatizados-no-ANDROID-STUDIO-JUNIT4.png" width="100" height="56"></a> |
-
+| **🚩 AGENDADO: 18/10/2021** MOCKANDO DADOS - COMO escrever unit test para viewmodel e livedata no ANDROID STUDIO EM KOTLIN | <a href="https://youtu.be/0PdhvCKtu0s" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/%5BMOCKANDO-DADOS%5D-COMO-escrever-unit-test-para-viewmodel-e-livedata-no-ANDROID-STUDIO-EM-KOTLIN.png" width="100" height="56"></a> |
 
 ### 🧪 **CODELAB: ANIMATION(ANIMAÇÕES COM KOTLIN)**
 - EM ANDAMENTO
