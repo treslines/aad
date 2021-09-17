@@ -59,8 +59,8 @@ class MainFragment : androidx.fragment.app.Fragment(R.layout.fragment_main) {
         // +-----------------------------------------------------------------+
         // https://android.github.io/android-test/downloads/espresso-cheat-sheet-2.1.0.pdf
         // Melhores práticas de teste >> https://developer.android.com/training/testing
-        binding.codelabUnitTests.setOnClickListener { toast("Veja >> Pacote: test") }
-        binding.codelabTestingJunitMockito.setOnClickListener { toast("Veja >> Pacote: androidTest") }
-        binding.codelabEspressoUiTesting.setOnClickListener { toast("Veja >> Pacote: AndroidTest") }
+        binding.codelabUnitTests.setOnClickListener { toast("Veja >> Video no Youtube") }
+        binding.codelabTestingJunitMockito.setOnClickListener { toast("Veja >> Video no Youtube") }
+        binding.codelabEspressoUiTesting.setOnClickListener { toast("Veja >> Video no Youtube") }
     }
 }

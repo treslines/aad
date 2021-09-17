@@ -37,6 +37,33 @@
                 android:value="br.com.programadordeelite.gdc.MainActivity" />
         </activity>
 
+        <!-- FIX PARA O PROBLEMA COM android:exported OCASIONADO POR LIBS TERCEIRAS -->
+        <activity
+            android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity"
+            android:theme="@android:style/Theme"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity"
+            android:theme="@android:style/Theme"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity"
+            android:theme="@android:style/Theme.Dialog"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <!-- FIX PARA O PROBLEMA COM android:exported OCASIONADO POR LIBS TERCEIRAS -->
         <receiver android:name=".codelab.core.notification.DynamicReceiver"
             android:exported="true">
             <intent-filter>
