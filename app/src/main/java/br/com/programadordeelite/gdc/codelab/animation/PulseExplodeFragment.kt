@@ -16,9 +16,13 @@ class PulseExplodeFragment : Fragment(R.layout.fragment_pulse_explode) {
         binding = FragmentPulseExplodeBinding.bind(view)
 
         // ==================================================
-        //  PULSE EXPLODE ANIMATION       -------------------
+        //  PULSE ANIMATION               -------------------
         // ==================================================
         startPulseAnim(binding.buttonPulseBackgroundAnimation)
+
+        // ==================================================
+        //  EXPLODE ANIMATION             -------------------
+        // ==================================================
         binding.buttonPulse.setOnClickListener {
             binding.buttonPulse.setVisible(false)
             startExplodeAnim(binding.buttonPulseBackgroundAnimation, ::showNextScreen)
@@ -36,6 +40,7 @@ class PulseExplodeFragment : Fragment(R.layout.fragment_pulse_explode) {
             .scaleY(SCALE_UP_VALUE)
             .setDuration(PULSE_DURATION)
             .withEndAction { kotlin.run { scaleDown(view) } }
+            .start()
     }
 
     private fun scaleDown(view: View) {
@@ -44,6 +49,7 @@ class PulseExplodeFragment : Fragment(R.layout.fragment_pulse_explode) {
             .scaleY(SCALE_DOWN_VALUE)
             .setDuration(PULSE_DURATION)
             .withEndAction { kotlin.run { scaleUp(view) } }
+            .start()
     }
 
     private fun startExplodeAnim(view: View, endAction: () -> Unit) = shrink(view, endAction)
@@ -58,6 +64,7 @@ class PulseExplodeFragment : Fragment(R.layout.fragment_pulse_explode) {
             .scaleY(SHRINK_VALUE)
             .setDuration(SHRINK_DURATION)
             .withEndAction { kotlin.run { explode(view, endAction) } }
+            .start()
     }
 
     private fun explode(view: View, endAction: () -> Unit) {
@@ -66,6 +73,7 @@ class PulseExplodeFragment : Fragment(R.layout.fragment_pulse_explode) {
             .scaleY(EXPLODE_VALUE)
             .setDuration(EXPLODE_DURATION)
             .withEndAction { kotlin.run { endAction() } }
+            .start()
     }
 
     companion object AnimProps {
