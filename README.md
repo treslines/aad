@@ -84,4 +84,6 @@ Da uma sacada nestes atalhos (Shortcuts) do Intellij: https://programadordeelite
 | **🚩 AGENDADO: 07/10/2021** COMO USAR MOCKITO PARA TESTAR NAVEGAÇÃO DO APP ANDROID STUDIO 🐞 TESTANDO APP | <a href="https://youtu.be/5WGzrPf86XU" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/%5BTESTANDO-APP%5D-COMO-USAR-MOCKITO-PARA-TESTAR-NAVEGA%C3%87%C3%83O-DO-APP-ANDROID-STUDIO-INTRODU%C3%87%C3%83O.png" width="100" height="56"></a> |
 
 ### 🧪 **CODELAB: ANIMATION(ANIMAÇÕES COM KOTLIN)**
+| Titulo        | 📺 Youtube Link |
+| :------------- |:-------------:|
 | **🚩 AGENDADO: 11/10/2021** COMO CRIAR ANIMAÇÕES PERSONALIZADAS EM KOTLIN NO ANDROID STUDIO - INTRODUÇÃO ÀS ANIMAÇÕES | <a href="https://youtu.be/__oVsMoF7Fk" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/COMO-CRIAR-ANIMA%C3%87%C3%95ES-PERSONALIZADAS-EM-KOTLIN-NO-ANDROID-STUDIO-%5BINTRODU%C3%87%C3%83O-%C3%80S-ANIMA%C3%87%C3%95ES%5D.png" width="100" height="56"></a> |
