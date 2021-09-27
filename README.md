@@ -73,7 +73,7 @@ Da uma sacada nestes atalhos (Shortcuts) do Intellij: https://programadordeelite
 ### 🧪 **CODELAB: DEBUGGING(DEPURANDO/CORRIGINDO BUGS/ERROS DO SEU APP)**
 | Titulo        | 📺 Youtube Link |
 | :------------- |:-------------:|
-| **🚩 AGENDADO: 27/09/2021** DEPURAÇÃO - COMO CORRIGIR ERROS USANDO DEBUG, LOGCAT, TIMBER E BREAK POINTS NO ANDROID STUDIO | <a href="https://youtu.be/hSsi_Gu8csw" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/%5BDEBUGANDO%5D-COMO-CORRIGIR-ERROS-USANDO-DEBUG-LOGCAT-TIMBER-E-BREAK-POINTS-NO-ANDROID-STUDIO.png" width="100" height="56"></a> |
+| COMO CORRIGIR ERROS USANDO DEBUG, LOGCAT, TIMBER E BREAK POINTS NO ANDROID STUDIO - DEPURAÇÃO | <a href="https://youtu.be/hSsi_Gu8csw" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/%5BDEBUGANDO%5D-COMO-CORRIGIR-ERROS-USANDO-DEBUG-LOGCAT-TIMBER-E-BREAK-POINTS-NO-ANDROID-STUDIO.png" width="100" height="56"></a> |
 
 
 ### 🧪 **CODELAB: TESTING(APRENDA A TESTAR SEU APP > INTERFACE GRÁFICA e CÓDIGO)**
