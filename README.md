@@ -1,10 +1,15 @@
-# Google Developer Certification 🥇 (Android Associated Certification)
+# Google Developer Certification 🥇 (Associate Android Developer)
 
 
 ## 🇧🇷 **Preparatório** 🇵🇹 
 para Certificação de desenvolvedor do Google 🏁 **EM APENAS 23 DIAS** (Android Associate Certification) - um guia passo a passo completo com vídeos no Youtube passando por todas as seções oficiais de cada codelab, 🇵🇹 **POREM TUDO EM PORTUGUÊS** 🇧🇷 E EM **KOTLIN!** ⚽😀
 </br>
-</br>
+
+| 🎨 App Multi-Uso        | 🎨 Resultdo Final |
+| :------------- |:-------------:|
+| <img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/google-android-certification-associate-android-developer1.png" width="240" height="520"> | <img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/google-android-certification-associate-android-developer2.png" width="240" height="520">|
+
+
 ## ⚡ **Para você estudante:** ⚡ 
 Para aqueles que quiserem meter a mão na massa, eu criei uma branch chamada **"skeleton"** onde você encontra toda a estrutura base do projeto, porém sem o código lógico. Esta estrutura contém apenas os arquivos de layout, navegação etc., para que você possa acompanhar as aulas a baixo e ir implementando você mesmo! Obrigado **Adilson Magalhaes Jäger** pelo valioso feedback e 💡 ideia para esta branch! 
 </br>
@@ -87,3 +92,8 @@ Da uma sacada nestes atalhos (Shortcuts) do Intellij: https://programadordeelite
 | Titulo        | 📺 Youtube Link |
 | :------------- |:-------------:|
 | **🚩 AGENDADO: 11/10/2021** COMO CRIAR ANIMAÇÕES PERSONALIZADAS EM KOTLIN NO ANDROID STUDIO - INTRODUÇÃO ÀS ANIMAÇÕES | <a href="https://youtu.be/__oVsMoF7Fk" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/COMO-CRIAR-ANIMA%C3%87%C3%95ES-PERSONALIZADAS-EM-KOTLIN-NO-ANDROID-STUDIO-%5BINTRODU%C3%87%C3%83O-%C3%80S-ANIMA%C3%87%C3%95ES%5D.png" width="100" height="56"></a> |
+
+---
+
+### ⚽ **OUTROS REPOSITÓRIOS QUE VOCÊ VAI CURTIR MUITO:**
+🇧🇷 **Almanac do Desenvolvedor Profissional Android** 🇵🇹 <a href="https://github.com/treslines/desafios_comuns_android" target="_blank"> 👉 **DESAFIOS E PROBLEMAS COMUNS NA VIDA DO DESENVOLVEDOR ANDROID**</a>
