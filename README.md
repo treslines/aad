@@ -96,4 +96,11 @@ Da uma sacada nestes atalhos (Shortcuts) do Intellij: https://programadordeelite
 ---
 
 ### ⚽ **OUTROS REPOSITÓRIOS QUE VOCÊ VAI CURTIR MUITO:**
-🇧🇷 **Almanac do Desenvolvedor Profissional Android** 🇵🇹 <a href="https://github.com/treslines/desafios_comuns_android" target="_blank"> 👉 **DESAFIOS E PROBLEMAS COMUNS NA VIDA DO DESENVOLVEDOR ANDROID**</a>
+🇧🇷 **Almanac do Desenvolvedor Profissional Android** 🇵🇹 
+</br>
+<a href="https://github.com/treslines/desafios_comuns_android" target="_blank"> 👉 **DESAFIOS E PROBLEMAS COMUNS NA VIDA DO DESENVOLVEDOR ANDROID**</a>
+
+| Clica na Imagem |
+| :------------- |
+| <a href="https://github.com/treslines/desafios_comuns_android" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/desafios_problemas_comuns_na_vida_do_desenvolvedor_android.png" width="240" height="520"></a> |
+
