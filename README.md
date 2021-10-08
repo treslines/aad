@@ -85,8 +85,8 @@ Da uma sacada nestes atalhos (Shortcuts) do Intellij: https://programadordeelite
 | Titulo        | 📺 Youtube Link |
 | :------------- |:-------------:|
 | Como escrever e executar testes unitários automatizados no ANDROID STUDIO JUNIT4 - Testar App | <a href="https://youtu.be/9Pf-FJdLEEg" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/%5BTESTAR-APP%5D-COMO-escrever-e-executar-testes-unit%C3%A1rios-automatizados-no-ANDROID-STUDIO-JUNIT4.png" width="100" height="56"></a> |
-| **🚩 AGENDADO: 04/10/2021** MOCKANDO DADOS - COMO escrever unit test para viewmodel e livedata no ANDROID STUDIO EM KOTLIN | <a href="https://youtu.be/0PdhvCKtu0s" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/%5BMOCKANDO-DADOS%5D-COMO-escrever-unit-test-para-viewmodel-e-livedata-no-ANDROID-STUDIO-EM-KOTLIN.png" width="100" height="56"></a> |
-| **🚩 AGENDADO: 07/10/2021** COMO USAR MOCKITO PARA TESTAR NAVEGAÇÃO DO APP ANDROID STUDIO 🐞 TESTANDO APP | <a href="https://youtu.be/5WGzrPf86XU" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/%5BTESTANDO-APP%5D-COMO-USAR-MOCKITO-PARA-TESTAR-NAVEGA%C3%87%C3%83O-DO-APP-ANDROID-STUDIO-INTRODU%C3%87%C3%83O.png" width="100" height="56"></a> |
+| COMO escrever unit test para viewmodel e livedata no ANDROID STUDIO EM KOTLIN - MOCKANDO DADOS | <a href="https://youtu.be/0PdhvCKtu0s" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/%5BMOCKANDO-DADOS%5D-COMO-escrever-unit-test-para-viewmodel-e-livedata-no-ANDROID-STUDIO-EM-KOTLIN.png" width="100" height="56"></a> |
+| COMO USAR MOCKITO PARA TESTAR NAVEGAÇÃO DO APP ANDROID STUDIO 🐞 TESTANDO APP | <a href="https://youtu.be/5WGzrPf86XU" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/%5BTESTANDO-APP%5D-COMO-USAR-MOCKITO-PARA-TESTAR-NAVEGA%C3%87%C3%83O-DO-APP-ANDROID-STUDIO-INTRODU%C3%87%C3%83O.png" width="100" height="56"></a> |
 
 ### 🧪 **CODELAB: ANIMATION(ANIMAÇÕES COM KOTLIN)**
 | Titulo        | 📺 Youtube Link |
