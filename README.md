@@ -91,7 +91,7 @@ Da uma sacada nestes atalhos (Shortcuts) do Intellij: https://programadordeelite
 ### 🧪 **CODELAB: ANIMATION(ANIMAÇÕES COM KOTLIN)**
 | Titulo        | 📺 Youtube Link |
 | :------------- |:-------------:|
-| **🚩 AGENDADO: 11/10/2021** COMO CRIAR ANIMAÇÕES PERSONALIZADAS EM KOTLIN NO ANDROID STUDIO - INTRODUÇÃO ÀS ANIMAÇÕES | <a href="https://youtu.be/__oVsMoF7Fk" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/COMO-CRIAR-ANIMA%C3%87%C3%95ES-PERSONALIZADAS-EM-KOTLIN-NO-ANDROID-STUDIO-%5BINTRODU%C3%87%C3%83O-%C3%80S-ANIMA%C3%87%C3%95ES%5D.png" width="100" height="56"></a> |
+| COMO CRIAR ANIMAÇÕES PERSONALIZADAS EM KOTLIN NO ANDROID STUDIO - INTRODUÇÃO ÀS ANIMAÇÕES | <a href="https://youtu.be/__oVsMoF7Fk" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/COMO-CRIAR-ANIMA%C3%87%C3%95ES-PERSONALIZADAS-EM-KOTLIN-NO-ANDROID-STUDIO-%5BINTRODU%C3%87%C3%83O-%C3%80S-ANIMA%C3%87%C3%95ES%5D.png" width="100" height="56"></a> |
 
 ---
 
