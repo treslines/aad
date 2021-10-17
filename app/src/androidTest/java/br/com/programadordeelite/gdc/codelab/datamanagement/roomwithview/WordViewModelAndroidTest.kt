@@ -2,9 +2,9 @@ package br.com.programadordeelite.gdc.codelab.datamanagement.roomwithview
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
+import junit.framework.Assert.assertEquals
+import junit.framework.Assert.assertNotNull
 import kotlinx.coroutines.runBlocking
-import org.hamcrest.CoreMatchers.*
-import org.hamcrest.MatcherAssert.assertThat
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
@@ -46,7 +46,7 @@ class WordViewModelAndroidTest {
     // Para isso temos que passar a observar o liveData criando um observer que não faz nada
     // e adiciona-lo ao liveData dentro do nosso viewModel.
 
-    @Test
+    @Test // ATENCÃO: ESSE TESTE FALHA E FOI RE-ESCRITO NA PASTA "test", DA UMA OLHADA LÁ!
     fun insert_NewWord_IntoViewModel_DispatchesObserver_OnLiveData() {
         wordViewModel.allWords.getOrAwaitTestValue ()
 
@@ -58,7 +58,7 @@ class WordViewModelAndroidTest {
 
         // Ao inserir uma palavra nova, nosso evento é disparado
         val value: List<Word>? = wordViewModel.allWords.value
-        assertThat(value?.last(), (not(nullValue())))
-        assertThat(value?.last()?.word, (equalTo("Nova Palavra")))
+        assertNotNull(value?.last())
+        assertEquals(value?.last()?.word, "Nova Palavra")
     }
 }

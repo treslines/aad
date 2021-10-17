@@ -1,9 +1,9 @@
 package br.com.programadordeelite.gdc.codelab.datamanagement.roomwithview
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
+import junit.framework.Assert.assertEquals
+import junit.framework.Assert.assertNotNull
 import kotlinx.coroutines.runBlocking
-import org.hamcrest.MatcherAssert.assertThat
-import org.hamcrest.Matchers.*
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
@@ -55,7 +55,7 @@ class WordViewModelTest {
 
         // Ao inserir uma palavra nova, nosso evento é disparado
         val value: List<Word>? = wordViewModel.allWords.value
-        assertThat(value?.last(), (not(nullValue())))
-        assertThat(value?.last()?.word, (equalTo("Nova Palavra")))
+        assertNotNull(value?.last())
+        assertEquals(value?.last()?.word, "Nova Palavra")
     }
 }

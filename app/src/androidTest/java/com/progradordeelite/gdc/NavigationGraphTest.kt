@@ -1,8 +1,9 @@
 package com.progradordeelite.gdc
 
-import androidx.navigation.NavController
-import androidx.navigation.Navigation
-import androidx.navigation.testing.TestNavHostController
+import android.content.Context
+import android.os.Bundle
+import androidx.annotation.IdRes
+import androidx.navigation.*
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.core.app.launchActivity
 import androidx.test.espresso.Espresso
@@ -17,11 +18,9 @@ import br.com.programadordeelite.gdc.R
 import br.com.programadordeelite.gdc.codelab.debugging.calc.Calculator
 import junit.framework.TestCase.assertEquals
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_main.nav_host_fragment
 import kotlinx.android.synthetic.main.activity_user_navigation.*
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.runBlockingTest
-import org.hamcrest.CoreMatchers
 import org.hamcrest.CoreMatchers.`is`
 import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
@@ -42,18 +41,13 @@ class NavigationGraphTest {
 
     @Test
     fun testNavigationFromMainFragmentToCodelabToastSnake() = runBlockingTest {
-        val testNavController = TestNavHostController(ApplicationProvider.getApplicationContext())
 
-        // MOCKANDO O NAVIGATION CONTROLLER
-        mock(testNavController.javaClass)
+        var navControl: NavController? = null
 
-        launchActivity<MainActivity>()
-
-        // GIVEN - ADICIONANDO O NAV CONTROLLER MOCKADO AO CENARIO
-//        val fragScenario = launchFragmentInContainer<MainFragment>(Bundle(), R.style.AppTheme)
-//        fragScenario.onFragment{
-//            Navigation.setViewNavController(it.view!!, navController)
-//        }
+        val activityScenario = launchActivity<MainActivity>()
+        activityScenario.onActivity {
+            navControl = Navigation.findNavController(it,R.id.nav_host_fragment)
+        }
 
         // WHEN - QUANDO USUÁRIO CLICAR NO BOTÃO PARA O CODELAB DE TOAST E SNACK
         Espresso.onView(withId(R.id.codelab_toast_snake)).perform(ViewActions.click())
@@ -64,10 +58,7 @@ class NavigationGraphTest {
         )
 
         // 2°) DE VERIFICAR NAVEGACAO
-        assertThat(testNavController.currentDestination?.id,`is`(equalTo(R.id.toastSnakeFragment)))
-
-        // 3°)DE VERIFICAR SE O NAVIGATION GRAPH REALMENTE NAVEGOU PARA LÁ
-        verify(testNavController).navigate(R.id.toastSnakeFragment)
+        assertThat(navControl!!.currentDestination?.id,`is`(equalTo(R.id.toastSnakeFragment)))
 
         val calculator = mock(Calculator::class.java)
         // IMAGINE QUE AQUI SERIA UMA CHAMADA PARA O BACKEND, POREM VC NAO TEM O BACKEND AINDA
