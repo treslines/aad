@@ -16,7 +16,6 @@ apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion 31
-
     defaultConfig {
         applicationId "br.com.programadordeelite.gdc"
         minSdkVersion 23
