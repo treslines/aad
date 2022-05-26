@@ -3,6 +3,9 @@
 
 ## 🇧🇷 **Preparatório** 🇵🇹 
 para Certificação de desenvolvedor do Google 🏁 **EM APENAS 23 DIAS** (Android Associate Certification) - um guia passo a passo completo com vídeos no Youtube passando por todas as seções oficiais de cada codelab, 🇵🇹 **POREM TUDO EM PORTUGUÊS** 🇧🇷 E EM **KOTLIN!** ⚽😀
+
+Agora se você estiver intessado em Compose, já segue e deixa uma estrelinha nesse repositório aqui: <a href="https://github.com/treslines/android_compose_arsenal" target="_blank">**COMPOSE ARSENAL**</a> 
+
 </br>
 
 | 🎨 App Multi-Uso        | 🎨 Resultdo Final |
