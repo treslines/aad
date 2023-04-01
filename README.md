@@ -4,6 +4,25 @@
 ## 🇧🇷 **Preparatório** 🇵🇹 
 para Certificação de desenvolvedor do Google 🏁 **EM APENAS 23 DIAS** (Android Associate Certification) - um guia passo a passo completo com vídeos no Youtube passando por todas as seções oficiais de cada codelab, 🇵🇹 **POREM TUDO EM PORTUGUÊS** 🇧🇷 E EM **KOTLIN!** ⚽😀
 
+# ⛓️ **ANTES DE CONTINUAR, CONECTE-SE COMIGO!**
+Networking é uma das coisas mais importantes na área de TI. (Se não a mais importante) **Em tempos de tantos layoffs, uma boa rede de contatos é indispensável**. Portanto, comece a criar sua rede de networking o quanto antes. Você irá me agradecer no futuro.  **Não sabe por onde começar?** Conecte-se comigo e participe dos nossos grupos de ajuda e networking. O pessoal é super ativo, colaborativo e nos ajudamos uns aos outros. 
+- 🧲 | Telegram: networking gratuito ► https://bit.ly/telegramGb
+- 🧲 | Discord: conteúdo seleto ►  https://bit.ly/discordGb
+- 🧲 | Techblog: system design ► https://bit.ly/techblogGb
+- 🧲 | Twitter: posts semanais ►  https://bit.ly/twitterGb
+- 🧲 | Tiktok: dicas e resenha ►  https://bit.ly/tiktokGb
+- 🧲 | LinkedIn: seja encontrado por recrutadores ► https://bit.ly/linkedinGb
+- 🧲 | Github: deixa uma estrelinha ► https://github.com/treslines
+
+
+# Conhecimento bom é conhecimento compartilhado
+Seja também um multiplicador de conhecimento. Mostre esse repositório para sua **COMUNIDADE/GRUPO/SLACK MOBILE** Com o textinho abaixo eu facilito para você como mostrar esse repositório para seus amigos ou companheiros de trabalho. Apenas copia o texto abaixo e posta nas suas redes sociais. **Conhecimento bom é conhecimento compartilhado** Conto com seu apoio e ajuda!
+
+| 👇 Texto com link para postar nas redes sociais 👇 |
+| :------------- |
+| Repositório bacana em Português 🇵🇹 🇧🇷 para quem pretende criar um projeto multiplataforma mobile. Vai te evitar muita dor de cabeça e economizar muito tempo no trabalho. https://bit.ly/kotlin-multiplatform-mobile |
+
+# App
 Agora se você estiver intessado em Compose, já segue e deixa uma estrelinha nesse repositório aqui: <a href="https://github.com/treslines/android_compose_arsenal" target="_blank">**COMPOSE ARSENAL**</a> 
 
 
