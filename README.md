@@ -4,6 +4,18 @@
 ## 🇧🇷 **Preparatório** 🇵🇹 
 para Certificação de desenvolvedor do Google 🏁 **EM APENAS 23 DIAS** (Android Associate Certification) - um guia passo a passo completo com vídeos no Youtube passando por todas as seções oficiais de cada codelab, 🇵🇹 **POREM TUDO EM PORTUGUÊS** 🇧🇷 E EM **KOTLIN!** ⚽😀
 
+Neste repositório iremos abordar temas tais como:
+- O que é a certificação Android Developer e por que ela é importante?
+- Como se preparar para o exame de certificação Android Developer?
+- O que é avaliado no exame de certificação Android Developer?
+- Dicas e truques para passar no exame de certificação Android Developer
+- Perguntas comuns do exame de certificação Android Developer e como respondê-las
+- Como renovar a certificação Android Developer
+- Benefícios da certificação Android Developer para a carreira profissional
+- Comparação entre a certificação Android Developer e outras certificações para desenvolvedores Android
+- Experiências de outros desenvolvedores que obtiveram a certificação Android Developer
+- Custos e processo de registro para a certificação Android Developer
+
 # ⛓️ **Antes de continuar, garanta sua empregabilidade futura!**
 Networking é uma das coisas mais importantes na área de TI. (Se não a mais importante) **Em tempos de tantos layoffs, uma boa rede de contatos é indispensável**. Portanto, comece a criar sua rede de networking o quanto antes. Você irá me agradecer no futuro.  **Não sabe por onde começar?** Conecte-se comigo e participe dos nossos grupos de ajuda e networking. O pessoal é super ativo, colaborativo e nos ajudamos uns aos outros. 
 - 🧲 | Telegram: networking gratuito ► https://bit.ly/telegramGb
